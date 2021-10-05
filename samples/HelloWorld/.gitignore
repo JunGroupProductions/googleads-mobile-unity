@@ -1,10 +1,18 @@
 # =============== #
 # Unity generated #
-# =============== #
+# =============== 
+Builds
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Pp]ackages/
+!/[Pp]ackages/manifest.json
+/[Ll]ogs/
+/[Uu]serSettings/
 Temp/
 Obj/
 UnityGenerated/
-Library/
 ProjectSettings/
 
 # ===================================== #
@@ -32,3 +40,21 @@ ExportedObj/
 Icon?
 ehthumbs.db
 Thumbs.db
+
+.vsconfig
+
+# Unity3D generated meta files
+*.pidb.meta
+
+# Unity3D Generated File On Crash Reports
+sysinfo.txt
+
+# .jar/.aar files downloaded by Unity Jar Resolver
+Assets/Plugins/Android/*.[ja]ar*
+ProjectSettings/AndroidResolverDependencies.xml
+
+# JetBrains Rider Plugin
+Assets/Plugins/Editor*
+
+# GitHub for Unity Plugin
+Assets/Plugins/GitHub*
