@@ -13,7 +13,7 @@ public class PostProcessIOS : MonoBehaviour {
 	    {
 
 	    	string[] linesArray = File.ReadAllLines(buildPath + "/Podfile");
-	        linesArray[0] = "source 'https://cdn.cocoapods.org/'\nsource 'git@github.com:JunGroupProductions/Private-Cocoapod-Specs.git'";
+	        linesArray[2] = "source 'https://cdn.cocoapods.org/'\nsource 'git@github.com:JunGroupProductions/Private-Cocoapod-Specs.git'";
 	        File.WriteAllLines(buildPath + "/Podfile", linesArray);
 	    }
 	}
