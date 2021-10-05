@@ -112,9 +112,9 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/6300978111";
+        string adUnitId = "ca-app-pub-6816316814885940/3848484471";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+        string adUnitId = "ca-app-pub-6816316814885940/5339483948";
 #else
         string adUnitId = "unexpected_platform";
 #endif
@@ -157,9 +157,9 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/1033173712";
+        string adUnitId = "ca-app-pub-6816316814885940/1709490738";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/4411468910";
+        string adUnitId = "ca-app-pub-6816316814885940/7896249896";
 #else
         string adUnitId = "unexpected_platform";
 #endif
@@ -211,9 +211,9 @@ public class GoogleAdMobController : MonoBehaviour
 #if UNITY_EDITOR
         string adUnitId = "unused";
 #elif UNITY_ANDROID
-        string adUnitId = "ca-app-pub-3940256099942544/5224354917";
+        string adUnitId = "ca-app-pub-6816316814885940/3865412331";
 #elif UNITY_IPHONE
-        string adUnitId = "ca-app-pub-3940256099942544/1712485313";
+        string adUnitId = "ca-app-pub-6816316814885940/6132545386";
 #else
         string adUnitId = "unexpected_platform";
 #endif
