@@ -19,7 +19,7 @@ public class BuildSampleApp : MonoBehaviour
     static void PerformiOSBuild ()
     {
         EditorUserBuildSettings.SwitchActiveBuildTarget(BuildTarget.iOS);
-        PlayerSettings.iOS.sdkVersion = iOSSdkVersion.SimulatorSDK;
+        PlayerSettings.iOS.sdkVersion = iOSSdkVersion.DeviceSDK;
         BuildPipeline.BuildPlayer(GetScenePaths(), "Builds/iOS",BuildTarget.iOS,BuildOptions.None);
     }
     

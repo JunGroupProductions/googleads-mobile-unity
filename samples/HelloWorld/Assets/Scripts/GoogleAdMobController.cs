@@ -36,9 +36,17 @@ public class GoogleAdMobController : MonoBehaviour
 
         // Add some test device IDs (replace with your own device IDs).
 #if UNITY_IPHONE
-        deviceIds.Add("96e23e80653bb28980d3f40beb58915c");
+        deviceIds.Add("d0f6835328b6e25db17827f558da4a57");
+        deviceIds.Add("c7a8402daaab2bfbbc11c00789bfbb9a");
+        deviceIds.Add("ce3f3d3df7dec8363692d9c350ea3273");
+        deviceIds.Add("9b8e7cd0c8e533bea624be402e1b63f4");
+        deviceIds.Add("cae20e92e4de34c05a3baf4469821bd5");
+        deviceIds.Add("25dd40f317a693a87415825c74a92f7c");
 #elif UNITY_ANDROID
-        deviceIds.Add("75EF8D155528C04DACBBA6F36F433035");
+        deviceIds.Add("C3E75CF03C0BF982C374667B1BD825AF");
+        deviceIds.Add("5D29DB113CD64CBC402BE865D8B3D6C1");
+        deviceIds.Add("D9566E99EE1A058EF2FAC80EC4933EAB");
+        deviceIds.Add("3BD3FA6FEA24486E7667706E000FD41C");
 #endif
 
         // Configure TagForChildDirectedTreatment and test device IDs.
