@@ -1,0 +1,14 @@
+<dependencies>
+  <androidPackages>
+    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.0.0.0">
+      <repositories>
+        <repository>https://hyprmx.jfrog.io/artifactory/hyprmx</repository>
+      </repositories>
+    </androidPackage>
+  </androidPackages>
+
+  <iosPods>
+    <iosPod name="HyprMX-AdMob" version="6.0.0.0" bitcodeEnabled="true">
+    </iosPod>
+  </iosPods>
+</dependencies>
