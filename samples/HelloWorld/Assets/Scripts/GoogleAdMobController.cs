@@ -42,11 +42,17 @@ public class GoogleAdMobController : MonoBehaviour
         deviceIds.Add("9b8e7cd0c8e533bea624be402e1b63f4");
         deviceIds.Add("cae20e92e4de34c05a3baf4469821bd5");
         deviceIds.Add("25dd40f317a693a87415825c74a92f7c");
+        deviceIds.Add("c15544b80963f07e83aa64404f3f0472");
+        deviceIds.Add("5297e92a7b704e109894f9f93a5b95c1");
+        deviceIds.Add("d3ee944ef42a161ca72ad64f8917d326");
+
 #elif UNITY_ANDROID
         deviceIds.Add("C3E75CF03C0BF982C374667B1BD825AF");
         deviceIds.Add("5D29DB113CD64CBC402BE865D8B3D6C1");
         deviceIds.Add("D9566E99EE1A058EF2FAC80EC4933EAB");
         deviceIds.Add("3BD3FA6FEA24486E7667706E000FD41C");
+        deviceIds.Add("1B8FE35DA1F36CFBEE0D24CA63AB6001");
+        deviceIds.Add("7DB92CC400AA8089309F717A9C777446");
 #endif
 
         // Configure TagForChildDirectedTreatment and test device IDs.
