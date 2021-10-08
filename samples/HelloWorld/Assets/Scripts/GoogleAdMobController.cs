@@ -5,7 +5,6 @@ using GoogleMobileAds.Common;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
-using GoogleMobileAds.Api.Mediation.HyprMX;
 
 public class GoogleAdMobController : MonoBehaviour
 {
@@ -101,17 +100,7 @@ public class GoogleAdMobController : MonoBehaviour
 
     private AdRequest CreateAdRequest()
     {
-        HyprMXMediationExtras extras = new HyprMXMediationExtras();
-        extras.SetConsentStatus(ConsentStatus.Given);
-        extras.SetUserId("custom_userId");
-
-        HyprMXMediationExtras interstitialExtras = new HyprMXMediationExtras();
-        interstitialExtras.SetConsentStatus(ConsentStatus.Given);
-        interstitialExtras.SetUserId("custom_userId");
-        interstitialExtras.SetLabel("Custom Event Label");
         return new AdRequest.Builder()
-            .AddMediationExtras(extras)
-            .AddMediationExtras(interstitialExtras)
             .Build();
     }
 
