@@ -5,6 +5,7 @@ using GoogleMobileAds.Common;
 using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
+using GoogleMobileAds.Api.Mediation.HyprMX;
 
 public class GoogleAdMobController : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class GoogleAdMobController : MonoBehaviour
     public Text fpsMeter;
     public Text statusText;
 
-
+    private string customUserId = "custom_user_id";
     #region UNITY MONOBEHAVIOR METHODS
 
     public void Start()
@@ -64,6 +65,22 @@ public class GoogleAdMobController : MonoBehaviour
 
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize(HandleInitCompleteAction);
+
+        GUI.Label(new Rect(10, Screen.height - 70, Screen.width - 1, Screen.height - 50), "Custom User ID:");
+
+        customUserId = GUI.TextField(new Rect(10, Screen.height - 45, Screen.width - 1, Screen.height - 25), customUserId, 25);
+
+        if (GUI.Button(new Rect((Screen.width/2) - 40, (Screen.height - 20), 60, 20), "Consent Given"))
+        {
+            HyprMXAdapterConfiguration.SetHasUserConsent(true);
+            HyprMXAdapterConfiguration.SetUserId(customUserId);
+        }
+
+        if (GUI.Button(new Rect((Screen.width / 2) + 40, (Screen.height - 20), 60, 20), "Consent Declined"))
+        {
+            HyprMXAdapterConfiguration.SetHasUserConsent(false);
+            HyprMXAdapterConfiguration.SetUserId(customUserId);
+        }
     }
 
     private void HandleInitCompleteAction(InitializationStatus initstatus)
@@ -75,7 +92,7 @@ public class GoogleAdMobController : MonoBehaviour
         MobileAdsEventExecutor.ExecuteInUpdate(() =>
         {
             statusText.text = "Initialization complete";
-            RequestBannerAd();
+            SetCustomId();
         });
     }
 
@@ -93,6 +110,7 @@ public class GoogleAdMobController : MonoBehaviour
             fpsMeter.gameObject.SetActive(false);
         }
     }
+
 
     #endregion
 
@@ -139,7 +157,7 @@ public class GoogleAdMobController : MonoBehaviour
         }
 
         // Create a 320x50 banner at top of the screen
-        bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Top);
+        bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Top);
 
         // Add Event Handlers
         bannerView.OnAdLoaded += (sender, args) => OnAdLoadedEvent.Invoke();
@@ -424,6 +442,30 @@ public class GoogleAdMobController : MonoBehaviour
 
     #endregion
 
+    public void ConsentGiven()
+    {
+        HyprMXAdapterConfiguration.SetHasUserConsent(true);
+        statusText.text = "Consent Set to Granted";
+    }
+
+    public void ConsentDeclined()
+    {
+        HyprMXAdapterConfiguration.SetHasUserConsent(false);
+        statusText.text = "Consent Set to Declined";
+    }
+
+    public void SetCustomId()
+    {
+        string result = "";
+        int length = 15;
+        for (int i = 0; i < length; i++)
+        {
+            char c = (char)('A' + UnityEngine.Random.Range(0, 26));
+            result += c;
+        }
+        HyprMXAdapterConfiguration.SetUserId(result);
+        statusText.text = "Setting custom user id " + result;
+    }
 
     #region AD INSPECTOR
 
