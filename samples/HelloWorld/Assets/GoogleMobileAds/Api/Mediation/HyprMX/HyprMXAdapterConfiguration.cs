@@ -40,12 +40,12 @@
 
         public static void SetUserId(string userId)
         {
-            GetAdapter().CallStatic<AndroidJavaObject>("setUserId", userId);
+            GetAdapter().Call<AndroidJavaObject>("setUserId", userId);
         }
 
         public static void SetHasUserConsent(bool hasUserConsent)
         {
-            GetAdapter().CallStatic<AndroidJavaObject>("setHasUserConsent", hasUserConsent);
+            GetAdapter().Call<AndroidJavaObject>("setHasUserConsent", hasUserConsent);
         }
 
         internal static AndroidJavaClass GetAdapter()
