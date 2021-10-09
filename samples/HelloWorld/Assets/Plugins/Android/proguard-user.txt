@@ -1,0 +1,2 @@
+# Google ads unity wrapper
+-keep class com.google.unity.** { *; }
