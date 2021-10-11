@@ -26,7 +26,6 @@ public class GoogleAdMobController : MonoBehaviour
     public Text fpsMeter;
     public Text statusText;
 
-    private string customUserId = "custom_user_id";
     #region UNITY MONOBEHAVIOR METHODS
 
     public void Start()
@@ -66,21 +65,6 @@ public class GoogleAdMobController : MonoBehaviour
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize(HandleInitCompleteAction);
 
-        GUI.Label(new Rect(10, Screen.height - 70, Screen.width - 1, Screen.height - 50), "Custom User ID:");
-
-        customUserId = GUI.TextField(new Rect(10, Screen.height - 45, Screen.width - 1, Screen.height - 25), customUserId, 25);
-
-        if (GUI.Button(new Rect((Screen.width/2) - 40, (Screen.height - 20), 60, 20), "Consent Given"))
-        {
-            HyprMXAdapterConfiguration.SetHasUserConsent(true);
-            HyprMXAdapterConfiguration.SetUserId(customUserId);
-        }
-
-        if (GUI.Button(new Rect((Screen.width / 2) + 40, (Screen.height - 20), 60, 20), "Consent Declined"))
-        {
-            HyprMXAdapterConfiguration.SetHasUserConsent(false);
-            HyprMXAdapterConfiguration.SetUserId(customUserId);
-        }
     }
 
     private void HandleInitCompleteAction(InitializationStatus initstatus)
@@ -92,7 +76,6 @@ public class GoogleAdMobController : MonoBehaviour
         MobileAdsEventExecutor.ExecuteInUpdate(() =>
         {
             statusText.text = "Initialization complete";
-            SetCustomId();
         });
     }
 
