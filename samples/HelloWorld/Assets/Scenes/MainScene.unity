@@ -1221,7 +1221,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1730567637}
-        m_MethodName: 
+        m_MethodName: SetCustomId
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4487,7 +4487,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: Set User Id
 --- !u!222 &2092925978
 CanvasRenderer:
   m_ObjectHideFlags: 0
