@@ -197,7 +197,7 @@ public class GoogleAdMobController : MonoBehaviour
 
     public void ShowInterstitialAd()
     {
-        if (interstitialAd.IsLoaded())
+        if (interstitialAd != null && interstitialAd.IsLoaded())
         {
             interstitialAd.Show();
         }

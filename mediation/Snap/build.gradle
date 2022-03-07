@@ -1,5 +1,5 @@
 /*
-*   Gradle file to build a Unity package to add Vungle mediation support to the Google Mobile Ads Unity plugin.
+*   Gradle file to build a Unity package to add Snap mediation support to the Google Mobile Ads Unity plugin.
 *   Usage: ./gradlew exportPackage
 */
 defaultTasks 'exportPackage'
@@ -19,8 +19,8 @@ project.ext {
                 'UNITY_EXE environment variable and point it to your Unity installation.')
     }
 
-    versionString = '3.7.4'
-    adapterName = 'Vungle'
+    versionString = '1.0.0'
+    adapterName = 'Snap'
     pluginName = "GoogleMobileAds${adapterName}Mediation"
     pluginFileName = "${pluginName}.unitypackage"
     zipName = "${adapterName}UnityAdapter-${versionString}"
@@ -30,27 +30,6 @@ project.ext {
     buildPath = file('temp').absolutePath
     exportPath = file(pluginFileName).absolutePath
 }
-
-// Build AAR library from android plugin source files using existing Gradle build file.
-task buildAndroidPluginAar(type: GradleBuild) {
-    buildFile = 'source/android-library/vungle/build.gradle'
-    tasks = ['makeAar']
-}
-
-// Move android plugin AAR library to temporary build directory.
-task copyAndroidLibraryAar(type: Copy) {
-    from('source/android-library/vungle/build/libs/vungle-unity-android-library.aar')
-    into("${pluginBuildDir}/Assets/Plugins/Android/")
-}
-
-// Copy Unity mediation extras interface to temporary build directory.
-task copyExtrasInterface(type: Copy) {
-    from("../../source/plugin/Assets/GoogleMobileAds/Api/Mediation/")
-    into("${pluginBuildDir}/Assets/GoogleMobileAds/Api/Mediation/")
-    include('MediationExtras.cs')
-}
-
-copyAndroidLibraryAar.dependsOn(buildAndroidPluginAar)
 
 // Build unity package using through command line interface.
 // Create new unity project with files in temporary build directory and export files to a unity package.
@@ -63,8 +42,7 @@ task exportPackage(type: Exec) {
             "-projectPath", "${pluginBuildDir}",
             "-logFile", "temp/unity.log",
             "-exportPackage",
-            "Assets/GoogleMobileAds",
-            "Assets/Plugins",
+            "Assets/GoogleMobileAds/Editor",
             "${exportPath}",
             "-quit"
 
@@ -90,7 +68,7 @@ task clearTempBuildFolder(type: Delete) {
     delete { "${buildPath}" }
 }
 
-exportPackage.dependsOn(createTempBuildFolder, copyAndroidLibraryAar, copyExtrasInterface)
+exportPackage.dependsOn(createTempBuildFolder)
 exportPackage.finalizedBy(clearTempBuildFolder)
 
 /**
@@ -107,7 +85,7 @@ task clearZip(type: Delete) {
  */
 task makeZip(type: Zip) {
     // Targets to be added to the zip archive.
-    from("./${pluginFileName}", "./README.md", "./CHANGELOG.md")
+    from('./' + pluginFileName, './README.md', './CHANGELOG.md')
     // Root directory name for the zip archive.
     into(zipName)
     // Name of the zip archive.
