@@ -140,7 +140,7 @@ public class GoogleAdMobController : MonoBehaviour
         }
 
         // Create a 320x50 banner at top of the screen
-        bannerView = new BannerView(adUnitId, AdSize.SmartBanner, AdPosition.Top);
+        bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Top);
 
         // Add Event Handlers
         bannerView.OnAdLoaded += (sender, args) => OnAdLoadedEvent.Invoke();
@@ -197,7 +197,7 @@ public class GoogleAdMobController : MonoBehaviour
 
     public void ShowInterstitialAd()
     {
-        if (interstitialAd.IsLoaded())
+        if (interstitialAd != null && interstitialAd.IsLoaded())
         {
             interstitialAd.Show();
         }
