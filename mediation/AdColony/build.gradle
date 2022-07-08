@@ -19,7 +19,7 @@ project.ext {
                 'UNITY_EXE environment variable and point it to your Unity installation.')
     }
 
-    versionString = '2.5.0'
+    versionString = '2.6.0'
     adapterName = 'AdColony'
     pluginName = "GoogleMobileAds${adapterName}Mediation"
     pluginFileName = "${pluginName}.unitypackage"
@@ -107,7 +107,7 @@ task clearZip(type: Delete) {
  */
 task makeZip(type: Zip) {
     // Targets to be added to the zip archive.
-    from("./${pluginFileName}", "./README.md", "./CHANGELOG.md")
+    from("./${pluginFileName}", "./README.md")
     // Root directory name for the zip archive.
     into(zipName)
     // Name of the zip archive.
