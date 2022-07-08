@@ -19,7 +19,7 @@ project.ext {
                 'UNITY_EXE environment variable and point it to your Unity installation.')
     }
 
-    versionString = '1.7.0'
+    versionString = '1.8.1'
     adapterName = 'VerizonMedia'
     pluginName = "GoogleMobileAds${adapterName}Mediation"
     pluginFileName = "${pluginName}.unitypackage"
@@ -43,7 +43,6 @@ task exportPackage(type: Exec) {
             "-logFile", "temp/unity.log",
             "-exportPackage",
             "Assets/GoogleMobileAds",
-            "Assets/Plugins",
             "${exportPath}",
             "-quit"
 
@@ -86,7 +85,7 @@ task clearZip(type: Delete) {
  */
 task makeZip(type: Zip) {
     // Targets to be added to the zip archive.
-    from('./' + pluginFileName, './README.md', './CHANGELOG.md')
+    from('./' + pluginFileName, './README.md')
     // Root directory name for the zip archive.
     into(zipName)
     // Name of the zip archive.
