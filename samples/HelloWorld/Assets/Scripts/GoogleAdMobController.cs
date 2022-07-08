@@ -68,7 +68,7 @@ public class GoogleAdMobController : MonoBehaviour
         MobileAds.Initialize(HandleInitCompleteAction);
 
         // Listen to application foreground / background events.
-        AppStateEventNotifier.AppStateChanged += OnAppStateChanged;
+        //AppStateEventNotifier.AppStateChanged += OnAppStateChanged;
     }
 
     private void HandleInitCompleteAction(InitializationStatus initstatus)
@@ -437,20 +437,20 @@ public class GoogleAdMobController : MonoBehaviour
         }
     }
 
-    public void OnAppStateChanged(AppState state)
-    {
-        // Display the app open ad when the app is foregrounded.
-        UnityEngine.Debug.Log("App State is " + state);
+    // public void OnAppStateChanged(AppState state)
+    // {
+    //     // Display the app open ad when the app is foregrounded.
+    //     UnityEngine.Debug.Log("App State is " + state);
 
-        // OnAppStateChanged is not guaranteed to execute on the Unity UI thread.
-        MobileAdsEventExecutor.ExecuteInUpdate(() =>
-        {
-            if (state == AppState.Foreground)
-            {
-                ShowAppOpenAd();
-            }
-        });
-    }
+    //     // OnAppStateChanged is not guaranteed to execute on the Unity UI thread.
+    //     MobileAdsEventExecutor.ExecuteInUpdate(() =>
+    //     {
+    //         if (state == AppState.Foreground)
+    //         {
+    //             ShowAppOpenAd();
+    //         }
+    //     });
+    // }
 
     public void RequestAndLoadAppOpenAd()
     {
