@@ -6,7 +6,10 @@ using UnityEngine.UI;
 using System;
 using System.Collections.Generic;
 using GoogleMobileAds.Api.Mediation.HyprMX;
-
+#if UNITY_IOS
+// Include the IosSupport namespace if running on iOS:
+using Unity.Advertisement.IosSupport;
+#endif
 public class GoogleAdMobController : MonoBehaviour
 {
     private readonly TimeSpan APPOPEN_TIMEOUT = TimeSpan.FromHours(4);
@@ -32,6 +35,13 @@ public class GoogleAdMobController : MonoBehaviour
 
     public void Start()
     {
+ #if UNITY_IOS
+        // Check the user's consent status.
+        // If the status is undetermined, display the request request:
+        if(ATTrackingStatusBinding.GetAuthorizationTrackingStatus() == ATTrackingStatusBinding.AuthorizationTrackingStatus.NOT_DETERMINED) {
+            ATTrackingStatusBinding.RequestAuthorizationTracking();
+        }
+#endif
         MobileAds.SetiOSAppPauseOnBackground(true);
 
         List<String> deviceIds = new List<String>() { AdRequest.TestDeviceSimulator };

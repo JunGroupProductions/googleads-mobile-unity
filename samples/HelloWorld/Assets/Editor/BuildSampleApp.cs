@@ -45,7 +45,7 @@ public class BuildSampleApp : MonoBehaviour
         
         PlayerSettings.Android.forceSDCardPermission = true;
         PlayerSettings.Android.targetSdkVersion = AndroidSdkVersions.AndroidApiLevelAuto;
-        PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel19;
+        PlayerSettings.Android.minSdkVersion = AndroidSdkVersions.AndroidApiLevel22;
         
         BuildPlayerOptions buildPlayerOptions = new BuildPlayerOptions();
         buildPlayerOptions.locationPathName = outputLocation;
