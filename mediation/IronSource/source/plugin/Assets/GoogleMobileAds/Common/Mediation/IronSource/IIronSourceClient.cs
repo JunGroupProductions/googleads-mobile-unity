@@ -18,7 +18,7 @@ namespace GoogleMobileAds.Common.Mediation.IronSource
 {
     public interface IIronSourceClient
     {
-        // Forward user's consent status to the IronSource SDK.
         void SetConsent(bool consent);
+        void SetMetaData(string key, string metaDataValue);
     }
 }

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#if UNITY_IPHONE || UNITY_IOS
+#if UNITY_IOS
 
 using System;
 using System.Runtime.InteropServices;
@@ -23,7 +23,7 @@ namespace GoogleMobileAds.iOS.Mediation.UnityAds
     internal class Externs
     {
         [DllImport("__Internal")]
-        internal static extern void GADUMSetGDPRConsentMetaData(bool consent);
+        internal static extern void GADUMSetConsentMetaData(string key, bool metaDataValue);
     }
 }
 

@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#if UNITY_IPHONE || UNITY_IOS
+#if UNITY_IOS
 
 using System;
 using System.Runtime.InteropServices;
@@ -26,13 +26,19 @@ namespace GoogleMobileAds.iOS.Mediation.MyTarget
         internal static extern void GADUMMyTargetSetUserConsent(bool userConsent);
 
         [DllImport("__Internal")]
+        internal static extern bool GADUMMyTargetGetUserConsent();
+
+        [DllImport("__Internal")]
         internal static extern void GADUMMyTargetSetUserAgeRestricted(bool userAgeRestricted);
 
         [DllImport("__Internal")]
-        internal static extern bool GADUMMyTargetIsConsent();
+        internal static extern bool GADUMMyTargetIsUserAgeRestricted();
 
         [DllImport("__Internal")]
-        internal static extern bool GADUMMyTargetIsUserAgeRestricted();
+        internal static extern void GADUMMyTargetSetCCPAUserConsent(bool ccpaUserConsent);
+
+        [DllImport("__Internal")]
+        internal static extern bool GADUMMyTargetGetCCPAUserConsent();
     }
 }
 

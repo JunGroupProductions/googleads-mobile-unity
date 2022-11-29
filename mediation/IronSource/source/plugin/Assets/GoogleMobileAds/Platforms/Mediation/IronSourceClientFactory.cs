@@ -22,13 +22,13 @@ namespace GoogleMobileAds.Mediation
 {
     public class IronSourceClientFactory
     {
-        public static IIronSourceClient IronSourceInstance()
+        public static IIronSourceClient CreateIronSourceClient()
         {
             #if UNITY_EDITOR
             return new GoogleMobileAds.Common.Mediation.IronSource.DummyClient();
             #elif UNITY_ANDROID
             return GoogleMobileAds.Android.Mediation.IronSource.IronSourceClient.Instance;
-            #elif (UNITY_5 && UNITY_IOS) || UNITY_IPHONE
+            #elif UNITY_IOS
             return GoogleMobileAds.iOS.Mediation.IronSource.IronSourceClient.Instance;
             #else
             return new GoogleMobileAds.Common.Mediation.IronSource.DummyClient();

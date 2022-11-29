@@ -33,11 +33,9 @@ namespace GoogleMobileAds.iOS.Mediation.UnityAds
             }
         }
 
-        public void SetGDPRConsentMetaData(bool consent)
+        public void SetConsentMetaData(string key, bool metaDataValue)
         {
-            string parameterString = (consent == true ? "@YES" : "@NO");
-            MonoBehaviour.print ("Setting UnityAds metadata with key 'gdpr.consent' to value: " + parameterString);
-            Externs.GADUMSetGDPRConsentMetaData (consent);
+            Externs.GADUMSetConsentMetaData(key, metaDataValue);
         }
     }
 }

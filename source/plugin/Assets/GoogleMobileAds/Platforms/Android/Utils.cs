@@ -12,9 +12,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-using UnityEngine;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Api.Mediation;
@@ -186,6 +187,25 @@ namespace GoogleMobileAds.Android
             return appOpenAdClass.GetStatic<int>(orientationFieldName);
         }
 
+        public static Dictionary<string, string> GetDictionary(AndroidJavaObject androidBundle)
+        {
+            AndroidJavaObject bundleKeySet = androidBundle.Call<AndroidJavaObject>("keySet");
+            int length = bundleKeySet.Call<int>("size");
+
+            AndroidJavaObject bundleKeyArray = bundleKeySet.Call<AndroidJavaObject>("toArray");
+            IntPtr bundleKeyArrayPtr = bundleKeyArray.GetRawObject();
+
+            Dictionary<string, string> dict = new Dictionary<string, string>();
+            for (int i = 0; i < length; i++)
+            {
+                IntPtr keyPtr = AndroidJNI.GetObjectArrayElement(bundleKeyArrayPtr, i);
+                string key = AndroidJNI.GetStringUTFChars(keyPtr);
+                string val = androidBundle.Call<string>("getString", key);
+                dict.Add(key, val);
+            }
+            return dict;
+        }
+
         internal static int GetScreenWidth()
         {
             DisplayMetrics metrics = new DisplayMetrics();
@@ -209,7 +229,7 @@ namespace GoogleMobileAds.Android
             // Denote that the request is coming from this Unity plugin.
             adRequestBuilder.Call<AndroidJavaObject>(
                     "setRequestAgent",
-                    nativePluginVersion);
+                    AdRequest.BuildVersionString(nativePluginVersion));
             AndroidJavaObject bundle = new AndroidJavaObject(BundleClassName);
             foreach (KeyValuePair<string, string> entry in request.Extras)
             {
