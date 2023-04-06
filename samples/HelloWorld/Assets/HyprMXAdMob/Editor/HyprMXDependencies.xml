@@ -1,11 +1,14 @@
 <dependencies>
   <androidPackages>
-    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.0.3.0">
+    <repositories>
+      <repository>https://s01.oss.sonatype.org/content/groups/staging/</repository>
+    </repositories>
+    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.2.0.0">
     </androidPackage>
   </androidPackages>
 
   <iosPods>
-    <iosPod name="HyprMX-AdMob" version="6.0.3.1" bitcodeEnabled="true">
+    <iosPod name="HyprMX-AdMob" version="6.2.0.0" bitcodeEnabled="true">
     </iosPod>
   </iosPods>
 </dependencies>
