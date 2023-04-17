@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
 using System.Runtime.InteropServices;
+
 public interface IHyprMXAudioListener
 {
     void onAdAudioStart();

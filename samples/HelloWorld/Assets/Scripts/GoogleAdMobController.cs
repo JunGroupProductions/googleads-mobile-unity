@@ -11,7 +11,7 @@ using GoogleMobileAds.Api.Mediation.HyprMX;
 // Include the IosSupport namespace if running on iOS:
 using Unity.Advertisement.IosSupport;
 #endif
-public class GoogleAdMobController : MonoBehaviour
+public class GoogleAdMobController : MonoBehaviour, IHyprMXAudioListener
 {
     private readonly TimeSpan APPOPEN_TIMEOUT = TimeSpan.FromHours(4);
     private DateTime appOpenExpireTime;
@@ -43,6 +43,8 @@ public class GoogleAdMobController : MonoBehaviour
         }
 #endif
         MobileAds.SetiOSAppPauseOnBackground(true);
+
+        HyprMXAudioEventBus.Instance.listener = this;
 
         List<String> deviceIds = new List<String>() { AdRequest.TestDeviceSimulator };
 
@@ -89,6 +91,16 @@ public class GoogleAdMobController : MonoBehaviour
 
         // Listen to application foreground / background events.
         //AppStateEventNotifier.AppStateChanged += OnAppStateChanged;
+    }
+
+    public void onAdAudioStart() 
+    {
+        Debug.Log("[GoogleAdMobController] onAdAudioStart()");
+    }
+
+     public void onAdAudioEnd() 
+    {
+        Debug.Log("[GoogleAdMobController] onAudioEnd()");
     }
 
     private void HandleInitCompleteAction(InitializationStatus initstatus)
