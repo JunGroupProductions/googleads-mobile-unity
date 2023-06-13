@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "452916973267",
+    "firebase_url": "https://marketplace-142121.firebaseio.com",
+    "project_id": "marketplace-142121",
+    "storage_bucket": "marketplace-142121.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452916973267:android:2ce993505ea5b843ee0e26",
+        "android_client_info": {
+          "package_name": "com.hyprmx.UnityAdMob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452916973267-kai2ag9tgmj7jjgipnvcfied8495ek9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9WD6obB5hChE8P54oknwJ2fQ4tdUFIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452916973267-0ns3unh3chejosqpe5qpfo2b34qq0jhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452916973267:android:7b892c096bf2b18cee0e26",
+        "android_client_info": {
+          "package_name": "com.hyprmx.android.admobapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452916973267-kai2ag9tgmj7jjgipnvcfied8495ek9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9WD6obB5hChE8P54oknwJ2fQ4tdUFIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452916973267-0ns3unh3chejosqpe5qpfo2b34qq0jhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452916973267:android:c66fc1efed1978f3ee0e26",
+        "android_client_info": {
+          "package_name": "com.hyprmx.android.placementsexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452916973267-kai2ag9tgmj7jjgipnvcfied8495ek9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCl9WD6obB5hChE8P54oknwJ2fQ4tdUFIQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452916973267-0ns3unh3chejosqpe5qpfo2b34qq0jhh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
