@@ -479,3 +479,27 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2821.007591 seconds.
+  path: Assets/HyprMXAdMob/Editor/NewAudioMixer.mixer
+  artifactKey: Guid(28ff54f0108f941aaa356804f7c4cca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyprMXAdMob/Editor/NewAudioMixer.mixer using Guid(28ff54f0108f941aaa356804f7c4cca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89a32644ba02e1aac3765ecb1dcdd886') in 0.067663 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 140.644348 seconds.
+  path: Assets/Scenes/game_music.mp3
+  artifactKey: Guid(2d2b10d3fd1d64d938612a2473271d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/game_music.mp3 using Guid(2d2b10d3fd1d64d938612a2473271d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '470ab51be85933ef2e7d97040836dab9') in 0.772602 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 41.692018 seconds.
+  path: Assets/Scenes/game_music.mp3
+  artifactKey: Guid(2d2b10d3fd1d64d938612a2473271d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/game_music.mp3 using Guid(2d2b10d3fd1d64d938612a2473271d20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1381eb8ec87f80b6e0798792c86dc2fb') in 0.005823 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.405580 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(56b91441d0b904ce8a3476ad21dc702d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Audio using Guid(56b91441d0b904ce8a3476ad21dc702d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ab42b7380ce80ea094e11dc40d6997') in 0.000967 seconds 
