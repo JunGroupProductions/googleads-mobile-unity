@@ -3,5 +3,3 @@ org.gradle.parallel=true
 android.useAndroidX=true
 unityStreamingAssets=**STREAMING_ASSETS**
 **ADDITIONAL_PROPERTIES**
-
-android.enableR8=**MINIFY_WITH_R_EIGHT**
