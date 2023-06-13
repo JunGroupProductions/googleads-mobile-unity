@@ -232,8 +232,6 @@ struct AudioSource_t871AC2272F896738252F04EE949AEF5B241D3299;
 struct BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB;
 // UnityEngine.Yoga.BaselineFunction
 struct BaselineFunction_t13AFADEF52F63320B2159C237635948AEB801679;
-// UnityEngine.UI.Button
-struct Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098;
 // UnityEngine.Camera
 struct Camera_tA92CC927D7439999BC82DBEDC0AA45B470F9E184;
 // UnityEngine.Canvas
@@ -242,12 +240,8 @@ struct Canvas_t2DB4CEFDFF732884866C83F11ABF75F5AE8FFB26;
 struct CanvasRenderer_tAB9A55A976C4E3B2B37D0CE5616E5685A8B43860;
 // GoogleMobileAds.Ump.Api.ConsentDebugSettings
 struct ConsentDebugSettings_t21BCD70B1E4DB762E04807E88E78285CC51370C6;
-// GoogleMobileAds.Ump.Api.ConsentForm
-struct ConsentForm_t5610A8E6FEE812A11649F04979CB8679F9B0E1EF;
 // GoogleMobileAds.Ump.Android.ConsentFormClient
 struct ConsentFormClient_t35F1E659F96DD734B4D32A4CE9D6B405BF3032F3;
-// UnityEngine.UI.Dropdown
-struct Dropdown_t54C0BDC1441E058BE37E796F68886671C270EF89;
 // UnityEngine.Font
 struct Font_tC95270EA3198038970422D78B74A7F2E218A96B6;
 // UnityEngine.TextCore.Text.FontAsset
@@ -372,8 +366,6 @@ struct StatusText_tBBD79FCB86BEA8D7F833F25418DA1CC8836E1182;
 struct String_t;
 // System.Threading.SynchronizationContext
 struct SynchronizationContext_tCDB842BBE53B050802CBBB59C6E6DC45B5B06DC0;
-// UnityEngine.UI.Text
-struct Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62;
 // UnityEngine.TextAsset
 struct TextAsset_t2C64E93DA366D9DE5A8209E1802FA4884AC1BD69;
 // UnityEngine.TextCore.Text.TextAsset
@@ -4771,29 +4763,6 @@ struct GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327  : pu
 {
 };
 
-// GoogleMobileAds.Sample.GoogleUmpController
-struct GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
-{
-	// System.Collections.Generic.List`1<System.String> GoogleMobileAds.Sample.GoogleUmpController::TEST_DEVICE_IDS
-	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TEST_DEVICE_IDS_4;
-	// UnityEngine.UI.Text GoogleMobileAds.Sample.GoogleUmpController::TextConsent
-	Text_tD60B2346DAA6666BF0D822FF607F0B220C2B9E62* ___TextConsent_5;
-	// UnityEngine.UI.Dropdown GoogleMobileAds.Sample.GoogleUmpController::SelectChildUser
-	Dropdown_t54C0BDC1441E058BE37E796F68886671C270EF89* ___SelectChildUser_6;
-	// UnityEngine.UI.Dropdown GoogleMobileAds.Sample.GoogleUmpController::SelectDebugGeography
-	Dropdown_t54C0BDC1441E058BE37E796F68886671C270EF89* ___SelectDebugGeography_7;
-	// UnityEngine.UI.Button GoogleMobileAds.Sample.GoogleUmpController::BtnResetConsentInformation
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___BtnResetConsentInformation_8;
-	// UnityEngine.UI.Button GoogleMobileAds.Sample.GoogleUmpController::BtnUpdateConsentInformation
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___BtnUpdateConsentInformation_9;
-	// UnityEngine.UI.Button GoogleMobileAds.Sample.GoogleUmpController::BtnLoadConsentForm
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___BtnLoadConsentForm_10;
-	// UnityEngine.UI.Button GoogleMobileAds.Sample.GoogleUmpController::BtnShowConsentForm
-	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___BtnShowConsentForm_11;
-	// GoogleMobileAds.Ump.Api.ConsentForm GoogleMobileAds.Sample.GoogleUmpController::_consentForm
-	ConsentForm_t5610A8E6FEE812A11649F04979CB8679F9B0E1EF* ____consentForm_12;
-};
-
 // HyprMXAudioEventBus
 struct HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
 {
@@ -5637,10 +5606,10 @@ struct U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields
 {
 	// GoogleMobileAds.Samples.GoogleMobileAdsController/<>c GoogleMobileAds.Samples.GoogleMobileAdsController/<>c::<>9
 	U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413* ___U3CU3E9_0;
-	// System.Action`1<GoogleMobileAds.Api.InitializationStatus> GoogleMobileAds.Samples.GoogleMobileAdsController/<>c::<>9__1_0
-	Action_1_t61953204BFE962922BA541482E3ECC9BB03FC8EE* ___U3CU3E9__1_0_1;
-	// System.Action`1<GoogleMobileAds.Api.AdInspectorError> GoogleMobileAds.Samples.GoogleMobileAdsController/<>c::<>9__2_0
-	Action_1_t22BCEEA28B80F9170EC19984592D155304718F9D* ___U3CU3E9__2_0_2;
+	// System.Action`1<GoogleMobileAds.Api.InitializationStatus> GoogleMobileAds.Samples.GoogleMobileAdsController/<>c::<>9__3_0
+	Action_1_t61953204BFE962922BA541482E3ECC9BB03FC8EE* ___U3CU3E9__3_0_1;
+	// System.Action`1<GoogleMobileAds.Api.AdInspectorError> GoogleMobileAds.Samples.GoogleMobileAdsController/<>c::<>9__4_0
+	Action_1_t22BCEEA28B80F9170EC19984592D155304718F9D* ___U3CU3E9__4_0_2;
 };
 
 // GoogleMobileAds.Samples.GoogleMobileAdsController/<>c
@@ -6616,13 +6585,11 @@ struct GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_Stati
 {
 	// System.Boolean GoogleMobileAds.Samples.GoogleMobileAdsController::_isInitialized
 	bool ____isInitialized_4;
+	// System.Boolean GoogleMobileAds.Samples.GoogleMobileAdsController::tagAsAgeRestrictedUser
+	bool ___tagAsAgeRestrictedUser_5;
 };
 
 // GoogleMobileAds.Samples.GoogleMobileAdsController
-
-// GoogleMobileAds.Sample.GoogleUmpController
-
-// GoogleMobileAds.Sample.GoogleUmpController
 
 // HyprMXAudioEventBus
 struct HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields
@@ -7021,184 +6988,181 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3144[8] =
 	static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___GraphicsResourcesRecreate_0)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___EngineUpdate_1)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___FlushPendingResources_2)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___RegisterIntermediateRenderers_3)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___RenderNodeAdd_4)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___RenderNodeExecute_5)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___RenderNodeCleanup_6)),static_cast<int32_t>(offsetof(Utility_t8BCC393462C6270211734BE47CF5350F05EC97AD_StaticFields, ___s_MarkerRaiseEngineUpdate_7)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3146[1] = 
 {
-	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3148[5] = 
-{
-	static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields, ____instance_4)),0,static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields, ___Lock_6)),static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF, ___listener_7)),static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields, ___U3CQuittingU3Ek__BackingField_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3149[3] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__1_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__2_0_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3150[1] = 
-{
-	static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ____isInitialized_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3152[1] = 
-{
-	static_cast<int32_t>(offsetof(SceneManagerButton_t7ECAD6B2F0A8469F4024608A583E739F32405114, ___SceneToLoadName_21)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3153[3] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t26B75F61131FD65040D5F70114784B80E52AB033, ___U3CU3E4__this_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t26B75F61131FD65040D5F70114784B80E52AB033, ___type_1)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t26B75F61131FD65040D5F70114784B80E52AB033, ___logString_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3154[1] = 
-{
-	static_cast<int32_t>(offsetof(StatusText_tBBD79FCB86BEA8D7F833F25418DA1CC8836E1182, ____synchronizationContext_44)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3155[5] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_1_2)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_2_3)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_5_4)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3156[5] = 
-{
-	static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ___TIMEOUT_6)),static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ____expireTime_7)),static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ____appOpenAd_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3157[7] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_1_1)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_2_2)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_3_3)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_4_4)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_5_5)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_6_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3158[4] = 
-{
-	static_cast<int32_t>(offsetof(BannerViewController_t981BECA3F5B7EEC289B1328DD90AF4B14169DEDC, ___AdLoadedStatus_4)),static_cast<int32_t>(offsetof(BannerViewController_t981BECA3F5B7EEC289B1328DD90AF4B14169DEDC, ___GameAudioSource_5)),0,static_cast<int32_t>(offsetof(BannerViewController_t981BECA3F5B7EEC289B1328DD90AF4B14169DEDC, ____bannerView_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3159[9] = 
-{
-	static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___TEST_DEVICE_IDS_4)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___TextConsent_5)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___SelectChildUser_6)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___SelectDebugGeography_7)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___BtnResetConsentInformation_8)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___BtnUpdateConsentInformation_9)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___BtnLoadConsentForm_10)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ___BtnShowConsentForm_11)),static_cast<int32_t>(offsetof(GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB, ____consentForm_12)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3160[7] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_1_2)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_2_3)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_3_4)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_4_5)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_5_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3161[3] = 
-{
-	static_cast<int32_t>(offsetof(InterstitialAdController_tF00500E81F295F1163B53F49E97DF30744C58FE9, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(InterstitialAdController_tF00500E81F295F1163B53F49E97DF30744C58FE9, ____interstitialAd_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3162[8] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__4_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_0_2)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_1_3)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_2_4)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_3_5)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_4_6)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_5_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3163[3] = 
-{
-	static_cast<int32_t>(offsetof(RewardedAdController_t41CB377B42EE9294642A355E077DE50728106514, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(RewardedAdController_t41CB377B42EE9294642A355E077DE50728106514, ____rewardedAd_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3164[8] = 
-{
-	static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__4_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_0_2)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_1_3)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_2_4)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_3_5)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_4_6)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_5_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3165[3] = 
-{
-	static_cast<int32_t>(offsetof(RewardedInterstitialAdController_t8394B4105689D892E07F1BC84ACD546B1F3447A3, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(RewardedInterstitialAdController_t8394B4105689D892E07F1BC84ACD546B1F3447A3, ____rewardedInterstitialAd_6)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3167[1] = 
-{
-	0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3169[1] = 
-{
 	static_cast<int32_t>(offsetof(AdError_tA3BF7518349885A73447524367693A096B3DD1AE, ____client_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3170[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3147[2] = 
 {
 	static_cast<int32_t>(offsetof(AdErrorEventArgs_t1DBA3607C875036E80F31EE6AC928BB12D34D32A, ___U3CAdErrorU3Ek__BackingField_1)),static_cast<int32_t>(offsetof(AdErrorEventArgs_t1DBA3607C875036E80F31EE6AC928BB12D34D32A, ___U3CMessageU3Ek__BackingField_2)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3171[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3148[1] = 
 {
 	static_cast<int32_t>(offsetof(AdFailedToLoadEventArgs_tE066F90E1243641A362F1F7BBACACA2EFE3C38D2, ___U3CLoadAdErrorU3Ek__BackingField_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3172[5] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3149[5] = 
 {
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3174[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3151[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_t967F3092A418F3CF7F7DB12B1C690871F35ADAB4, ___loadAdError_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_t967F3092A418F3CF7F7DB12B1C690871F35ADAB4, ___U3CU3Ef__refU240_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3175[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3152[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_t5C29F1AB7BF1B133232BEF4675915B90875AEE53, ___adLoadCallback_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_t5C29F1AB7BF1B133232BEF4675915B90875AEE53, ___client_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3176[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3153[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey2_tBB8751F5F35B9A13A90B6A368A50E621D5BB3C88, ___appEvent_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey2_tBB8751F5F35B9A13A90B6A368A50E621D5BB3C88, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3177[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3154[1] = 
 {
 	static_cast<int32_t>(offsetof(AdManagerInterstitialAd_tC0BDFC18A8E7A4A44817FD75CDCB54FEC019093C, ___OnAppEventReceived_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3178[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3155[1] = 
 {
 	static_cast<int32_t>(offsetof(AdapterResponseInfo_t9EB601BF2C45E995747E624506CB85AC6A56C8CA, ____client_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3179[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3156[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_t566C9C0E49096AC9ED1FABCCD90A74317EFD45EA, ___loadAdError_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_t566C9C0E49096AC9ED1FABCCD90A74317EFD45EA, ___U3CU3Ef__refU240_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3180[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3157[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_tD96E499F21AE2084827FD476E9C0D076D9A2FDCC, ___adLoadCallback_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_tD96E499F21AE2084827FD476E9C0D076D9A2FDCC, ___client_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3181[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3158[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey2_t2943AC652E7E9D5034DE1A76D69FD2E81830D866, ___adError_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey2_t2943AC652E7E9D5034DE1A76D69FD2E81830D866, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3182[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3159[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey3_t5E7E3E23334DE6CB88734E90897DB0C8AB1F8954, ___args_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey3_t5E7E3E23334DE6CB88734E90897DB0C8AB1F8954, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3183[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3160[8] = 
 {
 	static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ___OnAdPaid_0)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ___OnAdClicked_1)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ___OnAdImpressionRecorded_2)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ___OnAdFullScreenContentOpened_3)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ___OnAdFullScreenContentClosed_4)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ___OnAdFullScreenContentFailed_5)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ____client_6)),static_cast<int32_t>(offsetof(AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC, ____canShowAd_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3184[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3161[1] = 
 {
 	static_cast<int32_t>(offsetof(AppStateEventNotifier_t0A047576C80CBFF891C1E1A0106BA70A5E302FAE_StaticFields, ___client_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3185[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3162[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CConfigureBannerEventsU3Ec__AnonStorey0_tC78496E8E0B5D9B37DFD7DB9B5440BAC94753159, ___loadAdError_0)),static_cast<int32_t>(offsetof(U3CConfigureBannerEventsU3Ec__AnonStorey0_tC78496E8E0B5D9B37DFD7DB9B5440BAC94753159, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3186[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3163[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CConfigureBannerEventsU3Ec__AnonStorey1_tF4FE247D0F4BE902D37FBBA2041DDB61C489D8D0, ___args_0)),static_cast<int32_t>(offsetof(U3CConfigureBannerEventsU3Ec__AnonStorey1_tF4FE247D0F4BE902D37FBBA2041DDB61C489D8D0, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3187[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3164[8] = 
 {
 	static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnBannerAdLoaded_0)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnBannerAdLoadFailed_1)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnAdPaid_2)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnAdClicked_3)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnAdImpressionRecorded_4)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnAdFullScreenContentOpened_5)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ___OnAdFullScreenContentClosed_6)),static_cast<int32_t>(offsetof(BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB, ____client_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3188[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3165[1] = 
 {
 	static_cast<int32_t>(offsetof(InitializationStatus_t550D061D96119B8458B9FC389FBA74A1DBEB1DDD, ___client_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3189[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3166[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_t078F80D6238FA3404C369261E17E8C11E357793A, ___interstitialAd_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_t078F80D6238FA3404C369261E17E8C11E357793A, ___U3CU3Ef__refU240_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3190[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3167[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey2_tBC584DF9FE468ED28241B68AC750C2D40AD73B73, ___loadAdError_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey2_tBC584DF9FE468ED28241B68AC750C2D40AD73B73, ___U3CU3Ef__refU240_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3191[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3168[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_t0A670E82EC373473D0DFD058F62D65E411B396F6, ___client_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_t0A670E82EC373473D0DFD058F62D65E411B396F6, ___adLoadCallback_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3192[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3169[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey3_tF7328B04881DDB8E28037B8716B7B3E0EC0A5F15, ___adError_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey3_tF7328B04881DDB8E28037B8716B7B3E0EC0A5F15, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3193[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3170[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey4_t68C06B745C8ACE1C5A2FEA8CF032881194C8E9FD, ___args_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey4_t68C06B745C8ACE1C5A2FEA8CF032881194C8E9FD, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3194[8] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3171[8] = 
 {
 	static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ___OnAdPaid_0)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ___OnAdClicked_1)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ___OnAdImpressionRecorded_2)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ___OnAdFullScreenContentOpened_3)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ___OnAdFullScreenContentClosed_4)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ___OnAdFullScreenContentFailed_5)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ____client_6)),static_cast<int32_t>(offsetof(InterstitialAd_t41640B3957C2B66FA5F6F38A4805393B6B013FEC, ____canShowAd_7)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3195[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3172[1] = 
 {
 	static_cast<int32_t>(offsetof(LoadAdError_t22654493F27C801157B803019F04E69E66CD4A62, ____client_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3197[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3174[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CInitializeU3Ec__AnonStorey1_t7ECFBA0A24C1ADAF491218897F06CE0674F97386, ___initStatusClient_0)),static_cast<int32_t>(offsetof(U3CInitializeU3Ec__AnonStorey1_t7ECFBA0A24C1ADAF491218897F06CE0674F97386, ___U3CU3Ef__refU240_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3198[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3175[1] = 
 {
 	static_cast<int32_t>(offsetof(U3CInitializeU3Ec__AnonStorey0_tB4B8A1B8DEFDACD5B03BCA0CB64B49A6218E956E, ___initCompleteAction_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3199[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3176[2] = 
 {
 	static_cast<int32_t>(offsetof(U3COpenAdInspectorU3Ec__AnonStorey3_tEFEFF877ECC34376E1E52673752BC68284FF227F, ___args_0)),static_cast<int32_t>(offsetof(U3COpenAdInspectorU3Ec__AnonStorey3_tEFEFF877ECC34376E1E52673752BC68284FF227F, ___U3CU3Ef__refU242_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3200[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3177[1] = 
 {
 	static_cast<int32_t>(offsetof(U3COpenAdInspectorU3Ec__AnonStorey2_t946CC312559758F96CBE8632B40C21CD98033354, ___adInspectorClosedAction_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3201[1] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3178[1] = 
 {
 	static_cast<int32_t>(offsetof(U3CRaiseActionU3Ec__AnonStorey4_t5EADF70554955B15BA689BFF6E7C3FDF02126AA5, ___action_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3202[6] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3179[6] = 
 {
 	static_cast<int32_t>(offsetof(MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5, ___client_0)),static_cast<int32_t>(offsetof(MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5_StaticFields, ___clientFactory_1)),static_cast<int32_t>(offsetof(MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5_StaticFields, ____synchronizationContext_2)),static_cast<int32_t>(offsetof(MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5_StaticFields, ____unityMainThreadId_3)),static_cast<int32_t>(offsetof(MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5_StaticFields, ___instance_4)),static_cast<int32_t>(offsetof(MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5_StaticFields, ___U3CRaiseAdEventsOnUnityMainThreadU3Ek__BackingField_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3203[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3180[2] = 
 {
 	static_cast<int32_t>(offsetof(ResponseInfo_t9809BD9030BD343A84738E174B86DBC3658720A0, ____client_0)),static_cast<int32_t>(offsetof(ResponseInfo_t9809BD9030BD343A84738E174B86DBC3658720A0_StaticFields, ___U3CU3Ef__amU24cache0_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3204[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3181[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_tEBED13706F9DA821F8601B069F26E653CB9BAA88, ___loadAdError_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey1_tEBED13706F9DA821F8601B069F26E653CB9BAA88, ___U3CU3Ef__refU240_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3205[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3182[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_tE468CDD78DB81EE4DCA4E3649D82B775C9FBC3CA, ___adLoadCallback_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_tE468CDD78DB81EE4DCA4E3649D82B775C9FBC3CA, ___client_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3206[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3183[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey2_tEB41442900B46CE7A2F25733564A01232E08B1F0, ___adError_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey2_tEB41442900B46CE7A2F25733564A01232E08B1F0, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3207[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3184[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey3_t7F1A4DCB98509B8941B3638E92B84E2CF9281E1E, ___args_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey3_t7F1A4DCB98509B8941B3638E92B84E2CF9281E1E, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3208[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3185[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey4_t040EAEDBE7323F6BB6E2414E9AA189D212A3AA4C, ___args_0)),static_cast<int32_t>(offsetof(U3CRegisterAdEventsU3Ec__AnonStorey4_t040EAEDBE7323F6BB6E2414E9AA189D212A3AA4C, ___U24this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3209[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3186[9] = 
 {
 	static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ___OnAdPaid_0)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ___OnAdClicked_1)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ___OnAdImpressionRecorded_2)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ___OnAdFullScreenContentOpened_3)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ___OnAdFullScreenContentClosed_4)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ___OnAdFullScreenContentFailed_5)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ____client_6)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ____canShowAd_7)),static_cast<int32_t>(offsetof(RewardedAd_t6D9A2A205821D735AB48061D75AC8DC4E3FA5D09, ____userRewardEarnedCallback_8)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3210[2] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3187[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_t16E241D6ED7F4DF30CB9F4B87B36F170DE5CF2FF, ___adLoadCallback_0)),static_cast<int32_t>(offsetof(U3CLoadU3Ec__AnonStorey0_t16E241D6ED7F4DF30CB9F4B87B36F170DE5CF2FF, ___client_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3211[9] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3188[9] = 
 {
 	static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ___OnAdPaid_0)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ___OnAdClicked_1)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ___OnAdImpressionRecorded_2)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ___OnAdFullScreenContentOpened_3)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ___OnAdFullScreenContentClosed_4)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ___OnAdFullScreenContentFailed_5)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ____client_6)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ____canShowAd_7)),static_cast<int32_t>(offsetof(RewardedInterstitialAd_t5E0B1087E71C016DFDC50BBFBAA8A2CCEFEA58AE, ____userRewardEarnedCallback_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3190[1] = 
+{
+	0,};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3192[5] = 
+{
+	static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields, ____instance_4)),0,static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields, ___Lock_6)),static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF, ___listener_7)),static_cast<int32_t>(offsetof(HyprMXAudioEventBus_t44048513EF5014E1E056E2B14B2589D55D7815DF_StaticFields, ___U3CQuittingU3Ek__BackingField_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3193[3] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__3_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__4_0_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3194[2] = 
+{
+	static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ____isInitialized_4)),static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ___tagAsAgeRestrictedUser_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3196[1] = 
+{
+	static_cast<int32_t>(offsetof(SceneManagerButton_t7ECAD6B2F0A8469F4024608A583E739F32405114, ___SceneToLoadName_21)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3197[3] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t26B75F61131FD65040D5F70114784B80E52AB033, ___U3CU3E4__this_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t26B75F61131FD65040D5F70114784B80E52AB033, ___type_1)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass3_0_t26B75F61131FD65040D5F70114784B80E52AB033, ___logString_2)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3198[1] = 
+{
+	static_cast<int32_t>(offsetof(StatusText_tBBD79FCB86BEA8D7F833F25418DA1CC8836E1182, ____synchronizationContext_44)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3199[5] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_1_2)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_2_3)),static_cast<int32_t>(offsetof(U3CU3Ec_t9BA50AC46A49306A540CEA4BC3F49F2A5C91219F_StaticFields, ___U3CU3E9__12_5_4)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3200[5] = 
+{
+	static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ___TIMEOUT_6)),static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ____expireTime_7)),static_cast<int32_t>(offsetof(AppOpenAdController_tD99005A48846AE4426DE30A29BA9E762881F66ED, ____appOpenAd_8)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3201[7] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_1_1)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_2_2)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_3_3)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_4_4)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_5_5)),static_cast<int32_t>(offsetof(U3CU3Ec_t16BEECD19221441A05742B26AFC15E558B73CB60_StaticFields, ___U3CU3E9__13_6_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3202[4] = 
+{
+	static_cast<int32_t>(offsetof(BannerViewController_t981BECA3F5B7EEC289B1328DD90AF4B14169DEDC, ___AdLoadedStatus_4)),static_cast<int32_t>(offsetof(BannerViewController_t981BECA3F5B7EEC289B1328DD90AF4B14169DEDC, ___GameAudioSource_5)),0,static_cast<int32_t>(offsetof(BannerViewController_t981BECA3F5B7EEC289B1328DD90AF4B14169DEDC, ____bannerView_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3204[7] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_1_2)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_2_3)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_3_4)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_4_5)),static_cast<int32_t>(offsetof(U3CU3Ec_tC64487D50B41898E9D21F9CDE51DFD720BFB8A3E_StaticFields, ___U3CU3E9__7_5_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3205[3] = 
+{
+	static_cast<int32_t>(offsetof(InterstitialAdController_tF00500E81F295F1163B53F49E97DF30744C58FE9, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(InterstitialAdController_tF00500E81F295F1163B53F49E97DF30744C58FE9, ____interstitialAd_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3206[8] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__4_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_0_2)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_1_3)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_2_4)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_3_5)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_4_6)),static_cast<int32_t>(offsetof(U3CU3Ec_t1E2780869A4EEB604A751EFF9CE7F8FDAFF22231_StaticFields, ___U3CU3E9__7_5_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3207[3] = 
+{
+	static_cast<int32_t>(offsetof(RewardedAdController_t41CB377B42EE9294642A355E077DE50728106514, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(RewardedAdController_t41CB377B42EE9294642A355E077DE50728106514, ____rewardedAd_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3208[8] = 
+{
+	static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__4_0_1)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_0_2)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_1_3)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_2_4)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_3_5)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_4_6)),static_cast<int32_t>(offsetof(U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields, ___U3CU3E9__7_5_7)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3209[3] = 
+{
+	static_cast<int32_t>(offsetof(RewardedInterstitialAdController_t8394B4105689D892E07F1BC84ACD546B1F3447A3, ___AdLoadedStatus_4)),0,static_cast<int32_t>(offsetof(RewardedInterstitialAdController_t8394B4105689D892E07F1BC84ACD546B1F3447A3, ____rewardedInterstitialAd_6)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3211[1] = 
+{
+	0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3214[3] = 
 {
 	0,0,0,};

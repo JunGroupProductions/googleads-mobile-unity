@@ -13,19 +13,13 @@ namespace GoogleMobileAds.Samples
     public class GoogleMobileAdsController : MonoBehaviour
     {
         private static bool _isInitialized;
+        public static bool tagAsAgeRestrictedUser = false;
 
         /// <summary>
         /// Initializes the MobileAds SDK
         /// </summary>
         private void Start()
         {
-            // Demonstrates how to configure Google Mobile Ads.
-            // Google Mobile Ads needs to be run only once and before loading any ads.
-            if (_isInitialized)
-            {
-                return;
-            }
-
             // On Android, Unity is paused when displaying interstitial or rewarded video.
             // This setting makes iOS behave consistently with Android.
             MobileAds.SetiOSAppPauseOnBackground(true);
@@ -34,6 +28,18 @@ namespace GoogleMobileAds.Samples
             // on the Unity main thread. The default value is false.
             // https://developers.google.com/admob/unity/quick-start#raise_ad_events_on_the_unity_main_thread
             MobileAds.RaiseAdEventsOnUnityMainThread = true;
+        }
+
+        public void Initialize()
+        {
+            Debug.Log("[GMAC] Google Mobile Ads attempting to initialize.");
+            // Demonstrates how to configure Google Mobile Ads.
+            // Google Mobile Ads needs to be run only once and before loading any ads.
+            if (_isInitialized)
+            {
+                Debug.Log("[GMAC] Google Mobile Ads has already been initialized.");
+                return;
+            }
 
             // Set your test devices.
             // https://developers.google.com/admob/unity/test-ads
@@ -82,17 +88,19 @@ namespace GoogleMobileAds.Samples
             // and the Test Device Ids.
             RequestConfiguration requestConfiguration = new RequestConfiguration
             {
-                TestDeviceIds = deviceIds
+                TestDeviceIds = deviceIds,
+                TagForChildDirectedTreatment = TagForChildDirectedTreatment.True
             };
+
             MobileAds.SetRequestConfiguration(requestConfiguration);
 
             // Initialize the Google Mobile Ads SDK.
-            Debug.Log("Google Mobile Ads Initializing.");
+            Debug.Log("[GMAC] Google Mobile Ads Initializing.");
             MobileAds.Initialize((InitializationStatus initstatus) =>
             {
                 if (initstatus == null)
                 {
-                    Debug.LogError("Google Mobile Ads initialization failed.");
+                    Debug.LogError("[GMAC] Google Mobile Ads initialization failed.");
                     return;
                 }
 
@@ -102,13 +110,13 @@ namespace GoogleMobileAds.Samples
                 {
                     foreach (var item in adapterStatusMap)
                     {
-                        Debug.Log(string.Format("Adapter {0} is {1}",
+                        Debug.Log(string.Format("[GMAC] Adapter {0} is {1}",
                             item.Key,
                             item.Value.InitializationState));
                     }
                 }
 
-                Debug.Log("Google Mobile Ads initialization complete.");
+                Debug.Log("[GMAC] Google Mobile Ads initialization complete.");
                 _isInitialized = true;
             });
         }
@@ -118,17 +126,17 @@ namespace GoogleMobileAds.Samples
         /// </summary>
         public void OpenAdInspector()
         {
-            Debug.Log("Opening ad Inspector.");
+            Debug.Log("[GMAC] Opening ad Inspector.");
             MobileAds.OpenAdInspector((AdInspectorError error) =>
             {
                 // If the operation failed, an error is returned.
                 if (error != null)
                 {
-                    Debug.Log("Ad Inspector failed to open with error: " + error);
+                    Debug.Log("[GMAC] Ad Inspector failed to open with error: " + error);
                     return;
                 }
 
-                Debug.Log("Ad Inspector opened successfully.");
+                Debug.Log("[GMAC] Ad Inspector opened successfully.");
             });
         }
     }
