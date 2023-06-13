@@ -15,7 +15,7 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 33
-        applicationId 'com.DefaultCompany.HelloWorld'
+        applicationId 'com.hyprmx.UnityAdMob'
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
@@ -63,5 +63,5 @@ android {
             enableSplit = true
         }
     }
-    namespace 'com.DefaultCompany.HelloWorld'
+    namespace 'com.hyprmx.UnityAdMob'
 }

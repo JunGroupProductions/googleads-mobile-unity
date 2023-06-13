@@ -114,171 +114,177 @@ extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__12_1_m6AF34D18D7918F191CA8C522
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__12_2_m49B37269A433DD46B68E1C20C8415AD3C53346EC (void);
 // 0x00000034 System.Void GoogleMobileAds.Sample.AppOpenAdController/<>c::<RegisterEventHandlers>b__12_5(GoogleMobileAds.Api.AdError)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__12_5_m6C9EE69A4AD3867E5FAEE829277EB5B280A3F712 (void);
-// 0x00000035 System.Void GoogleMobileAds.Sample.BannerViewController::CreateBannerView()
+// 0x00000035 System.Void GoogleMobileAds.Sample.BannerViewController::Start()
+extern void BannerViewController_Start_mF4284527C6DD81A58FB98DEBA07A046C30947BD4 (void);
+// 0x00000036 System.Void GoogleMobileAds.Sample.BannerViewController::onAdAudioStart()
+extern void BannerViewController_onAdAudioStart_m0A744596481110C327F10067587A3A79773C8EF1 (void);
+// 0x00000037 System.Void GoogleMobileAds.Sample.BannerViewController::onAdAudioEnd()
+extern void BannerViewController_onAdAudioEnd_m24C537E0210DD86B1E43B98846253979C4FDA72B (void);
+// 0x00000038 System.Void GoogleMobileAds.Sample.BannerViewController::CreateBannerView()
 extern void BannerViewController_CreateBannerView_m08D29BC99067D3DD46D7CF421B45AAF3CA25D28D (void);
-// 0x00000036 System.Void GoogleMobileAds.Sample.BannerViewController::LoadAd()
+// 0x00000039 System.Void GoogleMobileAds.Sample.BannerViewController::LoadAd()
 extern void BannerViewController_LoadAd_m5CF38F799222E377D0D2A46898CEFB69B5AF879D (void);
-// 0x00000037 System.Void GoogleMobileAds.Sample.BannerViewController::ShowAd()
+// 0x0000003A System.Void GoogleMobileAds.Sample.BannerViewController::ShowAd()
 extern void BannerViewController_ShowAd_m96E09EBC31A2D9DE09556EAE66CCFC97D5B891B2 (void);
-// 0x00000038 System.Void GoogleMobileAds.Sample.BannerViewController::HideAd()
+// 0x0000003B System.Void GoogleMobileAds.Sample.BannerViewController::HideAd()
 extern void BannerViewController_HideAd_m3961665300E3DA25FE370F7692C9E40472BD0603 (void);
-// 0x00000039 System.Void GoogleMobileAds.Sample.BannerViewController::DestroyAd()
+// 0x0000003C System.Void GoogleMobileAds.Sample.BannerViewController::DestroyAd()
 extern void BannerViewController_DestroyAd_m60E8802F007D136B502B6CED96DD8750FFAA8A33 (void);
-// 0x0000003A System.Void GoogleMobileAds.Sample.BannerViewController::LogResponseInfo()
+// 0x0000003D System.Void GoogleMobileAds.Sample.BannerViewController::LogResponseInfo()
 extern void BannerViewController_LogResponseInfo_m7B821AA1ECBFFCF0939406C739748798AA868F9D (void);
-// 0x0000003B System.Void GoogleMobileAds.Sample.BannerViewController::ListenToAdEvents()
+// 0x0000003E System.Void GoogleMobileAds.Sample.BannerViewController::ListenToAdEvents()
 extern void BannerViewController_ListenToAdEvents_m86C7A1A0D0112B7324164293D990E594CD523599 (void);
-// 0x0000003C System.Void GoogleMobileAds.Sample.BannerViewController::.ctor()
+// 0x0000003F System.Void GoogleMobileAds.Sample.BannerViewController::.ctor()
 extern void BannerViewController__ctor_m24FEB9DC23D2BDCC6E9F82AA16A5ABF1F8386522 (void);
-// 0x0000003D System.Void GoogleMobileAds.Sample.BannerViewController::<ListenToAdEvents>b__9_0()
-extern void BannerViewController_U3CListenToAdEventsU3Eb__9_0_mA27303A98AED5F34E5D051CD6EFFE11093B2DFBA (void);
-// 0x0000003E System.Void GoogleMobileAds.Sample.BannerViewController/<>c::.cctor()
+// 0x00000040 System.Void GoogleMobileAds.Sample.BannerViewController::<ListenToAdEvents>b__13_0()
+extern void BannerViewController_U3CListenToAdEventsU3Eb__13_0_m834D95113DDAE4C5F1934F2CEE335BEAD2F60214 (void);
+// 0x00000041 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::.cctor()
 extern void U3CU3Ec__cctor_m5116877D258D75A92144CD14B2D90A4C8F87A915 (void);
-// 0x0000003F System.Void GoogleMobileAds.Sample.BannerViewController/<>c::.ctor()
+// 0x00000042 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::.ctor()
 extern void U3CU3Ec__ctor_m0339173189910A2CA878D5B1B4385299EA4AD418 (void);
-// 0x00000040 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__9_1(GoogleMobileAds.Api.LoadAdError)
-extern void U3CU3Ec_U3CListenToAdEventsU3Eb__9_1_mCE3784333AD7B844AC66905B60972168453F3C1B (void);
-// 0x00000041 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__9_2(GoogleMobileAds.Api.AdValue)
-extern void U3CU3Ec_U3CListenToAdEventsU3Eb__9_2_mF19904FD757BE1A79BCC31377DCE9AA4AD9F1254 (void);
-// 0x00000042 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__9_3()
-extern void U3CU3Ec_U3CListenToAdEventsU3Eb__9_3_m5BD1DB23AFDEAA26AE3673FE2A1B0910532D6A6F (void);
-// 0x00000043 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__9_4()
-extern void U3CU3Ec_U3CListenToAdEventsU3Eb__9_4_m887DF2FDF754D941CB4DFF619E2647B752CEB216 (void);
-// 0x00000044 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__9_5()
-extern void U3CU3Ec_U3CListenToAdEventsU3Eb__9_5_m08F74A1D881E260C0E9A9FF8357CBF38D019EA01 (void);
-// 0x00000045 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__9_6()
-extern void U3CU3Ec_U3CListenToAdEventsU3Eb__9_6_m5595B13AA846BCE0200E0462D828AA5D819E3489 (void);
-// 0x00000046 System.Void GoogleMobileAds.Sample.GoogleUmpController::Awake()
+// 0x00000043 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__13_1(GoogleMobileAds.Api.LoadAdError)
+extern void U3CU3Ec_U3CListenToAdEventsU3Eb__13_1_m0C39DCF838453DB72FE8AAC52B78E303CC389E49 (void);
+// 0x00000044 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__13_2(GoogleMobileAds.Api.AdValue)
+extern void U3CU3Ec_U3CListenToAdEventsU3Eb__13_2_m672F2608A6FAECCF677A2291608CD0F0351E0361 (void);
+// 0x00000045 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__13_3()
+extern void U3CU3Ec_U3CListenToAdEventsU3Eb__13_3_mCA77F1BE8F451D29B5AEB0F88EC3451AD53B8C93 (void);
+// 0x00000046 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__13_4()
+extern void U3CU3Ec_U3CListenToAdEventsU3Eb__13_4_m18D8F3685C15676B1531093573C051D98915B582 (void);
+// 0x00000047 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__13_5()
+extern void U3CU3Ec_U3CListenToAdEventsU3Eb__13_5_mEA1D87710047EC85E7B8D6F7313F8B148EDD19A9 (void);
+// 0x00000048 System.Void GoogleMobileAds.Sample.BannerViewController/<>c::<ListenToAdEvents>b__13_6()
+extern void U3CU3Ec_U3CListenToAdEventsU3Eb__13_6_mAB2D7E1231035EB03D3975C9EF7D332A12C3F1B0 (void);
+// 0x00000049 System.Void GoogleMobileAds.Sample.GoogleUmpController::Awake()
 extern void GoogleUmpController_Awake_m994AE003D9BC7064E26438331404AA201690EC4A (void);
-// 0x00000047 System.Void GoogleMobileAds.Sample.GoogleUmpController::ResetConsentInformation()
+// 0x0000004A System.Void GoogleMobileAds.Sample.GoogleUmpController::ResetConsentInformation()
 extern void GoogleUmpController_ResetConsentInformation_m5C9EEFBE1C1C6B0BB11C0C5260F846950685EECB (void);
-// 0x00000048 System.Void GoogleMobileAds.Sample.GoogleUmpController::UpdateConsentInformation()
+// 0x0000004B System.Void GoogleMobileAds.Sample.GoogleUmpController::UpdateConsentInformation()
 extern void GoogleUmpController_UpdateConsentInformation_mB3CC03CE136B7679BABDF83669DFEEB69A0C7280 (void);
-// 0x00000049 System.Void GoogleMobileAds.Sample.GoogleUmpController::LoadConsentForm()
+// 0x0000004C System.Void GoogleMobileAds.Sample.GoogleUmpController::LoadConsentForm()
 extern void GoogleUmpController_LoadConsentForm_mAE3B52163245E357FC18693FF4CAE111B51C195C (void);
-// 0x0000004A System.Void GoogleMobileAds.Sample.GoogleUmpController::ShowConsentForm()
+// 0x0000004D System.Void GoogleMobileAds.Sample.GoogleUmpController::ShowConsentForm()
 extern void GoogleUmpController_ShowConsentForm_mF785307FAF8A111B96E5CAECCC22BB8415913889 (void);
-// 0x0000004B System.Void GoogleMobileAds.Sample.GoogleUmpController::InitUI()
+// 0x0000004E System.Void GoogleMobileAds.Sample.GoogleUmpController::InitUI()
 extern void GoogleUmpController_InitUI_m83BBF0864BDB73E73FA70BCFA8B63E3051768B14 (void);
-// 0x0000004C System.Void GoogleMobileAds.Sample.GoogleUmpController::UpdateUI()
+// 0x0000004F System.Void GoogleMobileAds.Sample.GoogleUmpController::UpdateUI()
 extern void GoogleUmpController_UpdateUI_m4B0C854E0B8D4128322C86909BAE454A57042C3A (void);
-// 0x0000004D System.Void GoogleMobileAds.Sample.GoogleUmpController::.ctor()
+// 0x00000050 System.Void GoogleMobileAds.Sample.GoogleUmpController::.ctor()
 extern void GoogleUmpController__ctor_m0BF38DB200EEB06B81E7E46D1CE1F16C96CC2317 (void);
-// 0x0000004E System.Void GoogleMobileAds.Sample.GoogleUmpController::<UpdateConsentInformation>b__11_0(GoogleMobileAds.Ump.Api.FormError)
+// 0x00000051 System.Void GoogleMobileAds.Sample.GoogleUmpController::<UpdateConsentInformation>b__11_0(GoogleMobileAds.Ump.Api.FormError)
 extern void GoogleUmpController_U3CUpdateConsentInformationU3Eb__11_0_mDBF3F76B43F0EDABA372E8DF9EC334F87FBBEFA9 (void);
-// 0x0000004F System.Void GoogleMobileAds.Sample.GoogleUmpController::<LoadConsentForm>b__12_0(GoogleMobileAds.Ump.Api.ConsentForm,GoogleMobileAds.Ump.Api.FormError)
+// 0x00000052 System.Void GoogleMobileAds.Sample.GoogleUmpController::<LoadConsentForm>b__12_0(GoogleMobileAds.Ump.Api.ConsentForm,GoogleMobileAds.Ump.Api.FormError)
 extern void GoogleUmpController_U3CLoadConsentFormU3Eb__12_0_m05588C81CBBB003C20BC3212EE535E4554E14931 (void);
-// 0x00000050 System.Void GoogleMobileAds.Sample.GoogleUmpController::<ShowConsentForm>b__13_0(GoogleMobileAds.Ump.Api.FormError)
+// 0x00000053 System.Void GoogleMobileAds.Sample.GoogleUmpController::<ShowConsentForm>b__13_0(GoogleMobileAds.Ump.Api.FormError)
 extern void GoogleUmpController_U3CShowConsentFormU3Eb__13_0_mB30F203C306BE5494E118B7CEDAC013E3AE7FE74 (void);
-// 0x00000051 System.Void GoogleMobileAds.Sample.InterstitialAdController::LoadAd()
+// 0x00000054 System.Void GoogleMobileAds.Sample.InterstitialAdController::LoadAd()
 extern void InterstitialAdController_LoadAd_mD196701059DCAB2093AF6AD770177946EACCB325 (void);
-// 0x00000052 System.Void GoogleMobileAds.Sample.InterstitialAdController::ShowAd()
+// 0x00000055 System.Void GoogleMobileAds.Sample.InterstitialAdController::ShowAd()
 extern void InterstitialAdController_ShowAd_m059DBD65F44B2603A5BECA380CE47DFF466D2BA9 (void);
-// 0x00000053 System.Void GoogleMobileAds.Sample.InterstitialAdController::DestroyAd()
+// 0x00000056 System.Void GoogleMobileAds.Sample.InterstitialAdController::DestroyAd()
 extern void InterstitialAdController_DestroyAd_mB297EBF6E5A14A968E4BBE1F626C5EA77DAE9292 (void);
-// 0x00000054 System.Void GoogleMobileAds.Sample.InterstitialAdController::LogResponseInfo()
+// 0x00000057 System.Void GoogleMobileAds.Sample.InterstitialAdController::LogResponseInfo()
 extern void InterstitialAdController_LogResponseInfo_mBFEC205F2D74D0AA4EA5FDA275D22C69145B53F4 (void);
-// 0x00000055 System.Void GoogleMobileAds.Sample.InterstitialAdController::RegisterEventHandlers(GoogleMobileAds.Api.InterstitialAd)
+// 0x00000058 System.Void GoogleMobileAds.Sample.InterstitialAdController::RegisterEventHandlers(GoogleMobileAds.Api.InterstitialAd)
 extern void InterstitialAdController_RegisterEventHandlers_mFA3417762C761D3CD09033948C08AD2E18B2E62E (void);
-// 0x00000056 System.Void GoogleMobileAds.Sample.InterstitialAdController::.ctor()
+// 0x00000059 System.Void GoogleMobileAds.Sample.InterstitialAdController::.ctor()
 extern void InterstitialAdController__ctor_m960056937C419239E9D4170E35E2DCE9B05DF894 (void);
-// 0x00000057 System.Void GoogleMobileAds.Sample.InterstitialAdController::<LoadAd>b__3_0(GoogleMobileAds.Api.InterstitialAd,GoogleMobileAds.Api.LoadAdError)
+// 0x0000005A System.Void GoogleMobileAds.Sample.InterstitialAdController::<LoadAd>b__3_0(GoogleMobileAds.Api.InterstitialAd,GoogleMobileAds.Api.LoadAdError)
 extern void InterstitialAdController_U3CLoadAdU3Eb__3_0_m4D568CC717F1C2432FDDAA82F6E55140863372CF (void);
-// 0x00000058 System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::.cctor()
+// 0x0000005B System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::.cctor()
 extern void U3CU3Ec__cctor_m11B14A424C0665498775A7A72CD02C696B20C408 (void);
-// 0x00000059 System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::.ctor()
+// 0x0000005C System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::.ctor()
 extern void U3CU3Ec__ctor_mA174F455EFC91B31CFF35EA5ACCBC0DCB2AC50D5 (void);
-// 0x0000005A System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_0(GoogleMobileAds.Api.AdValue)
+// 0x0000005D System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_0(GoogleMobileAds.Api.AdValue)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_0_mC2F735FC679B57716737601C5C3FC046F37E468E (void);
-// 0x0000005B System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_1()
+// 0x0000005E System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_1()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_1_m08A08C5ADF7BFFE32200D9A0307434E2562E2E53 (void);
-// 0x0000005C System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_2()
+// 0x0000005F System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_2()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_2_m03F66287EAC97D7AABE3E0EBD599448703184F9F (void);
-// 0x0000005D System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_3()
+// 0x00000060 System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_3()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_3_mC437645E6A8B01B6155C0096C3132D491E74CA28 (void);
-// 0x0000005E System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_4()
+// 0x00000061 System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_4()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_4_m748376A21BE07481A76365377442A8FA26C9E401 (void);
-// 0x0000005F System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
+// 0x00000062 System.Void GoogleMobileAds.Sample.InterstitialAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_5_mB06C29E2235116DA23E92D978A6D2606F7F57201 (void);
-// 0x00000060 System.Void GoogleMobileAds.Sample.RewardedAdController::LoadAd()
+// 0x00000063 System.Void GoogleMobileAds.Sample.RewardedAdController::LoadAd()
 extern void RewardedAdController_LoadAd_m8C55694F67F813DCDD38530F7C418F6D24257DD8 (void);
-// 0x00000061 System.Void GoogleMobileAds.Sample.RewardedAdController::ShowAd()
+// 0x00000064 System.Void GoogleMobileAds.Sample.RewardedAdController::ShowAd()
 extern void RewardedAdController_ShowAd_m4DC62A4C78B6C0849C1A2DB77BEACF9B4DF2E229 (void);
-// 0x00000062 System.Void GoogleMobileAds.Sample.RewardedAdController::DestroyAd()
+// 0x00000065 System.Void GoogleMobileAds.Sample.RewardedAdController::DestroyAd()
 extern void RewardedAdController_DestroyAd_mD8A853B6791F4C6DA6BFF7B8390703750E2B16E2 (void);
-// 0x00000063 System.Void GoogleMobileAds.Sample.RewardedAdController::LogResponseInfo()
+// 0x00000066 System.Void GoogleMobileAds.Sample.RewardedAdController::LogResponseInfo()
 extern void RewardedAdController_LogResponseInfo_m7692BCA8B1544FC0DE0EDDC5026EF0A10C10D399 (void);
-// 0x00000064 System.Void GoogleMobileAds.Sample.RewardedAdController::RegisterEventHandlers(GoogleMobileAds.Api.RewardedAd)
+// 0x00000067 System.Void GoogleMobileAds.Sample.RewardedAdController::RegisterEventHandlers(GoogleMobileAds.Api.RewardedAd)
 extern void RewardedAdController_RegisterEventHandlers_mD8DCC5DE3ACAE8120126D263DF44C320FD68D4F4 (void);
-// 0x00000065 System.Void GoogleMobileAds.Sample.RewardedAdController::.ctor()
+// 0x00000068 System.Void GoogleMobileAds.Sample.RewardedAdController::.ctor()
 extern void RewardedAdController__ctor_m684F4493C490C277D60154C8B2E628440EF50EBB (void);
-// 0x00000066 System.Void GoogleMobileAds.Sample.RewardedAdController::<LoadAd>b__3_0(GoogleMobileAds.Api.RewardedAd,GoogleMobileAds.Api.LoadAdError)
+// 0x00000069 System.Void GoogleMobileAds.Sample.RewardedAdController::<LoadAd>b__3_0(GoogleMobileAds.Api.RewardedAd,GoogleMobileAds.Api.LoadAdError)
 extern void RewardedAdController_U3CLoadAdU3Eb__3_0_m56F9B04050C46E40EC490DD5FC28BF98B522D7EA (void);
-// 0x00000067 System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::.cctor()
+// 0x0000006A System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::.cctor()
 extern void U3CU3Ec__cctor_mEC0416967DAEF58419CC552C40DA5BC0E5603792 (void);
-// 0x00000068 System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::.ctor()
+// 0x0000006B System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::.ctor()
 extern void U3CU3Ec__ctor_m2D0243FFED69699017E9B3B81CDD824F18398DB3 (void);
-// 0x00000069 System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<ShowAd>b__4_0(GoogleMobileAds.Api.Reward)
+// 0x0000006C System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<ShowAd>b__4_0(GoogleMobileAds.Api.Reward)
 extern void U3CU3Ec_U3CShowAdU3Eb__4_0_m90F821D70E74E7A3A4466B233C3FB658504DFC86 (void);
-// 0x0000006A System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_0(GoogleMobileAds.Api.AdValue)
+// 0x0000006D System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_0(GoogleMobileAds.Api.AdValue)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_0_m73D8FB612F462D614285A20EDB4D95653A7AF1FC (void);
-// 0x0000006B System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_1()
+// 0x0000006E System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_1()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_1_mC3648C31CD19A9AAAA74694DDC3D8673C578E0DC (void);
-// 0x0000006C System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_2()
+// 0x0000006F System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_2()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_2_m4AEDA47F143D39EA3C2F21FB953C68440ED574B2 (void);
-// 0x0000006D System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_3()
+// 0x00000070 System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_3()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_3_mB3A83C6C1FA8CEAD1D9125518DE54E13A69A6212 (void);
-// 0x0000006E System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_4()
+// 0x00000071 System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_4()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_4_mC428A0045A0AF4A3EB35157462B635B995F8133E (void);
-// 0x0000006F System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
+// 0x00000072 System.Void GoogleMobileAds.Sample.RewardedAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_5_mA589D01B35F03AA08EB81B74EB1A9E238AF72F91 (void);
-// 0x00000070 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::LoadAd()
+// 0x00000073 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::LoadAd()
 extern void RewardedInterstitialAdController_LoadAd_m96E336FEC7ACE54C50CD7815DBF9074B02E54E6C (void);
-// 0x00000071 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::ShowAd()
+// 0x00000074 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::ShowAd()
 extern void RewardedInterstitialAdController_ShowAd_m9637959A8B4B3EC4391DFD352EAE2E783503D416 (void);
-// 0x00000072 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::DestroyAd()
+// 0x00000075 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::DestroyAd()
 extern void RewardedInterstitialAdController_DestroyAd_m76D9D4AFB9556049EA134466BECF72049CEF9533 (void);
-// 0x00000073 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::LogResponseInfo()
+// 0x00000076 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::LogResponseInfo()
 extern void RewardedInterstitialAdController_LogResponseInfo_m6EF4301C004A8569078A43028099E9E55F2D12EC (void);
-// 0x00000074 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::RegisterEventHandlers(GoogleMobileAds.Api.RewardedInterstitialAd)
+// 0x00000077 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::RegisterEventHandlers(GoogleMobileAds.Api.RewardedInterstitialAd)
 extern void RewardedInterstitialAdController_RegisterEventHandlers_m82EB3600F93BDA6F7855C1B095D0CF272961EC13 (void);
-// 0x00000075 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::.ctor()
+// 0x00000078 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::.ctor()
 extern void RewardedInterstitialAdController__ctor_m91084300FC45A648332A60BBE4F193A01375499F (void);
-// 0x00000076 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::<LoadAd>b__3_0(GoogleMobileAds.Api.RewardedInterstitialAd,GoogleMobileAds.Api.LoadAdError)
+// 0x00000079 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController::<LoadAd>b__3_0(GoogleMobileAds.Api.RewardedInterstitialAd,GoogleMobileAds.Api.LoadAdError)
 extern void RewardedInterstitialAdController_U3CLoadAdU3Eb__3_0_mBBCF42F5B1A182AEAC077B395EB00768937C3AC6 (void);
-// 0x00000077 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::.cctor()
+// 0x0000007A System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::.cctor()
 extern void U3CU3Ec__cctor_mBF1AA3A85F2D938C473AD8F73E4ACA88FB19CBEB (void);
-// 0x00000078 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::.ctor()
+// 0x0000007B System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::.ctor()
 extern void U3CU3Ec__ctor_m28BA3DC0E0993231DF6FF15752DC695E1E28A746 (void);
-// 0x00000079 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<ShowAd>b__4_0(GoogleMobileAds.Api.Reward)
+// 0x0000007C System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<ShowAd>b__4_0(GoogleMobileAds.Api.Reward)
 extern void U3CU3Ec_U3CShowAdU3Eb__4_0_m9E3BF1F7F38CFC4D7AD9D9A3AEDBB170000DDBB0 (void);
-// 0x0000007A System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_0(GoogleMobileAds.Api.AdValue)
+// 0x0000007D System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_0(GoogleMobileAds.Api.AdValue)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_0_m686257827D1AC97BFA224E04708EDB24BFE0237B (void);
-// 0x0000007B System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_1()
+// 0x0000007E System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_1()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_1_mC39B64B416556F191ECFDED43FD918578366EF25 (void);
-// 0x0000007C System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_2()
+// 0x0000007F System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_2()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_2_mEB0EDC2F0879F5B200A01A3571F59135A7DDC267 (void);
-// 0x0000007D System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_3()
+// 0x00000080 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_3()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_3_m3121807BB57F7F4ED11533A12D9622E7D27062FD (void);
-// 0x0000007E System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_4()
+// 0x00000081 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_4()
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_4_m7E90763E262348D8A6CEC1A3F01AB488E53F746D (void);
-// 0x0000007F System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
+// 0x00000082 System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_5_m31E287DEB909EFD25F49283AA8B3A35C1C1ED235 (void);
-// 0x00000080 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetHasUserConsent(System.Boolean)
+// 0x00000083 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetHasUserConsent(System.Boolean)
 extern void HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE (void);
-// 0x00000081 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetUserId(System.String)
+// 0x00000084 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetUserId(System.String)
 extern void HyprMXAdapterConfiguration_SetUserId_m2029CBF4DEFA1097C4D7E4C5B793BAD956519E01 (void);
-// 0x00000082 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::.ctor()
+// 0x00000085 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::.ctor()
 extern void HyprMXAdapterConfiguration__ctor_m553DFC9136128F24668908A6EEBCFA0CB9F6DAE6 (void);
-// 0x00000083 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetUserId(System.String)
+// 0x00000086 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetUserId(System.String)
 extern void HyprMXAndroidAdapter_SetUserId_m8C7A364E26C2453A1C08BF03A3D80A8B6B8A6B49 (void);
-// 0x00000084 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetHasUserConsent(System.Boolean)
+// 0x00000087 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetHasUserConsent(System.Boolean)
 extern void HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D (void);
-// 0x00000085 UnityEngine.AndroidJavaObject GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::GetAdapter()
+// 0x00000088 UnityEngine.AndroidJavaObject GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::GetAdapter()
 extern void HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC (void);
-// 0x00000086 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::.ctor()
+// 0x00000089 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::.ctor()
 extern void HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759 (void);
-static Il2CppMethodPointer s_methodPointers[134] = 
+static Il2CppMethodPointer s_methodPointers[137] = 
 {
 	HyprMXAndroidAudioCallback__ctor_mE3B69E8928935775FA4873834358377616322792,
 	HyprMXAndroidAudioCallback_onAdAudioStart_m59FF772BC8E6FE020246F53DF8E4401728B12B85,
@@ -332,6 +338,9 @@ static Il2CppMethodPointer s_methodPointers[134] =
 	U3CU3Ec_U3CRegisterEventHandlersU3Eb__12_1_m6AF34D18D7918F191CA8C5222DC4D8030F0D1B7A,
 	U3CU3Ec_U3CRegisterEventHandlersU3Eb__12_2_m49B37269A433DD46B68E1C20C8415AD3C53346EC,
 	U3CU3Ec_U3CRegisterEventHandlersU3Eb__12_5_m6C9EE69A4AD3867E5FAEE829277EB5B280A3F712,
+	BannerViewController_Start_mF4284527C6DD81A58FB98DEBA07A046C30947BD4,
+	BannerViewController_onAdAudioStart_m0A744596481110C327F10067587A3A79773C8EF1,
+	BannerViewController_onAdAudioEnd_m24C537E0210DD86B1E43B98846253979C4FDA72B,
 	BannerViewController_CreateBannerView_m08D29BC99067D3DD46D7CF421B45AAF3CA25D28D,
 	BannerViewController_LoadAd_m5CF38F799222E377D0D2A46898CEFB69B5AF879D,
 	BannerViewController_ShowAd_m96E09EBC31A2D9DE09556EAE66CCFC97D5B891B2,
@@ -340,15 +349,15 @@ static Il2CppMethodPointer s_methodPointers[134] =
 	BannerViewController_LogResponseInfo_m7B821AA1ECBFFCF0939406C739748798AA868F9D,
 	BannerViewController_ListenToAdEvents_m86C7A1A0D0112B7324164293D990E594CD523599,
 	BannerViewController__ctor_m24FEB9DC23D2BDCC6E9F82AA16A5ABF1F8386522,
-	BannerViewController_U3CListenToAdEventsU3Eb__9_0_mA27303A98AED5F34E5D051CD6EFFE11093B2DFBA,
+	BannerViewController_U3CListenToAdEventsU3Eb__13_0_m834D95113DDAE4C5F1934F2CEE335BEAD2F60214,
 	U3CU3Ec__cctor_m5116877D258D75A92144CD14B2D90A4C8F87A915,
 	U3CU3Ec__ctor_m0339173189910A2CA878D5B1B4385299EA4AD418,
-	U3CU3Ec_U3CListenToAdEventsU3Eb__9_1_mCE3784333AD7B844AC66905B60972168453F3C1B,
-	U3CU3Ec_U3CListenToAdEventsU3Eb__9_2_mF19904FD757BE1A79BCC31377DCE9AA4AD9F1254,
-	U3CU3Ec_U3CListenToAdEventsU3Eb__9_3_m5BD1DB23AFDEAA26AE3673FE2A1B0910532D6A6F,
-	U3CU3Ec_U3CListenToAdEventsU3Eb__9_4_m887DF2FDF754D941CB4DFF619E2647B752CEB216,
-	U3CU3Ec_U3CListenToAdEventsU3Eb__9_5_m08F74A1D881E260C0E9A9FF8357CBF38D019EA01,
-	U3CU3Ec_U3CListenToAdEventsU3Eb__9_6_m5595B13AA846BCE0200E0462D828AA5D819E3489,
+	U3CU3Ec_U3CListenToAdEventsU3Eb__13_1_m0C39DCF838453DB72FE8AAC52B78E303CC389E49,
+	U3CU3Ec_U3CListenToAdEventsU3Eb__13_2_m672F2608A6FAECCF677A2291608CD0F0351E0361,
+	U3CU3Ec_U3CListenToAdEventsU3Eb__13_3_mCA77F1BE8F451D29B5AEB0F88EC3451AD53B8C93,
+	U3CU3Ec_U3CListenToAdEventsU3Eb__13_4_m18D8F3685C15676B1531093573C051D98915B582,
+	U3CU3Ec_U3CListenToAdEventsU3Eb__13_5_mEA1D87710047EC85E7B8D6F7313F8B148EDD19A9,
+	U3CU3Ec_U3CListenToAdEventsU3Eb__13_6_mAB2D7E1231035EB03D3975C9EF7D332A12C3F1B0,
 	GoogleUmpController_Awake_m994AE003D9BC7064E26438331404AA201690EC4A,
 	GoogleUmpController_ResetConsentInformation_m5C9EEFBE1C1C6B0BB11C0C5260F846950685EECB,
 	GoogleUmpController_UpdateConsentInformation_mB3CC03CE136B7679BABDF83669DFEEB69A0C7280,
@@ -415,29 +424,29 @@ static Il2CppMethodPointer s_methodPointers[134] =
 	HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC,
 	HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759,
 };
-static const int32_t s_InvokerIndices[134] = 
+static const int32_t s_InvokerIndices[137] = 
 {
 	3191,
 	3191,
 	3191,
-	4881,
+	4882,
 	0,
 	0,
-	4881,
-	4805,
+	4882,
+	4806,
 	3191,
-	4861,
-	4798,
+	4862,
+	4799,
 	3191,
-	4904,
-	3191,
-	3191,
-	3191,
-	4904,
+	4905,
 	3191,
 	3191,
 	3191,
-	4904,
+	4905,
+	3191,
+	3191,
+	3191,
+	4905,
 	3191,
 	2615,
 	2615,
@@ -463,7 +472,7 @@ static const int32_t s_InvokerIndices[134] =
 	1475,
 	3191,
 	3191,
-	4904,
+	4905,
 	3191,
 	2615,
 	3191,
@@ -478,7 +487,10 @@ static const int32_t s_InvokerIndices[134] =
 	3191,
 	3191,
 	3191,
-	4904,
+	3191,
+	3191,
+	3191,
+	4905,
 	3191,
 	2615,
 	2615,
@@ -504,7 +516,7 @@ static const int32_t s_InvokerIndices[134] =
 	2615,
 	3191,
 	1475,
-	4904,
+	4905,
 	3191,
 	2615,
 	3191,
@@ -519,7 +531,7 @@ static const int32_t s_InvokerIndices[134] =
 	2615,
 	3191,
 	1475,
-	4904,
+	4905,
 	3191,
 	2615,
 	2615,
@@ -535,7 +547,7 @@ static const int32_t s_InvokerIndices[134] =
 	2615,
 	3191,
 	1475,
-	4904,
+	4905,
 	3191,
 	2615,
 	2615,
@@ -544,19 +556,19 @@ static const int32_t s_InvokerIndices[134] =
 	3191,
 	3191,
 	2615,
-	4798,
-	4805,
+	4799,
+	4806,
 	3191,
-	4805,
-	4798,
-	4881,
+	4806,
+	4799,
+	4882,
 	3191,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	134,
+	137,
 	s_methodPointers,
 	0,
 	NULL,

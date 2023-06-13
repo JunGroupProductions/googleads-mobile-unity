@@ -42,7 +42,7 @@ namespace GoogleMobileAds.Sample
                 DestroyAd();
             }
 
-            Debug.Log("Loading interstitial ad.");
+            Debug.Log("[IAC] Loading interstitial ad.");
 
             // Create our request used to load the ad.
             var adRequest = new AdRequest();
@@ -53,19 +53,19 @@ namespace GoogleMobileAds.Sample
                 // If the operation failed with a reason.
                 if (error != null)
                 {
-                    Debug.LogError("Interstitial ad failed to load an ad with error : " + error);
+                    Debug.LogError("[IAC] Interstitial ad failed to load an ad with error : " + error);
                     return;
                 }
                 // If the operation failed for unknown reasons.
                 // This is an unexpected error, please report this bug if it happens.
                 if (ad == null)
                 {
-                    Debug.LogError("Unexpected error: Interstitial load event fired with null ad and null error.");
+                    Debug.LogError("[IAC] Unexpected error: Interstitial load event fired with null ad and null error.");
                     return;
                 }
 
                 // The operation completed successfully.
-                Debug.Log("Interstitial ad loaded with response : " + ad.GetResponseInfo());
+                Debug.Log("[IAC] Interstitial ad loaded with response : " + ad.GetResponseInfo());
                 _interstitialAd = ad;
 
                 // Register to ad events to extend functionality.
@@ -83,12 +83,12 @@ namespace GoogleMobileAds.Sample
         {
             if (_interstitialAd != null && _interstitialAd.CanShowAd())
             {
-                Debug.Log("Showing interstitial ad.");
+                Debug.Log("[IAC] Showing interstitial ad.");
                 _interstitialAd.Show();
             }
             else
             {
-                Debug.LogError("Interstitial ad is not ready yet.");
+                Debug.LogError("[IAC] Interstitial ad is not ready yet.");
             }
 
             // Inform the UI that the ad is not ready.
@@ -102,7 +102,7 @@ namespace GoogleMobileAds.Sample
         {
             if (_interstitialAd != null)
             {
-                Debug.Log("Destroying interstitial ad.");
+                Debug.Log("[IAC] Destroying interstitial ad.");
                 _interstitialAd.Destroy();
                 _interstitialAd = null;
             }
@@ -128,34 +128,34 @@ namespace GoogleMobileAds.Sample
             // Raised when the ad is estimated to have earned money.
             ad.OnAdPaid += (AdValue adValue) =>
             {
-                Debug.Log(String.Format("Interstitial ad paid {0} {1}.",
+                Debug.Log(String.Format("[IAC] Interstitial ad paid {0} {1}.",
                     adValue.Value,
                     adValue.CurrencyCode));
             };
             // Raised when an impression is recorded for an ad.
             ad.OnAdImpressionRecorded += () =>
             {
-                Debug.Log("Interstitial ad recorded an impression.");
+                Debug.Log("[IAC] Interstitial ad recorded an impression.");
             };
             // Raised when a click is recorded for an ad.
             ad.OnAdClicked += () =>
             {
-                Debug.Log("Interstitial ad was clicked.");
+                Debug.Log("[IAC] Interstitial ad was clicked.");
             };
             // Raised when an ad opened full screen content.
             ad.OnAdFullScreenContentOpened += () =>
             {
-                Debug.Log("Interstitial ad full screen content opened.");
+                Debug.Log("[IAC] Interstitial ad full screen content opened.");
             };
             // Raised when the ad closed full screen content.
             ad.OnAdFullScreenContentClosed += () =>
             {
-                Debug.Log("Interstitial ad full screen content closed.");
+                Debug.Log("[IAC] Interstitial ad full screen content closed.");
             };
             // Raised when the ad failed to open full screen content.
             ad.OnAdFullScreenContentFailed += (AdError error) =>
             {
-                Debug.LogError("Interstitial ad failed to open full screen content with error : "
+                Debug.LogError("[IAC] Interstitial ad failed to open full screen content with error : "
                     + error);
             };
         }

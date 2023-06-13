@@ -15,8 +15,7 @@ namespace GoogleMobileAds.Sample
         /// UI element activated when an ad is ready to show.
         /// </summary>
         public GameObject AdLoadedStatus;
-
-        AudioSource audioSource;
+        public AudioSource GameAudioSource;
 
         // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
@@ -32,7 +31,21 @@ namespace GoogleMobileAds.Sample
         public void Start()
         {
             Debug.Log("[BVC] Start");
-            audioSource = GetComponent<AudioSource>();
+            // try 
+            // {
+            //     GameAudioSource = GetComponent<AudioSource>();
+            // }
+            // catch (Exception e)
+            // {
+            //     Debug.Log("[BVC] Exception: " + e.Message);
+            // }
+                        
+            if(GameAudioSource is null) {
+                Debug.Log("[BVC] GameAudioSource can not be found");
+            } else {
+                Debug.Log("[BVC] GameAudioSource found");
+            }
+
             HyprMXAudioEventBus.Instance.listener = this;
         }
         
@@ -40,13 +53,30 @@ namespace GoogleMobileAds.Sample
         public void onAdAudioStart()
         {
             Debug.Log("[BVC] onAdAudioStart");
-            audioSource.Pause();
+            if(GameAudioSource is null) {
+                Debug.Log("[BVC] GameAudioSource is null");
+                return;
+            }
+            if(GameAudioSource.isPlaying) {
+                Debug.Log("[BVC] GameAudioSource is Playing");
+                GameAudioSource.Pause();
+                Debug.Log("[BVC] GameAudioSource should have paused");
+            } else {
+                Debug.Log("[BVC] GameAudioSource is not Playing");
+            }
+
         }
 
         public void onAdAudioEnd()
-        {
+        {            
+            if(GameAudioSource is null) {
+                Debug.Log("[BVC] GameAudioSource is null");
+                return;
+            }
+
             Debug.Log("[BVC] onAdAudioEnd");
-            audioSource.Play();
+            GameAudioSource.Play();
+            Debug.Log("[BVC] GameAudioSource should have resumed");
         }
         #endregion
 
