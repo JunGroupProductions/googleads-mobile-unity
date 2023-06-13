@@ -232,7 +232,21 @@ extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_3_m3121807BB57F7F4ED11533A12
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_4_m7E90763E262348D8A6CEC1A3F01AB488E53F746D (void);
 // 0x0000006E System.Void GoogleMobileAds.Sample.RewardedInterstitialAdController/<>c::<RegisterEventHandlers>b__7_5(GoogleMobileAds.Api.AdError)
 extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_5_m31E287DEB909EFD25F49283AA8B3A35C1C1ED235 (void);
-static Il2CppMethodPointer s_methodPointers[110] = 
+// 0x0000006F System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetHasUserConsent(System.Boolean)
+extern void HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE (void);
+// 0x00000070 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetUserId(System.String)
+extern void HyprMXAdapterConfiguration_SetUserId_m2029CBF4DEFA1097C4D7E4C5B793BAD956519E01 (void);
+// 0x00000071 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::.ctor()
+extern void HyprMXAdapterConfiguration__ctor_m553DFC9136128F24668908A6EEBCFA0CB9F6DAE6 (void);
+// 0x00000072 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetUserId(System.String)
+extern void HyprMXAndroidAdapter_SetUserId_m8C7A364E26C2453A1C08BF03A3D80A8B6B8A6B49 (void);
+// 0x00000073 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetHasUserConsent(System.Boolean)
+extern void HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D (void);
+// 0x00000074 UnityEngine.AndroidJavaObject GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::GetAdapter()
+extern void HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC (void);
+// 0x00000075 System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::.ctor()
+extern void HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759 (void);
+static Il2CppMethodPointer s_methodPointers[117] = 
 {
 	GoogleMobileAdsController_Start_m45EE9CC19DC068D42F07015C83A9A3FE55CBA6B9,
 	GoogleMobileAdsController_OpenAdInspector_m17D068F176B018C7C1518768B1C421636E3C02A5,
@@ -344,8 +358,15 @@ static Il2CppMethodPointer s_methodPointers[110] =
 	U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_3_m3121807BB57F7F4ED11533A12D9622E7D27062FD,
 	U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_4_m7E90763E262348D8A6CEC1A3F01AB488E53F746D,
 	U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_5_m31E287DEB909EFD25F49283AA8B3A35C1C1ED235,
+	HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE,
+	HyprMXAdapterConfiguration_SetUserId_m2029CBF4DEFA1097C4D7E4C5B793BAD956519E01,
+	HyprMXAdapterConfiguration__ctor_m553DFC9136128F24668908A6EEBCFA0CB9F6DAE6,
+	HyprMXAndroidAdapter_SetUserId_m8C7A364E26C2453A1C08BF03A3D80A8B6B8A6B49,
+	HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D,
+	HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC,
+	HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759,
 };
-static const int32_t s_InvokerIndices[110] = 
+static const int32_t s_InvokerIndices[117] = 
 {
 	3191,
 	3191,
@@ -457,12 +478,19 @@ static const int32_t s_InvokerIndices[110] =
 	3191,
 	3191,
 	2615,
+	4798,
+	4805,
+	3191,
+	4805,
+	4798,
+	4881,
+	3191,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	110,
+	117,
 	s_methodPointers,
 	0,
 	NULL,

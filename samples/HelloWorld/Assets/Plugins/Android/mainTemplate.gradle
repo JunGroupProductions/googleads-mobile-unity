@@ -20,6 +20,7 @@ dependencies {
 // Android Resolver Dependencies Start
     implementation 'com.google.android.gms:play-services-ads:22.1.0' // Assets/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:7
     implementation 'com.google.android.ump:user-messaging-platform:2.0.0' // Assets/GoogleMobileAds/Editor/GoogleUmpDependencies.xml:7
+    implementation 'com.hyprmx.android:HyprMX-AdMob:6.2.0.1' // Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml:4
 // Android Resolver Dependencies End
 **DEPS**}
 

@@ -142,6 +142,10 @@ struct AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158;
 struct AdValue_t3D87DDD4D06FAAA212BD2119CA464B4F0FEBBCFD;
 // GoogleMobileAds.Api.AdapterStatus
 struct AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0;
+// UnityEngine.AndroidJavaClass
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03;
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0;
 // UnityEngine.UI.AnimationTriggers
 struct AnimationTriggers_tA0DC06F89C5280C6DD972F6F4C8A56D7F4F79074;
 // GoogleMobileAds.Api.AppOpenAd
@@ -184,12 +188,18 @@ struct FormError_t925BBA051FDAC8CC3DECB9E5511864E8ED383026;
 struct FpsText_t8824EF16AC66DD2520BF27825C00BC5DC505DF56;
 // UnityEngine.GameObject
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
+// UnityEngine.GlobalJavaObjectRef
+struct GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8;
 // GoogleMobileAds.Samples.GoogleMobileAdsController
 struct GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327;
 // GoogleMobileAds.Sample.GoogleUmpController
 struct GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB;
 // UnityEngine.UI.Graphic
 struct Graphic_tCBFCA4585A19E2B75465AECFEAC43F4016BF7931;
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration
+struct HyprMXAdapterConfiguration_t13E6B1CC2DAEEDD87E0FDF2D2B67470EF3E61BD7;
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter
+struct HyprMXAndroidAdapter_tBA950715BAA6AF7B03D6C5E5B452EA739B90D175;
 // GoogleMobileAds.Common.IAdErrorClient
 struct IAdErrorClient_t1070A9DCB8BBE68B67D9ECBC19949CDF415AD2BF;
 // GoogleMobileAds.Common.IAppOpenAdClient
@@ -336,9 +346,11 @@ IL2CPP_EXTERN_C RuntimeClass* Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_i
 IL2CPP_EXTERN_C RuntimeClass* AdRequest_tB2AC2CD266CFD5D636C917BC2D938BE96E72BF4D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AdapterState_tC2EF5D755C69DB0311E40355C133DA4BE5B2E5FA_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AppStateEventNotifier_t0A047576C80CBFF891C1E1A0106BA70A5E302FAE_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AppState_tBC2F72F60F51FE0CB94604F23B86874654E551A5_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* BannerView_t203A90A6D41B56EC7208F121D6EE7E7283A590BB_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ConsentDebugSettings_t21BCD70B1E4DB762E04807E88E78285CC51370C6_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ConsentRequestParameters_t34C1E8C04ED21B543DFE57708C303AABEA447516_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ConsentStatus_t17E6578CFF6D27E574D6437D2834B200E08B4777_il2cpp_TypeInfo_var;
@@ -351,6 +363,7 @@ IL2CPP_EXTERN_C RuntimeClass* Int64_t092CFB123BE63C28ACDAF65C68F21A526050DBA3_il
 IL2CPP_EXTERN_C RuntimeClass* List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* LogCallback_tCFFF3C009186124A6A83A1E6BB7E360C5674C413_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* MobileAds_tE6A198EF1FBB6C42E5C1062E4B6CD5FB5B5494D5_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* RequestConfiguration_tE715340E972C7F6E659FD3ACE136CDDEAD74CCCB_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* SceneManager_tA0EF56A88ACA4A15731AF7FDC10A869FA4C698FA_il2cpp_TypeInfo_var;
@@ -375,6 +388,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral0B9B941B1C479A6DB00202B6D74976A1D2058683
 IL2CPP_EXTERN_C String_t* _stringLiteral12244F0CD1597634CCEF6C93201901D4848436D4;
 IL2CPP_EXTERN_C String_t* _stringLiteral18DE129302213BA631301E2AAB3B711C350954E9;
 IL2CPP_EXTERN_C String_t* _stringLiteral22B9951E8D855781E58E940E5DCAE0320C00D074;
+IL2CPP_EXTERN_C String_t* _stringLiteral269F2F8F12D27CBD314D1D3E10A12C3FF00AC7E1;
 IL2CPP_EXTERN_C String_t* _stringLiteral2A47FBD64FEFEA3B0D4C603CB333467FB4FF315F;
 IL2CPP_EXTERN_C String_t* _stringLiteral2DBA31093C1F45FC585E83BEEB3E81CD26FE6551;
 IL2CPP_EXTERN_C String_t* _stringLiteral2EAAB770ADEDA7FB8AEA914555A59728BC27D0D8;
@@ -406,6 +420,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral661A4C55CE076ED50ABD541FB0A831944F3996B8
 IL2CPP_EXTERN_C String_t* _stringLiteral688C1EC803A490F6CF59B2E344F416B7090441E6;
 IL2CPP_EXTERN_C String_t* _stringLiteral68B7940E59A445DD85D65466E852154ECAB35766;
 IL2CPP_EXTERN_C String_t* _stringLiteral69DFC6635B03CD70D7D9663FFED9983C4F65FF4A;
+IL2CPP_EXTERN_C String_t* _stringLiteral6F5F4B730831B20589268119FBDEDC2466F08E22;
 IL2CPP_EXTERN_C String_t* _stringLiteral729DE8E2AA6513F825553B72FDC077E8F194FD96;
 IL2CPP_EXTERN_C String_t* _stringLiteral7461A4F884A0978E112475677CE55325B4EDBAEF;
 IL2CPP_EXTERN_C String_t* _stringLiteral77F7E1807675EC83CABE5FED0099352A7845F1F4;
@@ -426,6 +441,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral9502E21B0B7E97BA1D55F55CEF511127DFB92EDE
 IL2CPP_EXTERN_C String_t* _stringLiteral95114E73A83F9B04331E1624E0E973AA4B1C20C2;
 IL2CPP_EXTERN_C String_t* _stringLiteral96FFAAE5EE350B9ACCBA13B9887B5A3867A87CAE;
 IL2CPP_EXTERN_C String_t* _stringLiteral9721622001D2476AD676280F5488486245B0F211;
+IL2CPP_EXTERN_C String_t* _stringLiteral9864702548FDC6768F7127A83DF55AF493789D76;
 IL2CPP_EXTERN_C String_t* _stringLiteral9972102FB7DDBA83C46A0299A828192AE124567F;
 IL2CPP_EXTERN_C String_t* _stringLiteral9B4EB378F5A2B108DC47238DCB590885D6DA6C09;
 IL2CPP_EXTERN_C String_t* _stringLiteral9C726BD1A8106CC6D9F58C32DE94858571B2320B;
@@ -460,6 +476,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralCB1ADC629CF3EBFB7FD466BA576D06727A1549A2
 IL2CPP_EXTERN_C String_t* _stringLiteralCBE1196059539D14242F61263EFEF67C1EB7585C;
 IL2CPP_EXTERN_C String_t* _stringLiteralCEAD9AE336B5CAE9A2FBFD5BE331B7DC96AD2572;
 IL2CPP_EXTERN_C String_t* _stringLiteralD061BB1E2C0211D04396EE6565D54031B4218142;
+IL2CPP_EXTERN_C String_t* _stringLiteralD13D7B88FCF7A275765203E3E2E77C0C6A41D230;
 IL2CPP_EXTERN_C String_t* _stringLiteralD6B9CB67A0E4944A575E7B5D7B6E1DFE8853DB42;
 IL2CPP_EXTERN_C String_t* _stringLiteralD6EA6C2C73D5196FD60E3F481D5F4B190485AE35;
 IL2CPP_EXTERN_C String_t* _stringLiteralD9925576C8D058F6028CA5DAD5B5B92952B007D3;
@@ -476,6 +493,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteralFA4E10EB3BA0108F6B2B5F0AE236C1C8E9F84E19
 IL2CPP_EXTERN_C String_t* _stringLiteralFD4B826C3F4FDA02D7CF7952E56196CD40D95C4B;
 IL2CPP_EXTERN_C String_t* _stringLiteralFE38257974BF0F70BDFA8A13D0A3625109F80CDC;
 IL2CPP_EXTERN_C String_t* _stringLiteralFE90B38C2C977EE623B275CF27FD61228060833E;
+IL2CPP_EXTERN_C const RuntimeMethod* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AppOpenAdController_OnAppStateChanged_m0E806ABC19651AC6454216318832C961C8A56C24_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AppOpenAdController_U3CLoadAdU3Eb__7_0_m1B6D67E8C7E15757C7239366D581B3B4ACAEAFA9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* AppOpenAdController_U3CRegisterEventHandlersU3Eb__12_3_m66C1671C6A48658ED8B7CAF1A9BF851C40123708_RuntimeMethod_var;
@@ -664,6 +682,15 @@ struct AdapterStatus_t4DFBD853B6BC534B2B9C9379AC5FA14051FFDEE0  : public Runtime
 	int32_t ___U3CLatencyU3Ek__BackingField_2;
 };
 
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0  : public RuntimeObject
+{
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jobject
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jobject_1;
+	// UnityEngine.GlobalJavaObjectRef UnityEngine.AndroidJavaObject::m_jclass
+	GlobalJavaObjectRef_t20D8E5AAFC2EB2518FCABBF40465855E797FF0D8* ___m_jclass_2;
+};
+
 // GoogleMobileAds.Api.AppOpenAd
 struct AppOpenAd_tF3D4C7489EF9689BE192F2379D10A39A26B82DAC  : public RuntimeObject
 {
@@ -743,6 +770,16 @@ struct FormError_t925BBA051FDAC8CC3DECB9E5511864E8ED383026  : public RuntimeObje
 	int32_t ___U3CErrorCodeU3Ek__BackingField_0;
 	// System.String GoogleMobileAds.Ump.Api.FormError::<Message>k__BackingField
 	String_t* ___U3CMessageU3Ek__BackingField_1;
+};
+
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration
+struct HyprMXAdapterConfiguration_t13E6B1CC2DAEEDD87E0FDF2D2B67470EF3E61BD7  : public RuntimeObject
+{
+};
+
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter
+struct HyprMXAndroidAdapter_tBA950715BAA6AF7B03D6C5E5B452EA739B90D175  : public RuntimeObject
+{
 };
 
 // GoogleMobileAds.Api.InitializationStatus
@@ -961,6 +998,11 @@ struct Nullable_1_tD9EF87DE17BC8563283D8BCB64EF209BCFE74FD3
 
 // GoogleMobileAds.Api.AdInspectorError
 struct AdInspectorError_tD384323496C44553EA9EA953DBCFE6D24BC0534D  : public AdError_tA3BF7518349885A73447524367693A096B3DD1AE
+{
+};
+
+// UnityEngine.AndroidJavaClass
+struct AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03  : public AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0
 {
 };
 
@@ -1917,6 +1959,15 @@ struct AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158_StaticFields
 
 // GoogleMobileAds.Api.AdapterStatus
 
+// UnityEngine.AndroidJavaObject
+struct AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_StaticFields
+{
+	// System.Boolean UnityEngine.AndroidJavaObject::enableDebugPrints
+	bool ___enableDebugPrints_0;
+};
+
+// UnityEngine.AndroidJavaObject
+
 // GoogleMobileAds.Api.AppOpenAd
 
 // GoogleMobileAds.Api.AppOpenAd
@@ -1940,6 +1991,14 @@ struct AdSize_tF9FBB34C7252D73803A62C13A3AB656A06A0F158_StaticFields
 // GoogleMobileAds.Ump.Api.FormError
 
 // GoogleMobileAds.Ump.Api.FormError
+
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration
+
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration
+
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter
+
+// GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter
 
 // GoogleMobileAds.Api.InitializationStatus
 
@@ -2142,6 +2201,10 @@ struct U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF_StaticFields
 // GoogleMobileAds.Api.AdInspectorError
 
 // GoogleMobileAds.Api.AdInspectorError
+
+// UnityEngine.AndroidJavaClass
+
+// UnityEngine.AndroidJavaClass
 
 // System.Boolean
 struct Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_StaticFields
@@ -2536,6 +2599,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool Enumerator_MoveNext_mCD4950A75FFADD54AF3
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_1__ctor_m8EDF953DA7FF0E33AE19FB51BD7DBDB7C495CFE0_gshared (Action_1_tC926860F20D428DA3E93D6FBA36420E904DD903B* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
 // System.Void System.Action`2<System.Object,System.Object>::.ctor(System.Object,System.IntPtr)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Action_2__ctor_m6A0E7FE9DF9AE6C4BEE58611CB55F64FC3D79052_gshared (Action_2_t156C43F079E7E68155FCDCD12DC77DD11AEF7E3C* __this, RuntimeObject* ___0_object, intptr_t ___1_method, const RuntimeMethod* method) ;
+// FieldType UnityEngine.AndroidJavaObject::GetStatic<System.Object>(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR RuntimeObject* AndroidJavaObject_GetStatic_TisRuntimeObject_m4EF4E4761A0A6E99E0A298F653E8129B1494E4C9_gshared (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_fieldName, const RuntimeMethod* method) ;
 
 // System.Void GoogleMobileAds.Api.MobileAds::SetiOSAppPauseOnBackground(System.Boolean)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void MobileAds_SetiOSAppPauseOnBackground_m2626F076EEDF748681C27AC832E79AC9E93756E7 (bool ___0_pause, const RuntimeMethod* method) ;
@@ -2918,6 +2983,21 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void RewardedInterstitialAdController_Registe
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec__ctor_m28BA3DC0E0993231DF6FF15752DC695E1E28A746 (U3CU3Ec_tA1A62A35EF7C84BE0D511035E3577FB0C1BA5BCF* __this, const RuntimeMethod* method) ;
 // System.String System.Double::ToString()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Double_ToString_m7499A5D792419537DCB9470A3675CEF5117DE339 (double* __this, const RuntimeMethod* method) ;
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetHasUserConsent(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D (bool ___0_hasUserConsent, const RuntimeMethod* method) ;
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetUserId(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAndroidAdapter_SetUserId_m8C7A364E26C2453A1C08BF03A3D80A8B6B8A6B49 (String_t* ___0_userId, const RuntimeMethod* method) ;
+// UnityEngine.AndroidJavaObject GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::GetAdapter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC (const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaObject::Call(System.String,System.Object[])
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_methodName, ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* ___1_args, const RuntimeMethod* method) ;
+// System.Void UnityEngine.AndroidJavaClass::.ctor(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389 (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* __this, String_t* ___0_className, const RuntimeMethod* method) ;
+// FieldType UnityEngine.AndroidJavaObject::GetStatic<UnityEngine.AndroidJavaObject>(System.String)
+inline AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* __this, String_t* ___0_fieldName, const RuntimeMethod* method)
+{
+	return ((  AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* (*) (AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0*, String_t*, const RuntimeMethod*))AndroidJavaObject_GetStatic_TisRuntimeObject_m4EF4E4761A0A6E99E0A298F653E8129B1494E4C9_gshared)(__this, ___0_fieldName, method);
+}
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -8878,6 +8958,138 @@ IL_0012:
 		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		Debug_LogError_mB00B2B4468EF3CAF041B038D840820FB84C924B2(L_3, NULL);
 		// };
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetHasUserConsent(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE (bool ___0_hasUserConsent, const RuntimeMethod* method) 
+{
+	{
+		// HyprMXAndroidAdapter.SetHasUserConsent(hasUserConsent);
+		bool L_0 = ___0_hasUserConsent;
+		HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::SetUserId(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAdapterConfiguration_SetUserId_m2029CBF4DEFA1097C4D7E4C5B793BAD956519E01 (String_t* ___0_customUserId, const RuntimeMethod* method) 
+{
+	{
+		// HyprMXAndroidAdapter.SetUserId(customUserId);
+		String_t* L_0 = ___0_customUserId;
+		HyprMXAndroidAdapter_SetUserId_m8C7A364E26C2453A1C08BF03A3D80A8B6B8A6B49(L_0, NULL);
+		// }
+		return;
+	}
+}
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAdapterConfiguration::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAdapterConfiguration__ctor_m553DFC9136128F24668908A6EEBCFA0CB9F6DAE6 (HyprMXAdapterConfiguration_t13E6B1CC2DAEEDD87E0FDF2D2B67470EF3E61BD7* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetUserId(System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAndroidAdapter_SetUserId_m8C7A364E26C2453A1C08BF03A3D80A8B6B8A6B49 (String_t* ___0_userId, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral6F5F4B730831B20589268119FBDEDC2466F08E22);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// GetAdapter().Call("setUserId", userId);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0;
+		L_0 = HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC(NULL);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
+		String_t* L_3 = ___0_userId;
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_3);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_3);
+		NullCheck(L_0);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_0, _stringLiteral6F5F4B730831B20589268119FBDEDC2466F08E22, L_2, NULL);
+		// }
+		return;
+	}
+}
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::SetHasUserConsent(System.Boolean)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D (bool ___0_hasUserConsent, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral9864702548FDC6768F7127A83DF55AF493789D76);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// GetAdapter().Call("setHasUserConsent", hasUserConsent);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_0;
+		L_0 = HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC(NULL);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_1 = (ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918*)SZArrayNew(ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918_il2cpp_TypeInfo_var, (uint32_t)1);
+		ObjectU5BU5D_t8061030B0A12A55D5AD8652A20C922FE99450918* L_2 = L_1;
+		bool L_3 = ___0_hasUserConsent;
+		bool L_4 = L_3;
+		RuntimeObject* L_5 = Box(Boolean_t09A6377A54BE2F9E6985A8149F19234FD7DDFE22_il2cpp_TypeInfo_var, &L_4);
+		NullCheck(L_2);
+		ArrayElementTypeCheck (L_2, L_5);
+		(L_2)->SetAt(static_cast<il2cpp_array_size_t>(0), (RuntimeObject*)L_5);
+		NullCheck(L_0);
+		AndroidJavaObject_Call_mDEF7846E2AB1C5379069BB21049ED55A9D837B1C(L_0, _stringLiteral9864702548FDC6768F7127A83DF55AF493789D76, L_2, NULL);
+		// }
+		return;
+	}
+}
+// UnityEngine.AndroidJavaObject GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::GetAdapter()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC (const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral269F2F8F12D27CBD314D1D3E10A12C3FF00AC7E1);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralD13D7B88FCF7A275765203E3E2E77C0C6A41D230);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// return new AndroidJavaClass(adapterClassName).GetStatic<AndroidJavaObject>("INSTANCE");
+		AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03* L_0 = (AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03*)il2cpp_codegen_object_new(AndroidJavaClass_tE6296B30CC4BF84434A9B765267F3FD0DD8DDB03_il2cpp_TypeInfo_var);
+		NullCheck(L_0);
+		AndroidJavaClass__ctor_mB5466169E1151B8CC44C8FED234D79984B431389(L_0, _stringLiteral269F2F8F12D27CBD314D1D3E10A12C3FF00AC7E1, NULL);
+		NullCheck(L_0);
+		AndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0* L_1;
+		L_1 = AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD(L_0, _stringLiteralD13D7B88FCF7A275765203E3E2E77C0C6A41D230, AndroidJavaObject_GetStatic_TisAndroidJavaObject_t8FFB930F335C1178405B82AC2BF512BB1EEF9EB0_mD7D192A35EB2B2DA3775FAB081958B72088251DD_RuntimeMethod_var);
+		return L_1;
+	}
+}
+// System.Void GoogleMobileAds.Api.Mediation.HyprMX.HyprMXAndroidAdapter::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759 (HyprMXAndroidAdapter_tBA950715BAA6AF7B03D6C5E5B452EA739B90D175* __this, const RuntimeMethod* method) 
+{
+	{
+		Object__ctor_mE837C6B9FA8C6D5D109F4B2EC885D79919AC0EA2(__this, NULL);
 		return;
 	}
 }
