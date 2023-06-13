@@ -9,12 +9,14 @@ namespace GoogleMobileAds.Sample
     /// Demonstrates how to use Google Mobile Ads banner views.
     /// </summary>
     [AddComponentMenu("GoogleMobileAds/Samples/BannerViewController")]
-    public class BannerViewController : MonoBehaviour
+    public class BannerViewController : MonoBehaviour, IHyprMXAudioListener
     {
         /// <summary>
         /// UI element activated when an ad is ready to show.
         /// </summary>
         public GameObject AdLoadedStatus;
+
+        AudioSource audioSource;
 
         // These ad units are configured to always serve test ads.
 #if UNITY_ANDROID
@@ -26,6 +28,27 @@ namespace GoogleMobileAds.Sample
 #endif
 
         private BannerView _bannerView;
+
+        public void Start()
+        {
+            audioSource = GetComponent<AudioSource>();
+            HyprMXAudioEventBus.Instance.listener = this;
+        }
+        
+        #region IHyprMXAudioListener
+        public void onAdAudioStart()
+        {
+            Debug.Log("onAdAudioStart");
+            audioSource.Pause();
+        }
+
+        public void onAdAudioEnd()
+        {
+            Debug.Log("onAdAudioEnd");
+            audioSource.Play();
+        }
+        #endregion
+
 
         /// <summary>
         /// Creates a 320x50 banner at top of the screen.
