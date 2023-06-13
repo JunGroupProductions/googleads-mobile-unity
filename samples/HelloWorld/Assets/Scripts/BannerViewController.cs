@@ -31,6 +31,7 @@ namespace GoogleMobileAds.Sample
 
         public void Start()
         {
+            Debug.Log("[BVC] Start");
             audioSource = GetComponent<AudioSource>();
             HyprMXAudioEventBus.Instance.listener = this;
         }
@@ -38,13 +39,13 @@ namespace GoogleMobileAds.Sample
         #region IHyprMXAudioListener
         public void onAdAudioStart()
         {
-            Debug.Log("onAdAudioStart");
+            Debug.Log("[BVC] onAdAudioStart");
             audioSource.Pause();
         }
 
         public void onAdAudioEnd()
         {
-            Debug.Log("onAdAudioEnd");
+            Debug.Log("[BVC] onAdAudioEnd");
             audioSource.Play();
         }
         #endregion
@@ -55,7 +56,7 @@ namespace GoogleMobileAds.Sample
         /// </summary>
         public void CreateBannerView()
         {
-            Debug.Log("Creating banner view.");
+            Debug.Log("[BVC] Creating banner view.");
 
             // If we already have a banner, destroy the old one.
             if(_bannerView != null)
@@ -69,7 +70,7 @@ namespace GoogleMobileAds.Sample
             // Listen to events the banner may raise.
             ListenToAdEvents();
 
-            Debug.Log("Banner view created.");
+            Debug.Log("[BVC] Banner view created.");
         }
 
         /// <summary>
@@ -87,7 +88,7 @@ namespace GoogleMobileAds.Sample
             var adRequest = new AdRequest();
 
             // Send the request to load the ad.
-            Debug.Log("Loading banner ad.");
+            Debug.Log("[BVC] Loading banner ad.");
             _bannerView.LoadAd(adRequest);
         }
 
@@ -98,7 +99,7 @@ namespace GoogleMobileAds.Sample
         {
             if (_bannerView != null)
             {
-                Debug.Log("Showing banner view.");
+                Debug.Log("[BVC] Showing banner view.");
                 _bannerView.Show();
             }
         }
@@ -110,7 +111,7 @@ namespace GoogleMobileAds.Sample
         {
             if (_bannerView != null)
             {
-                Debug.Log("Hiding banner view.");
+                Debug.Log("[BVC] Hiding banner view.");
                 _bannerView.Hide();
             }
         }
@@ -124,7 +125,7 @@ namespace GoogleMobileAds.Sample
         {
             if (_bannerView != null)
             {
-                Debug.Log("Destroying banner view.");
+                Debug.Log("[BVC] Destroying banner view.");
                 _bannerView.Destroy();
                 _bannerView = null;
             }
@@ -156,7 +157,7 @@ namespace GoogleMobileAds.Sample
             // Raised when an ad is loaded into the banner view.
             _bannerView.OnBannerAdLoaded += () =>
             {
-                Debug.Log("Banner view loaded an ad with response : "
+                Debug.Log("[BVC] Banner view loaded an ad with response : "
                     + _bannerView.GetResponseInfo());
 
                 // Inform the UI that the ad is ready.
@@ -165,34 +166,34 @@ namespace GoogleMobileAds.Sample
             // Raised when an ad fails to load into the banner view.
             _bannerView.OnBannerAdLoadFailed += (LoadAdError error) =>
             {
-                Debug.LogError("Banner view failed to load an ad with error : " + error);
+                Debug.LogError("[BVC] Banner view failed to load an ad with error : " + error);
             };
             // Raised when the ad is estimated to have earned money.
             _bannerView.OnAdPaid += (AdValue adValue) =>
             {
-                Debug.Log(String.Format("Banner view paid {0} {1}.",
+                Debug.Log(String.Format("[BVC] Banner view paid {0} {1}.",
                     adValue.Value,
                     adValue.CurrencyCode));
             };
             // Raised when an impression is recorded for an ad.
             _bannerView.OnAdImpressionRecorded += () =>
             {
-                Debug.Log("Banner view recorded an impression.");
+                Debug.Log("[BVC] Banner view recorded an impression.");
             };
             // Raised when a click is recorded for an ad.
             _bannerView.OnAdClicked += () =>
             {
-                Debug.Log("Banner view was clicked.");
+                Debug.Log("[BVC] Banner view was clicked.");
             };
             // Raised when an ad opened full screen content.
             _bannerView.OnAdFullScreenContentOpened += () =>
             {
-                Debug.Log("Banner view full screen content opened.");
+                Debug.Log("[BVC] Banner view full screen content opened.");
             };
             // Raised when the ad closed full screen content.
             _bannerView.OnAdFullScreenContentClosed += () =>
             {
-                Debug.Log("Banner view full screen content closed.");
+                Debug.Log("[BVC] Banner view full screen content closed.");
             };
         }
     }
