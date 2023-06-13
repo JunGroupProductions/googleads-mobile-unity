@@ -27,15 +27,6 @@ dependencies {
 }
 
 // Android Resolver Exclusions Start
-android {
-  packagingOptions {
-      exclude ('/lib/armeabi/*' + '*')
-      exclude ('/lib/mips/*' + '*')
-      exclude ('/lib/mips64/*' + '*')
-      exclude ('/lib/x86/*' + '*')
-      exclude ('/lib/x86_64/*' + '*')
-  }
-}
 // Android Resolver Exclusions End
 android {
     compileSdkVersion 33
@@ -52,8 +43,6 @@ android {
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
-        versionCode 1
-        versionName '1.0'
         consumerProguardFiles 'proguard-unity.txt'
     }
 
@@ -66,10 +55,6 @@ android {
         ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
     }
 
-    packagingOptions {
-        doNotStrip '*/armeabi-v7a/*.so'
-        doNotStrip '*/arm64-v8a/*.so'
-    }
 }
 
 def getSdkDir() {
@@ -111,6 +96,11 @@ def BuildIl2Cpp(String workingDir, String configuration, String architecture, St
 }
 
 android {
+    packagingOptions {
+        jniLibs {
+            keepDebugSymbols += ['*/armeabi-v7a/*.so', '*/arm64-v8a/*.so']
+        }
+    }
     task BuildIl2CppTask {
         doLast {
               BuildIl2Cpp(projectDir.toString().replaceAll('\\\\', '/'), 'Release', 'armv7', 'armeabi-v7a', [  ] as String[]);
@@ -123,11 +113,7 @@ android {
         if (project(':unityLibrary').tasks.findByName('mergeReleaseJniLibFolders'))
             project(':unityLibrary').mergeReleaseJniLibFolders.dependsOn BuildIl2CppTask
     }
-    sourceSets {
-        main {
-            jni.srcDirs = ["src/main/Il2CppOutputProject"]
-        }
-    }
+    namespace 'com.unity3d.player'
 }
 
 

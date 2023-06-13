@@ -62,3 +62,6 @@ captures/
 *.iml
 *.iws
 *.ipr
+
+# ignore large files
+unityLibrary/symbols/
