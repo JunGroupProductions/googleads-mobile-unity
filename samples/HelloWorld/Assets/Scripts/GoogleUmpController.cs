@@ -19,16 +19,19 @@ namespace GoogleMobileAds.Sample
     {
         public void ConsentGiven()
         {
+            Debug.Log("[Settings] SetHasUserConsent to true");
             HyprMXAdapterConfiguration.SetHasUserConsent(true);
         }
         
         public void ConsentDeclined()
         {
+            Debug.Log("[Settings] SetHasUserConsent to false");
             HyprMXAdapterConfiguration.SetHasUserConsent(false);
         }
 
         public void TagAsAgeRestrictedUser()
         {
+            Debug.Log("[Settings] tagAsAgeRestrictedUser to true");
             GoogleMobileAdsController.tagAsAgeRestrictedUser = true;
         }
 

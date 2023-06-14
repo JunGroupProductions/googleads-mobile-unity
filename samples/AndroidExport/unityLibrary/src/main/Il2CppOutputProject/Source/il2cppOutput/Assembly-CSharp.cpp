@@ -397,6 +397,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral081B980527D732839F00B7E80BB60C61C4A5B92A
 IL2CPP_EXTERN_C String_t* _stringLiteral0B9B941B1C479A6DB00202B6D74976A1D2058683;
 IL2CPP_EXTERN_C String_t* _stringLiteral0C31AD4CB0A20F948A38423FF917068FA11AD81B;
 IL2CPP_EXTERN_C String_t* _stringLiteral0EE582A404AC41E1419DBE8A69A43EB913B88E80;
+IL2CPP_EXTERN_C String_t* _stringLiteral14E04544AFC33E24776BB0896695882BA741E307;
 IL2CPP_EXTERN_C String_t* _stringLiteral18DE129302213BA631301E2AAB3B711C350954E9;
 IL2CPP_EXTERN_C String_t* _stringLiteral1C8793653F627521EFCB348E32A99903D73BA0DF;
 IL2CPP_EXTERN_C String_t* _stringLiteral1CF1DFF0DA74CC0A941F96DBD4C954E080555CA3;
@@ -418,6 +419,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral30F0C8C543FC50693446BC35963FD0E9EDCB3880
 IL2CPP_EXTERN_C String_t* _stringLiteral318A1C84B2C7EC2F9B66B6D04559D61A824930A5;
 IL2CPP_EXTERN_C String_t* _stringLiteral31A0D7054359216EFE7213AEA1E910EEFC934B74;
 IL2CPP_EXTERN_C String_t* _stringLiteral328A7BC820AC8705753CF3A94FA8A566DC9D71A8;
+IL2CPP_EXTERN_C String_t* _stringLiteral33D8385307F413D2E1C97512226C60AC89586E7B;
 IL2CPP_EXTERN_C String_t* _stringLiteral34CEA6E2997A1E7295D21B5A77CADDDC920D6398;
 IL2CPP_EXTERN_C String_t* _stringLiteral35F21FBAC9A3CB492F02548A10F83E32E50EE550;
 IL2CPP_EXTERN_C String_t* _stringLiteral36B2B5409D40FF9740E5ED63549F9D56B11BC6B7;
@@ -448,6 +450,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral688C1EC803A490F6CF59B2E344F416B7090441E6
 IL2CPP_EXTERN_C String_t* _stringLiteral6F5F4B730831B20589268119FBDEDC2466F08E22;
 IL2CPP_EXTERN_C String_t* _stringLiteral716303C6F4B36D3EBC60A3FC8FF783E9BDE37DB5;
 IL2CPP_EXTERN_C String_t* _stringLiteral729DE8E2AA6513F825553B72FDC077E8F194FD96;
+IL2CPP_EXTERN_C String_t* _stringLiteral76DA967C1A1A50D40DA49C4CC8B66FF1A01557DC;
 IL2CPP_EXTERN_C String_t* _stringLiteral80B27A59ADC9E8A6004238E5999659E009B618E2;
 IL2CPP_EXTERN_C String_t* _stringLiteral851436032891ADEBB305D03B4EA08D1DFE74F69E;
 IL2CPP_EXTERN_C String_t* _stringLiteral85AC50FBABB5EF185354F2CF2FADF34F6252831F;
@@ -6711,7 +6714,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void U3CU3Ec_U3CListenToAdEventsU3Eb__13_6_mA
 // System.Void GoogleMobileAds.Sample.GoogleUmpController::ConsentGiven()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GoogleUmpController_ConsentGiven_mE10124A1A0DE5355A2BBB446B4FACDC905128B8E (GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral14E04544AFC33E24776BB0896695882BA741E307);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.Log("[Settings] SetHasUserConsent to true");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral14E04544AFC33E24776BB0896695882BA741E307, NULL);
 		// HyprMXAdapterConfiguration.SetHasUserConsent(true);
 		HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE((bool)1, NULL);
 		// }
@@ -6721,7 +6734,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GoogleUmpController_ConsentGiven_mE10124
 // System.Void GoogleMobileAds.Sample.GoogleUmpController::ConsentDeclined()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GoogleUmpController_ConsentDeclined_mAC92A6EF632DEE473384E08CA47107162AB40B9E (GoogleUmpController_t3C3A61D11A4E3564D5B22A31348958AEE9C94CAB* __this, const RuntimeMethod* method) 
 {
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral76DA967C1A1A50D40DA49C4CC8B66FF1A01557DC);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// Debug.Log("[Settings] SetHasUserConsent to false");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral76DA967C1A1A50D40DA49C4CC8B66FF1A01557DC, NULL);
 		// HyprMXAdapterConfiguration.SetHasUserConsent(false);
 		HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE((bool)0, NULL);
 		// }
@@ -6734,10 +6757,15 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GoogleUmpController_TagAsAgeRestrictedUs
 	static bool s_Il2CppMethodInitialized;
 	if (!s_Il2CppMethodInitialized)
 	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral33D8385307F413D2E1C97512226C60AC89586E7B);
 		s_Il2CppMethodInitialized = true;
 	}
 	{
+		// Debug.Log("[Settings] tagAsAgeRestrictedUser to true");
+		il2cpp_codegen_runtime_class_init_inline(Debug_t8394C7EEAECA3689C2C9B9DE9C7166D73596276F_il2cpp_TypeInfo_var);
+		Debug_Log_m87A9A3C761FF5C43ED8A53B16190A53D08F818BB(_stringLiteral33D8385307F413D2E1C97512226C60AC89586E7B, NULL);
 		// GoogleMobileAdsController.tagAsAgeRestrictedUser = true;
 		((GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields*)il2cpp_codegen_static_fields_for(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_il2cpp_TypeInfo_var))->___tagAsAgeRestrictedUser_5 = (bool)1;
 		// }
