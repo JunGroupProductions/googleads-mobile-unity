@@ -64,39 +64,39 @@ namespace GoogleMobileAds.Sample
             var adRequest = new AdRequest();
 
             // Send the request to load the ad.
-            AppOpenAd.Load(_adUnitId, ScreenOrientation.Portrait, adRequest,
-                (AppOpenAd ad, LoadAdError error) =>
-                {
-                    // If the operation failed with a reason.
-                    if (error != null)
-                    {
-                        Debug.LogError("App open ad failed to load an ad with error : "
-                                        + error);
-                        return;
-                    }
+            // AppOpenAd.Load(_adUnitId, ScreenOrientation.Portrait, adRequest,
+            //     (AppOpenAd ad, LoadAdError error) =>
+            //     {
+            //         // If the operation failed with a reason.
+            //         if (error != null)
+            //         {
+            //             Debug.LogError("App open ad failed to load an ad with error : "
+            //                             + error);
+            //             return;
+            //         }
 
-                    // If the operation failed for unknown reasons.
-                    // This is an unexpected error, please report this bug if it happens.
-                    if (ad == null)
-                    {
-                        Debug.LogError("Unexpected error: App open ad load event fired with " +
-                                       " null ad and null error.");
-                        return;
-                    }
+            //         // If the operation failed for unknown reasons.
+            //         // This is an unexpected error, please report this bug if it happens.
+            //         if (ad == null)
+            //         {
+            //             Debug.LogError("Unexpected error: App open ad load event fired with " +
+            //                            " null ad and null error.");
+            //             return;
+            //         }
 
-                    // The operation completed successfully.
-                    Debug.Log("App open ad loaded with response : " + ad.GetResponseInfo());
-                    _appOpenAd = ad;
+            //         // The operation completed successfully.
+            //         Debug.Log("App open ad loaded with response : " + ad.GetResponseInfo());
+            //         _appOpenAd = ad;
 
-                    // App open ads can be preloaded for up to 4 hours.
-                    _expireTime = DateTime.Now + TIMEOUT;
+            //         // App open ads can be preloaded for up to 4 hours.
+            //         _expireTime = DateTime.Now + TIMEOUT;
 
-                    // Register to ad events to extend functionality.
-                    RegisterEventHandlers(ad);
+            //         // Register to ad events to extend functionality.
+            //         RegisterEventHandlers(ad);
 
-                    // Inform the UI that the ad is ready.
-                    AdLoadedStatus?.SetActive(true);
-                });
+            //         // Inform the UI that the ad is ready.
+            //         AdLoadedStatus?.SetActive(true);
+            //     });
         }
 
         /// <summary>
