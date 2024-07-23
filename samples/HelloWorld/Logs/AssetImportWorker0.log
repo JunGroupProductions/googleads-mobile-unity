@@ -208,3 +208,9 @@ Received Import Request.
   path: Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset
   artifactKey: Guid(d92d0edee1db34e768e0fe8a049166a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset using Guid(d92d0edee1db34e768e0fe8a049166a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c25fb3daceaf13e0361b095f21bb4695') in 0.420778 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1265.176401 seconds.
+  path: Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset
+  artifactKey: Guid(d92d0edee1db34e768e0fe8a049166a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/GoogleMobileAds/Resources/GoogleMobileAdsSettings.asset using Guid(d92d0edee1db34e768e0fe8a049166a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '898802f9a0eb03d87bf7985805822e88') in 0.008072 seconds 
