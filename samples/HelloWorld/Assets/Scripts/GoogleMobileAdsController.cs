@@ -16,12 +16,7 @@ namespace GoogleMobileAds.Samples
         // https://developers.google.com/admob/unity/test-ads
         internal static List<string> TestDeviceIds = new List<string>()
         {
-            AdRequest.TestDeviceSimulator,
-#if UNITY_IPHONE
-            "96e23e80653bb28980d3f40beb58915c",
-#elif UNITY_ANDROID
-            "702815ACFC14FF222DA1DC767672A573"
-#endif
+            AdRequest.TestDeviceSimulator
         };
 
         // The Google Mobile Ads Unity plugin needs to be run only once.
