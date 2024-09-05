@@ -7,7 +7,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4' // Packages/com.google.ads.mobile/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:12
     implementation 'com.google.android.gms:play-services-ads:23.2.0' // Packages/com.google.ads.mobile/GoogleMobileAds/Editor/GoogleMobileAdsDependencies.xml:7
     implementation 'com.google.android.ump:user-messaging-platform:2.2.0' // Packages/com.google.ads.mobile/GoogleMobileAds/Editor/GoogleUmpDependencies.xml:7
-    implementation 'com.hyprmx.android:HyprMX-AdMob:6.4.1.0' // Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml:4
+    implementation 'com.hyprmx.android:HyprMX-AdMob:6.4.2.0' // Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml:4
 // Android Resolver Dependencies End
     implementation(name: 'googlemobileads-unity', ext:'aar')
     implementation(name: 'UnityAds', ext:'aar')
@@ -127,6 +127,8 @@ android {
         }
     }
 }
+
+
 
 
 

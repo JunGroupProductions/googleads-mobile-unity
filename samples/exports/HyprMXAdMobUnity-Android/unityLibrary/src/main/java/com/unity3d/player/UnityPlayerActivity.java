@@ -11,6 +11,11 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.os.Process;
+import android.webkit.WebView;
+
+import com.hyprmx.android.sdk.core.HyprMX;
+import com.hyprmx.android.sdk.utility.HyprMXLog;
+import com.hyprmx.android.sdk.utility.HyprMXProperties;
 
 public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecycleEvents
 {
@@ -33,6 +38,9 @@ public class UnityPlayerActivity extends Activity implements IUnityPlayerLifecyc
     {
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         super.onCreate(savedInstanceState);
+
+        HyprMXLog.enableDebugLogs(true);
+        WebView.setWebContentsDebuggingEnabled(true);
 
         String cmdLine = updateUnityCommandLineArguments(getIntent().getStringExtra("unity"));
         getIntent().putExtra("unity", cmdLine);
