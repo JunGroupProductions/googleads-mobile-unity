@@ -1,6 +1,6 @@
 <dependencies>
   <androidPackages>
-    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.4.1.0">
+    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.4.2.0">
     </androidPackage>
   </androidPackages>
 
