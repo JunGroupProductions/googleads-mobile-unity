@@ -1,7 +1,11 @@
 fileFormatVersion: 2
-guid: 505b4c11333524d05b493f03a4783ee1
-TextScriptImporter:
-  externalObjects: {}
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+guid: 24ba6bab4fe114fcda4b9347cb3c0fe2
+labels:
+- gvh
+- gvh_version-9.1.1
+- gvhp_exportpath-GoogleMobileAds/link.xml
+timeCreated: 1480838400
+DefaultImporter:
+  userData:
+  assetBundleName:
+  assetBundleVariant:
