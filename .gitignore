@@ -1,2 +1,5 @@
 .DS_Store
 libil2cpp.so
+samples/exports/HyprMXAdMobUnity-Android/launcher/build
+samples/exports/HyprMXAdMobUnity-Android/unityLibrary/build
+build/

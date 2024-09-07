@@ -32,6 +32,11 @@ extern void GoogleMobileAdsController_InitializeGoogleMobileAdsConsent_mC63E1553
 extern void GoogleMobileAdsController_InitializeGoogleMobileAds_m6D3949D210905F18ED459651FD11DBC968BE17D1 (void);
 extern void GoogleMobileAdsController_OpenAdInspector_m17D068F176B018C7C1518768B1C421636E3C02A5 (void);
 extern void GoogleMobileAdsController_OpenPrivacyOptions_m91CCB2E63F7CF94BA61A32BBA7F287B52394B427 (void);
+extern void GoogleMobileAdsController_InitializeClicked_m651B64EE5DC77C764ECF60076B107D882843F556 (void);
+extern void GoogleMobileAdsController_SetConsentGiven_mABE8BE6C1CAEEFB37EEDD54A258F2EB40F4B0304 (void);
+extern void GoogleMobileAdsController_SetConsentDeclined_m92D78003A0278AEEF0740ECCC55DBC2651E26E5A (void);
+extern void GoogleMobileAdsController_SetAgeRestrictedUser_mF47C80A45460A503A93F8A5A4EA8C334DF3F2729 (void);
+extern void GoogleMobileAdsController_SetAgeRestrictedUserFalse_mF1A2E97B32CAD56401CEA3CE7E9BB0278241AAE1 (void);
 extern void GoogleMobileAdsController__ctor_m84BD290CD621BD1D23D3D6C86F79BDC8A3905B0A (void);
 extern void GoogleMobileAdsController__cctor_m2580DDA20CE1A8F30A85480479C77C771569890E (void);
 extern void GoogleMobileAdsController_U3CInitializeGoogleMobileAdsConsentU3Eb__4_0_mA3BB3B15B466667F0A7A1D22CB121348C41CD460 (void);
@@ -101,9 +106,8 @@ extern void U3CU3Ec_U3CRegisterEventHandlersU3Eb__7_5_mA589D01B35F03AA08EB81B74E
 extern void HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE (void);
 extern void HyprMXAdapterConfiguration__ctor_m553DFC9136128F24668908A6EEBCFA0CB9F6DAE6 (void);
 extern void HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D (void);
-extern void HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC (void);
 extern void HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759 (void);
-static Il2CppMethodPointer s_methodPointers[91] = 
+static Il2CppMethodPointer s_methodPointers[95] = 
 {
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_mBEB95BEB954BB63E9710BBC7AD5E78C4CB0A0033,
 	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_mE70FB23ACC1EA12ABC948AA22C2E78B2D0AA39B1,
@@ -125,6 +129,11 @@ static Il2CppMethodPointer s_methodPointers[91] =
 	GoogleMobileAdsController_InitializeGoogleMobileAds_m6D3949D210905F18ED459651FD11DBC968BE17D1,
 	GoogleMobileAdsController_OpenAdInspector_m17D068F176B018C7C1518768B1C421636E3C02A5,
 	GoogleMobileAdsController_OpenPrivacyOptions_m91CCB2E63F7CF94BA61A32BBA7F287B52394B427,
+	GoogleMobileAdsController_InitializeClicked_m651B64EE5DC77C764ECF60076B107D882843F556,
+	GoogleMobileAdsController_SetConsentGiven_mABE8BE6C1CAEEFB37EEDD54A258F2EB40F4B0304,
+	GoogleMobileAdsController_SetConsentDeclined_m92D78003A0278AEEF0740ECCC55DBC2651E26E5A,
+	GoogleMobileAdsController_SetAgeRestrictedUser_mF47C80A45460A503A93F8A5A4EA8C334DF3F2729,
+	GoogleMobileAdsController_SetAgeRestrictedUserFalse_mF1A2E97B32CAD56401CEA3CE7E9BB0278241AAE1,
 	GoogleMobileAdsController__ctor_m84BD290CD621BD1D23D3D6C86F79BDC8A3905B0A,
 	GoogleMobileAdsController__cctor_m2580DDA20CE1A8F30A85480479C77C771569890E,
 	GoogleMobileAdsController_U3CInitializeGoogleMobileAdsConsentU3Eb__4_0_mA3BB3B15B466667F0A7A1D22CB121348C41CD460,
@@ -194,10 +203,9 @@ static Il2CppMethodPointer s_methodPointers[91] =
 	HyprMXAdapterConfiguration_SetHasUserConsent_mC49D7A2B5226E18F3080370B179D915AE0E169EE,
 	HyprMXAdapterConfiguration__ctor_m553DFC9136128F24668908A6EEBCFA0CB9F6DAE6,
 	HyprMXAndroidAdapter_SetHasUserConsent_m72A1EBB6F3753A3F2E8743FEAD4619642508DE7D,
-	HyprMXAndroidAdapter_GetAdapter_m2C99FB950902BDE326333CE238C4E0965564C3BC,
 	HyprMXAndroidAdapter__ctor_mB1CD331E21AED2B2E66B350E3CAAEA9549761759,
 };
-static const int32_t s_InvokerIndices[91] = 
+static const int32_t s_InvokerIndices[95] = 
 {
 	8393,
 	5652,
@@ -214,6 +222,11 @@ static const int32_t s_InvokerIndices[91] =
 	4612,
 	5652,
 	4612,
+	5652,
+	5652,
+	5652,
+	5652,
+	5652,
 	5652,
 	5652,
 	5652,
@@ -288,14 +301,13 @@ static const int32_t s_InvokerIndices[91] =
 	8207,
 	5652,
 	8207,
-	8357,
 	5652,
 };
 IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	91,
+	95,
 	s_methodPointers,
 	0,
 	NULL,

@@ -1083,9 +1083,6 @@ struct HashAlgorithm_t299ECE61BBF4582B1F75734D43A96DDEC9B2004D  : public Runtime
 struct HashHelpers_t0F28B03B873280BF35E747F5B954C752F924A770  : public RuntimeObject
 {
 };
-struct HyprMXAndroidAdapter_tBA950715BAA6AF7B03D6C5E5B452EA739B90D175  : public RuntimeObject
-{
-};
 struct InitializationOptions_t51AA79A729CADA6922543A7A47F1E87A09DBD17A  : public RuntimeObject
 {
 	RuntimeObject* ___U3CValuesU3Ek__BackingField;
@@ -10283,6 +10280,7 @@ struct GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_Stati
 {
 	List_1_tF470A3BE5C1B5B68E1325EF3F109D172E60BD7CD* ___TestDeviceIds;
 	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____isInitialized;
+	Nullable_1_t78F453FADB4A9F50F267A4E349019C34410D1A01 ____ageRestrictedUser;
 };
 struct MobileAdsEventExecutor_t1185FA76E60746A4BF6150BBFC4BD17B123F380A_StaticFields
 {
@@ -12442,9 +12440,9 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7077[3] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7078[4] = 
 {
 	static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__5_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__6_0)),static_cast<int32_t>(offsetof(U3CU3Ec_tAAF079955D69F9C2BF57EF596E0572F41D5F1413_StaticFields, ___U3CU3E9__7_0)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7079[3] = 
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7079[4] = 
 {
-	static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ___TestDeviceIds)),static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ____isInitialized)),static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327, ____consentController)),};
+	static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ___TestDeviceIds)),static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ____isInitialized)),static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327, ____consentController)),static_cast<int32_t>(offsetof(GoogleMobileAdsController_t365DD152053FBC49E2FF6F218AA18CFD7A08F327_StaticFields, ____ageRestrictedUser)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7081[1] = 
 {
 	static_cast<int32_t>(offsetof(SceneManagerButton_t7ECAD6B2F0A8469F4024608A583E739F32405114, ___SceneToLoadName)),};
@@ -12472,9 +12470,6 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7088[8] =
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7089[3] = 
 {
 	static_cast<int32_t>(offsetof(RewardedAdController_t41CB377B42EE9294642A355E077DE50728106514, ___AdLoadedStatus)),0,static_cast<int32_t>(offsetof(RewardedAdController_t41CB377B42EE9294642A355E077DE50728106514, ____rewardedAd)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7091[1] = 
-{
-	0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable7094[2] = 
 {
 	static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___1BB8C3B4B732BFEBE344CB468F8AB3DE2DC5132BB13B44D34C37A153960C5306)),static_cast<int32_t>(offsetof(U3CPrivateImplementationDetailsU3E_t0F5473E849A5A5185A9F4C5246F0C32816C49FCA_StaticFields, ___4B691FBA51886FE991D905F21F7097AA899B02D61B0649A7E5679E26CE1E09CF)),};
