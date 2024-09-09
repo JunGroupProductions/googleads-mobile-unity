@@ -44,6 +44,8 @@ android {
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
+        versionCode 1
+        versionName '1.0'
         consumerProguardFiles 'proguard-unity.txt'
     }
 
@@ -118,25 +120,12 @@ android {
         if (project(':unityLibrary').tasks.findByName('mergeReleaseJniLibFolders'))
             project(':unityLibrary').mergeReleaseJniLibFolders.dependsOn BuildIl2CppTask
     }
+    sourceSets {
+        main {
+            jni.srcDirs = ["src/main/Il2CppOutputProject"]
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -5,7 +5,7 @@ dependencies {
     }
 
 android {
-    namespace "com.DefaultCompany.HelloWorld"
+    namespace "com.hyprmx.UnityAdMob"
     ndkPath "/Applications/Unity/Hub/Editor/2022.3.38f1/PlaybackEngines/AndroidPlayer/NDK"
     compileSdk 34
 
@@ -17,7 +17,7 @@ android {
     defaultConfig {
         minSdkVersion 22
         targetSdkVersion 34
-        applicationId 'com.DefaultCompany.HelloWorld'
+        applicationId 'com.hyprmx.UnityAdMob'
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
