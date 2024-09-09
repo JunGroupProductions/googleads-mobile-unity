@@ -1279,7 +1279,7 @@ MonoBehaviour:
       - m_Target: {fileID: 169921881}
         m_TargetAssemblyTypeName: GoogleMobileAds.Samples.GoogleMobileAdsController,
           Assembly-CSharp
-        m_MethodName: SetConsentGiven
+        m_MethodName: InitializeClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -7,9 +7,7 @@ dependencies {
 android {
     namespace "com.DefaultCompany.HelloWorld"
     ndkPath "/Applications/Unity/Hub/Editor/2022.3.38f1/PlaybackEngines/AndroidPlayer/NDK"
-
-    compileSdkVersion 34
-    buildToolsVersion '34.0.0'
+    compileSdk 34
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
