@@ -25,16 +25,21 @@
 
 #if UNITY_ANDROID
     internal class HyprMXAndroidAdapter {
-        private const string adapterClassName = "com.hyprmx.android.HyprMXAdapterConfiguration";
-
         public static void SetHasUserConsent(bool hasUserConsent)
         {
-            GetAdapter().Call("setHasUserConsent", hasUserConsent);
-        }
-
-        internal static AndroidJavaObject GetAdapter()
-        {
-            return new AndroidJavaClass(adapterClassName).GetStatic<AndroidJavaObject>("INSTANCE");
+            try
+            {
+                using var singletonClass = new AndroidJavaClass("com.hyprmx.android.HyprMXAdapterConfiguration");
+                using var instance = singletonClass.GetStatic<AndroidJavaObject>("INSTANCE");
+                // The parameter type is java.lang.Boolean, not primitive boolean.
+                // The following code creates a java.lang.Boolean object so the method can be resolved correctly.
+                AndroidJavaObject javaBoolean = new AndroidJavaObject("java.lang.Boolean", hasUserConsent); 
+                instance.Call("setHasUserConsent", javaBoolean); 
+            }
+            catch (AndroidJavaException e)
+            {
+                Debug.LogError("HyprMX: Error setting user consent: " + e.Message);
+            }
         }
     }
 #endif

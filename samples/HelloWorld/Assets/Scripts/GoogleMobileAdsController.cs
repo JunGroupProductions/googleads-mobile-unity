@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Ump.Api;
+using GoogleMobileAds.Api.Mediation.HyprMX;
 
 namespace GoogleMobileAds.Samples
 {
@@ -41,21 +42,6 @@ namespace GoogleMobileAds.Samples
             // https://developers.google.com/admob/unity/quick-start#raise_ad_events_on_the_unity_main_thread
             MobileAds.RaiseAdEventsOnUnityMainThread = true;
 
-            // Configure your RequestConfiguration with Child Directed Treatment
-            // and the Test Device Ids.
-            MobileAds.SetRequestConfiguration(new RequestConfiguration
-            {
-                TestDeviceIds = TestDeviceIds
-            });
-
-            // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
-            if (_consentController.CanRequestAds)
-            {
-                InitializeGoogleMobileAds();
-            }
-
-            // Ensures that privacy and consent information is up to date.
-            InitializeGoogleMobileAdsConsent();
         }
 
         /// <summary>
@@ -166,5 +152,61 @@ namespace GoogleMobileAds.Samples
                 }
             });
         }
+    
+    private static bool? _ageRestrictedUser;
+    public void InitializeClicked()
+    {
+        // Initialize the Google Mobile Ads Unity plugin
+                    // Configure your RequestConfiguration with Child Directed Treatment
+            // and the Test Device Ids.
+        if(_ageRestrictedUser.HasValue)
+        {
+            MobileAds.SetRequestConfiguration(new RequestConfiguration
+            {
+                TagForChildDirectedTreatment = _ageRestrictedUser.Value ? TagForChildDirectedTreatment.True : TagForChildDirectedTreatment.False,
+                TestDeviceIds = TestDeviceIds
+            });
+        } else {
+            MobileAds.SetRequestConfiguration(new RequestConfiguration
+            {
+                    TestDeviceIds = TestDeviceIds
+            });
+        }
+
+        // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
+        if (_consentController.CanRequestAds)
+        {
+            InitializeGoogleMobileAds();
+        }
+
+        // Ensures that privacy and consent information is up to date.
+        InitializeGoogleMobileAdsConsent();
+    }
+
+
+    public void SetConsentGiven()
+    {
+        // User Declined Consent
+        HyprMXAdapterConfiguration.SetHasUserConsent(true);
+
+    }
+
+    public void SetConsentDeclined()
+    {
+        // User Granted Consent
+        HyprMXAdapterConfiguration.SetHasUserConsent(false);
+    }
+
+    public void SetAgeRestrictedUser()
+    {
+        // Initialize the Google Mobile Ads Unity plugin
+       _ageRestrictedUser = true;
+    }
+
+    public void SetAgeRestrictedUserFalse()
+    {
+        // Initialize the Google Mobile Ads Unity plugin
+        _ageRestrictedUser = false;
+    }
     }
 }
