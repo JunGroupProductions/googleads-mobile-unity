@@ -920,7 +920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7547914932056881335, guid: 14b7f179c2c5148188b1b282d47b96ee, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -299.99997
+      value: -299.99942
       objectReference: {fileID: 0}
     - target: {fileID: 7547914932158262829, guid: 14b7f179c2c5148188b1b282d47b96ee, type: 3}
       propertyPath: m_IsActive
@@ -1173,9 +1173,9 @@ MonoBehaviour:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 28
     m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 2
-    m_MaxSize: 48
+    m_BestFit: 1
+    m_MinSize: 24
+    m_MaxSize: 28
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
