@@ -152,66 +152,69 @@ namespace GoogleMobileAds.Samples
                 }
             });
         }
-    
-    private static bool? _ageRestrictedUser;
-    public void InitializeClicked()
-    {
-        updateRequestConfiguration();
 
-        // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
-        if (_consentController.CanRequestAds)
+        private static bool? _ageRestrictedUser;
+        public void InitializeClicked()
         {
-            InitializeGoogleMobileAds();
+            updateRequestConfiguration();
+
+            // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
+            if (_consentController.CanRequestAds)
+            {
+                InitializeGoogleMobileAds();
+            }
+
+            // Ensures that privacy and consent information is up to date.
+            InitializeGoogleMobileAdsConsent();
         }
 
-        // Ensures that privacy and consent information is up to date.
-        InitializeGoogleMobileAdsConsent();
-    }
 
-
-    public void SetConsentGiven()
-    {
-        // User Declined Consent
-        HyprMXAdapterConfiguration.SetHasUserConsent(true);
-
-    }
-
-    public void SetConsentDeclined()
-    {
-        // User Granted Consent
-        HyprMXAdapterConfiguration.SetHasUserConsent(false);
-    }
-
-    public void SetAgeRestrictedUser()
-    {
-        // Initialize the Google Mobile Ads Unity plugin
-       _ageRestrictedUser = true;
-       updateRequestConfiguration();
-    }
-
-    public void SetAgeRestrictedUserFalse()
-    {
-        // Initialize the Google Mobile Ads Unity plugin
-        _ageRestrictedUser = false;
-        updateRequestConfiguration();
-    }
-    
-    // Configure your RequestConfiguration with Child Directed Treatment
-    // and the Test Device Ids.
-    public void updateRequestConfiguration() {
-        if(_ageRestrictedUser.HasValue)
+        public void SetConsentGiven()
         {
-            MobileAds.SetRequestConfiguration(new RequestConfiguration
+            // User Declined Consent
+            HyprMXAdapterConfiguration.SetHasUserConsent(true);
+
+        }
+
+        public void SetConsentDeclined()
+        {
+            // User Granted Consent
+            HyprMXAdapterConfiguration.SetHasUserConsent(false);
+        }
+
+        public void SetAgeRestrictedUser()
+        {
+            // Initialize the Google Mobile Ads Unity plugin
+            _ageRestrictedUser = true;
+            updateRequestConfiguration();
+        }
+
+        public void SetAgeRestrictedUserFalse()
+        {
+            // Initialize the Google Mobile Ads Unity plugin
+            _ageRestrictedUser = false;
+            updateRequestConfiguration();
+        }
+
+        // Configure your RequestConfiguration with Child Directed Treatment
+        // and the Test Device Ids.
+        public void updateRequestConfiguration()
+        {
+            if (_ageRestrictedUser.HasValue)
             {
-                TagForChildDirectedTreatment = _ageRestrictedUser.Value ? TagForChildDirectedTreatment.True : TagForChildDirectedTreatment.False,
-                TestDeviceIds = TestDeviceIds
-            });
-        } else {
-            MobileAds.SetRequestConfiguration(new RequestConfiguration
-            {
+                MobileAds.SetRequestConfiguration(new RequestConfiguration
+                {
+                    TagForChildDirectedTreatment = _ageRestrictedUser.Value ? TagForChildDirectedTreatment.True : TagForChildDirectedTreatment.False,
                     TestDeviceIds = TestDeviceIds
-            });
+                });
+            }
+            else
+            {
+                MobileAds.SetRequestConfiguration(new RequestConfiguration
+                {
+                    TestDeviceIds = TestDeviceIds
+                });
+            }
         }
-    }
     }
 }
