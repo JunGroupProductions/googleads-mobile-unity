@@ -196,7 +196,6 @@ namespace GoogleMobileAds.Samples
         updateRequestConfiguration();
     }
     
-    // Initialize the Google Mobile Ads Unity plugin
     // Configure your RequestConfiguration with Child Directed Treatment
     // and the Test Device Ids.
     public void updateRequestConfiguration() {
