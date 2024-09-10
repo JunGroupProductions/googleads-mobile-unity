@@ -44,32 +44,6 @@ namespace GoogleMobileAds.Samples
 
         }
 
-        /// <summary>
-        /// Ensures that privacy and consent information is up to date.
-        /// </summary>
-        private void InitializeGoogleMobileAdsConsent()
-        {
-            Debug.Log("Google Mobile Ads gathering consent.");
-
-            _consentController.GatherConsent((string error) =>
-            {
-                if (error != null)
-                {
-                    Debug.LogError("Failed to gather consent with error: " +
-                        error);
-                }
-                else
-                {
-                    Debug.Log("Google Mobile Ads consent updated: "
-                        + ConsentInformation.ConsentStatus);
-                }
-
-                if (_consentController.CanRequestAds)
-                {
-                    InitializeGoogleMobileAds();
-                }
-            });
-        }
 
         /// <summary>
         /// Initializes the Google Mobile Ads Unity plugin.
@@ -163,9 +137,6 @@ namespace GoogleMobileAds.Samples
             {
                 InitializeGoogleMobileAds();
             }
-
-            // Ensures that privacy and consent information is up to date.
-            InitializeGoogleMobileAdsConsent();
         }
 
 
