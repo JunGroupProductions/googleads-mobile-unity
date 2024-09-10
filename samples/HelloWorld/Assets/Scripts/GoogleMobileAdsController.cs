@@ -156,22 +156,7 @@ namespace GoogleMobileAds.Samples
     private static bool? _ageRestrictedUser;
     public void InitializeClicked()
     {
-        // Initialize the Google Mobile Ads Unity plugin
-                    // Configure your RequestConfiguration with Child Directed Treatment
-            // and the Test Device Ids.
-        if(_ageRestrictedUser.HasValue)
-        {
-            MobileAds.SetRequestConfiguration(new RequestConfiguration
-            {
-                TagForChildDirectedTreatment = _ageRestrictedUser.Value ? TagForChildDirectedTreatment.True : TagForChildDirectedTreatment.False,
-                TestDeviceIds = TestDeviceIds
-            });
-        } else {
-            MobileAds.SetRequestConfiguration(new RequestConfiguration
-            {
-                    TestDeviceIds = TestDeviceIds
-            });
-        }
+        updateRequestConfiguration();
 
         // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
         if (_consentController.CanRequestAds)
@@ -201,12 +186,33 @@ namespace GoogleMobileAds.Samples
     {
         // Initialize the Google Mobile Ads Unity plugin
        _ageRestrictedUser = true;
+       updateRequestConfiguration();
     }
 
     public void SetAgeRestrictedUserFalse()
     {
         // Initialize the Google Mobile Ads Unity plugin
         _ageRestrictedUser = false;
+        updateRequestConfiguration();
+    }
+    
+    // Initialize the Google Mobile Ads Unity plugin
+    // Configure your RequestConfiguration with Child Directed Treatment
+    // and the Test Device Ids.
+    public void updateRequestConfiguration() {
+        if(_ageRestrictedUser.HasValue)
+        {
+            MobileAds.SetRequestConfiguration(new RequestConfiguration
+            {
+                TagForChildDirectedTreatment = _ageRestrictedUser.Value ? TagForChildDirectedTreatment.True : TagForChildDirectedTreatment.False,
+                TestDeviceIds = TestDeviceIds
+            });
+        } else {
+            MobileAds.SetRequestConfiguration(new RequestConfiguration
+            {
+                    TestDeviceIds = TestDeviceIds
+            });
+        }
     }
     }
 }
