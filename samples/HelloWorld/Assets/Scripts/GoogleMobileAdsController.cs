@@ -131,12 +131,7 @@ namespace GoogleMobileAds.Samples
         public void InitializeClicked()
         {
             updateRequestConfiguration();
-
-            // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
-            if (_consentController.CanRequestAds)
-            {
-                InitializeGoogleMobileAds();
-            }
+            InitializeGoogleMobileAds();
         }
 
 
