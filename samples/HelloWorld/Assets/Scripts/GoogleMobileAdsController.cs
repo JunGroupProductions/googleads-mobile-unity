@@ -20,8 +20,9 @@ namespace GoogleMobileAds.Samples
             AdRequest.TestDeviceSimulator,
 #if UNITY_IPHONE
             "96e23e80653bb28980d3f40beb58915c",
+            "6d7dd970a15d9e09d3bbd2efad4911e1",
 #elif UNITY_ANDROID
-            "702815ACFC14FF222DA1DC767672A573"
+            "702815ACFC14FF222DA1DC767672A573",
 #endif
             AdRequest.TestDeviceSimulator
         };
