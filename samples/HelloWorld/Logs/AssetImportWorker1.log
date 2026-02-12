@@ -740,3 +740,123 @@ AssetImportParameters requested are different than current active one (requested
 [usbmuxd] Detached: 17 00008120-001A114136E0A01E
 [usbmuxd] Attached: 18 00008120-001A114136E0A01E
 [usbmuxd] Detached: 18 00008120-001A114136E0A01E
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 20.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3050.
+Memory consumption went from 89.3 MB to 89.3 MB.
+Total: 7.870584 ms (FindLiveObjects: 0.137750 ms CreateObjectMapping: 0.020667 ms MarkObjects: 7.665625 ms  DeleteObjects: 0.046250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/precompiled-assembly-types:UnityEditor.Purchasing: 685dd6c21885a5f478106a28c35eac48 -> 34a9de9d7f3d57ae0879e0d7f40e5358
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/IosInitializationListener.cs: 1afcd9eace4b29d4c56ac3e208ce6091 -> 
+  custom:scripting/monoscript/fileName/IosLoadListener.cs: 60a6fa6bfa5567471df83e1cd9489185 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PostProcessBuildPlist.cs: 09abaaf263b8719afa9fe152a55cce58 -> 
+  custom:scripting/monoscript/fileName/AppleCapabilities.cs: ada0ffee336d5f4f056e5a6f89636ddf -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/IosBanner.cs: 0b0154bb8d2fedf5a9d3337f009a27b7 -> 
+  custom:scripting/monoscript/fileName/IosShowListener.cs: 99a543284038b23ffae9effef8635bb2 -> 
+  custom:scripting/monoscript/fileName/PListProcessor.cs: 1290dacdd6d927c28c10b66e0481b008 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Services.Core.Device: 05e86348667145c6318337b7ef48c140 -> 63b48da9c583ff24a0dde69e3097501c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements: 943cb582db753c05f125cc05f1779411 -> eddddc804f85d325d3f2cfb2febf94fd
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IosNativeObject.cs: bf575b4cc098f2a6c690a7fffa6175b2 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements.Editor: a357c05e7c81b4c56f1b27612cc9a459 -> f05c6ef344003dc4beb91632ad6a3d4b
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/HyprMXAdapterConfiguration.cs: 941bb1b9bc44b054b434280d95bab5a8 -> 854823bcee4f5d7875556e2e052dbb01
+  custom:scripting/monoscript/fileName/NSUserDefaults.cs: 0e4508bfb9a56172d0357721cef59693 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:GoogleMobileAds.Editor: d4c9ee07524a12488bc92fff8d1bfbcc -> f43a3c3179e4052d8fce24140d2b1e08
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 8b2c4e323c2b81057893fdf4b0763ca3 -> 520c803afdb1890ad501bfbb2dde5cf5
+  custom:scripting/monoscript/fileName/IosPlatform.cs: 02c9366fe4abc914cb4db792079af415 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 18.55 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3050.
+Memory consumption went from 89.1 MB to 89.1 MB.
+Total: 3.868083 ms (FindLiveObjects: 0.078084 ms CreateObjectMapping: 0.027208 ms MarkObjects: 3.751541 ms  DeleteObjects: 0.011125 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/precompiled-assembly-types:UnityEditor.Purchasing: 685dd6c21885a5f478106a28c35eac48 -> 34a9de9d7f3d57ae0879e0d7f40e5358
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/IosInitializationListener.cs: 1afcd9eace4b29d4c56ac3e208ce6091 -> 
+  custom:scripting/monoscript/fileName/IosLoadListener.cs: 60a6fa6bfa5567471df83e1cd9489185 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PostProcessBuildPlist.cs: 09abaaf263b8719afa9fe152a55cce58 -> 
+  custom:scripting/monoscript/fileName/AppleCapabilities.cs: ada0ffee336d5f4f056e5a6f89636ddf -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/IosBanner.cs: 0b0154bb8d2fedf5a9d3337f009a27b7 -> 
+  custom:scripting/monoscript/fileName/IosShowListener.cs: 99a543284038b23ffae9effef8635bb2 -> 
+  custom:scripting/monoscript/fileName/PListProcessor.cs: 1290dacdd6d927c28c10b66e0481b008 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Services.Core.Device: 05e86348667145c6318337b7ef48c140 -> 63b48da9c583ff24a0dde69e3097501c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements: 943cb582db753c05f125cc05f1779411 -> eddddc804f85d325d3f2cfb2febf94fd
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IosNativeObject.cs: bf575b4cc098f2a6c690a7fffa6175b2 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements.Editor: a357c05e7c81b4c56f1b27612cc9a459 -> f05c6ef344003dc4beb91632ad6a3d4b
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/HyprMXAdapterConfiguration.cs: 941bb1b9bc44b054b434280d95bab5a8 -> 854823bcee4f5d7875556e2e052dbb01
+  custom:scripting/monoscript/fileName/NSUserDefaults.cs: 0e4508bfb9a56172d0357721cef59693 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:GoogleMobileAds.Editor: d4c9ee07524a12488bc92fff8d1bfbcc -> f43a3c3179e4052d8fce24140d2b1e08
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 8b2c4e323c2b81057893fdf4b0763ca3 -> 520c803afdb1890ad501bfbb2dde5cf5
+  custom:scripting/monoscript/fileName/IosPlatform.cs: 02c9366fe4abc914cb4db792079af415 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 17.84 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (3.1 KB). Loaded Objects now: 3050.
+Memory consumption went from 89.0 MB to 89.0 MB.
+Total: 4.325125 ms (FindLiveObjects: 0.090958 ms CreateObjectMapping: 0.021584 ms MarkObjects: 4.201583 ms  DeleteObjects: 0.010625 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/precompiled-assembly-types:UnityEditor.Purchasing: 685dd6c21885a5f478106a28c35eac48 -> 34a9de9d7f3d57ae0879e0d7f40e5358
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/IosInitializationListener.cs: 1afcd9eace4b29d4c56ac3e208ce6091 -> 
+  custom:scripting/monoscript/fileName/IosLoadListener.cs: 60a6fa6bfa5567471df83e1cd9489185 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PostProcessBuildPlist.cs: 09abaaf263b8719afa9fe152a55cce58 -> 
+  custom:scripting/monoscript/fileName/AppleCapabilities.cs: ada0ffee336d5f4f056e5a6f89636ddf -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/IosBanner.cs: 0b0154bb8d2fedf5a9d3337f009a27b7 -> 
+  custom:scripting/monoscript/fileName/IosShowListener.cs: 99a543284038b23ffae9effef8635bb2 -> 
+  custom:scripting/monoscript/fileName/PListProcessor.cs: 1290dacdd6d927c28c10b66e0481b008 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Services.Core.Device: 05e86348667145c6318337b7ef48c140 -> 63b48da9c583ff24a0dde69e3097501c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements: 943cb582db753c05f125cc05f1779411 -> eddddc804f85d325d3f2cfb2febf94fd
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IosNativeObject.cs: bf575b4cc098f2a6c690a7fffa6175b2 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements.Editor: a357c05e7c81b4c56f1b27612cc9a459 -> f05c6ef344003dc4beb91632ad6a3d4b
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/HyprMXAdapterConfiguration.cs: 941bb1b9bc44b054b434280d95bab5a8 -> 854823bcee4f5d7875556e2e052dbb01
+  custom:scripting/monoscript/fileName/NSUserDefaults.cs: 0e4508bfb9a56172d0357721cef59693 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:GoogleMobileAds.Editor: d4c9ee07524a12488bc92fff8d1bfbcc -> f43a3c3179e4052d8fce24140d2b1e08
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 8b2c4e323c2b81057893fdf4b0763ca3 -> 520c803afdb1890ad501bfbb2dde5cf5
+  custom:scripting/monoscript/fileName/IosPlatform.cs: 02c9366fe4abc914cb4db792079af415 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
