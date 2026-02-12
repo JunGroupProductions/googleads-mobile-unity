@@ -16,7 +16,13 @@ namespace GoogleMobileAds.Samples
         // Always use test ads.
         // https://developers.google.com/admob/unity/test-ads
         internal static List<string> TestDeviceIds = new List<string>()
-        {
+        {            
+            AdRequest.TestDeviceSimulator,
+#if UNITY_IPHONE
+            "96e23e80653bb28980d3f40beb58915c",
+#elif UNITY_ANDROID
+            "702815ACFC14FF222DA1DC767672A573"
+#endif
             AdRequest.TestDeviceSimulator
         };
 
@@ -37,6 +43,13 @@ namespace GoogleMobileAds.Samples
             // This setting makes iOS behave consistently with Android.
             MobileAds.SetiOSAppPauseOnBackground(true);
 
+            // Configure your RequestConfiguration with Child Directed Treatment
+            // and the Test Device Ids.
+            MobileAds.SetRequestConfiguration(new RequestConfiguration
+            {
+                TestDeviceIds = TestDeviceIds
+            });
+            
             // When true all events raised by GoogleMobileAds will be raised
             // on the Unity main thread. The default value is false.
             // https://developers.google.com/admob/unity/quick-start#raise_ad_events_on_the_unity_main_thread
