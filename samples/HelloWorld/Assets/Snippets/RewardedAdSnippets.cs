@@ -8,9 +8,9 @@ namespace GoogleMobileAds.Snippets
     internal class RewardedAdSnippets
     {
 #if UNITY_ANDROID
-        private const string AD_UNIT_ID = "ca-app-pub-3940256099942544/5224354917";
+        private const string AD_UNIT_ID = "ca-app-pub-6816316814885940/3865412331";
 #elif UNITY_IPHONE
-        private const string AD_UNIT_ID = "ca-app-pub-3940256099942544/1712485313";
+        private const string AD_UNIT_ID = "ca-app-pub-6816316814885940/6132545386";
 #else
         private const string AD_UNIT_ID = "unused";
 #endif

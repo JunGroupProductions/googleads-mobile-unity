@@ -8,9 +8,9 @@ namespace GoogleMobileAds.Snippets
     internal class InterstitialAdSnippets
     {
 #if UNITY_ANDROID
-        private const string AD_UNIT_ID = "ca-app-pub-3940256099942544/1033173712";
+        private const string AD_UNIT_ID = "ca-app-pub-6816316814885940/1709490738";
 #elif UNITY_IPHONE
-        private const string AD_UNIT_ID = "ca-app-pub-3940256099942544/4411468910";
+        private const string AD_UNIT_ID = "ca-app-pub-6816316814885940/7896249896";
 #else
         private const string AD_UNIT_ID = "unused";
 #endif

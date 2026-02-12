@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleMobileAds.Api;
 using GoogleMobileAds.Ump.Api;
+using GoogleMobileAds.Api.Mediation.HyprMX;
 
 namespace GoogleMobileAds.Samples
 {
@@ -16,12 +17,7 @@ namespace GoogleMobileAds.Samples
         // https://developers.google.com/admob/unity/test-ads
         internal static List<string> TestDeviceIds = new List<string>()
         {
-            AdRequest.TestDeviceSimulator,
-#if UNITY_IPHONE
-            "96e23e80653bb28980d3f40beb58915c",
-#elif UNITY_ANDROID
-            "702815ACFC14FF222DA1DC767672A573"
-#endif
+            AdRequest.TestDeviceSimulator
         };
 
         // The Google Mobile Ads Unity plugin needs to be run only once.
@@ -41,49 +37,13 @@ namespace GoogleMobileAds.Samples
             // This setting makes iOS behave consistently with Android.
             MobileAds.SetiOSAppPauseOnBackground(true);
 
-            // Configure your RequestConfiguration with Child Directed Treatment
-            // and the Test Device Ids.
-            MobileAds.SetRequestConfiguration(new RequestConfiguration
-            {
-                TestDeviceIds = TestDeviceIds
-            });
+            // When true all events raised by GoogleMobileAds will be raised
+            // on the Unity main thread. The default value is false.
+            // https://developers.google.com/admob/unity/quick-start#raise_ad_events_on_the_unity_main_thread
+            MobileAds.RaiseAdEventsOnUnityMainThread = true;
 
-            // If we can request ads, we should initialize the Google Mobile Ads Unity plugin.
-            if (_consentController.CanRequestAds)
-            {
-                InitializeGoogleMobileAds();
-            }
-
-            // Ensures that privacy and consent information is up to date.
-            InitializeGoogleMobileAdsConsent();
         }
 
-        /// <summary>
-        /// Ensures that privacy and consent information is up to date.
-        /// </summary>
-        private void InitializeGoogleMobileAdsConsent()
-        {
-            Debug.Log("Google Mobile Ads gathering consent.");
-
-            _consentController.GatherConsent((string error) =>
-            {
-                if (error != null)
-                {
-                    Debug.LogError("Failed to gather consent with error: " +
-                        error);
-                }
-                else
-                {
-                    Debug.Log("Google Mobile Ads consent updated: "
-                        + ConsentInformation.ConsentStatus);
-                }
-
-                if (_consentController.CanRequestAds)
-                {
-                    InitializeGoogleMobileAds();
-                }
-            });
-        }
 
         /// <summary>
         /// Initializes the Google Mobile Ads Unity plugin.
@@ -100,8 +60,6 @@ namespace GoogleMobileAds.Samples
 
             // Initialize the Google Mobile Ads Unity plugin.
             Debug.Log("Google Mobile Ads Initializing.");
-
-            // [START initialize_sdk]
             MobileAds.Initialize((InitializationStatus initstatus) =>
             {
                 if (initstatus == null)
@@ -110,7 +68,7 @@ namespace GoogleMobileAds.Samples
                     _isInitialized = null;
                     return;
                 }
-                // [START_EXCLUDE silent]
+
                 // If you use mediation, you can check the status of each adapter.
                 var adapterStatusMap = initstatus.getAdapterStatusMap();
                 if (adapterStatusMap != null)
@@ -122,17 +80,10 @@ namespace GoogleMobileAds.Samples
                             item.Value.InitializationState));
                     }
                 }
-                // [END_EXCLUDE]
 
                 Debug.Log("Google Mobile Ads initialization complete.");
                 _isInitialized = true;
-
-                // Google Mobile Ads events are raised off the Unity Main thread. If you need to
-                // access UnityEngine objects after initialization,
-                // use MobileAdsEventExecutor.ExecuteInUpdate(). For more information, see:
-                // https://developers.google.com/admob/unity/global-settings#raise_ad_events_on_the_unity_main_thread
             });
-            // [END initialize_sdk]
         }
 
         /// <summary>
@@ -174,6 +125,62 @@ namespace GoogleMobileAds.Samples
                     Debug.Log("Privacy form opened successfully.");
                 }
             });
+        }
+
+        private static bool? _ageRestrictedUser;
+        public void InitializeClicked()
+        {
+            updateRequestConfiguration();
+            InitializeGoogleMobileAds();
+        }
+
+
+        public void SetConsentGiven()
+        {
+            // User Declined Consent
+            HyprMXAdapterConfiguration.SetHasUserConsent(true);
+
+        }
+
+        public void SetConsentDeclined()
+        {
+            // User Granted Consent
+            HyprMXAdapterConfiguration.SetHasUserConsent(false);
+        }
+
+        public void SetAgeRestrictedUser()
+        {
+            // Initialize the Google Mobile Ads Unity plugin
+            _ageRestrictedUser = true;
+            updateRequestConfiguration();
+        }
+
+        public void SetAgeRestrictedUserFalse()
+        {
+            // Initialize the Google Mobile Ads Unity plugin
+            _ageRestrictedUser = false;
+            updateRequestConfiguration();
+        }
+
+        // Configure your RequestConfiguration with Child Directed Treatment
+        // and the Test Device Ids.
+        public void updateRequestConfiguration()
+        {
+            if (_ageRestrictedUser.HasValue)
+            {
+                MobileAds.SetRequestConfiguration(new RequestConfiguration
+                {
+                    TagForChildDirectedTreatment = _ageRestrictedUser.Value ? TagForChildDirectedTreatment.True : TagForChildDirectedTreatment.False,
+                    TestDeviceIds = TestDeviceIds
+                });
+            }
+            else
+            {
+                MobileAds.SetRequestConfiguration(new RequestConfiguration
+                {
+                    TestDeviceIds = TestDeviceIds
+                });
+            }
         }
     }
 }
