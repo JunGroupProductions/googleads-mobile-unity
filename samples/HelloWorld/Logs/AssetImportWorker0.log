@@ -379,3 +379,297 @@ AssetImportParameters requested are different than current active one (requested
 [usbmuxd] Attached: 10 00008120-001A114136E0A01E
 [usbmuxd] Detached: 10 00008120-001A114136E0A01E
 [usbmuxd] Attached: 11 00008120-001A114136E0A01E
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x16e68b000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.480 seconds
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.963 seconds
+Domain Reload Profiling: 1443ms
+	BeginReloadAssembly (162ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (25ms)
+	RebuildCommonClasses (19ms)
+	RebuildNativeTypeToScriptingClass (6ms)
+	initialDomainReloadingComplete (21ms)
+	LoadAllAssembliesAndSetupDomain (272ms)
+		LoadAssemblies (375ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (4ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (963ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (244ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (46ms)
+			SetLoadedEditorAssemblies (1ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (20ms)
+			ProcessInitializeOnLoadAttributes (107ms)
+			ProcessInitializeOnLoadMethodAttributes (69ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
+Refreshing native plugins compatible for Editor in 21.32 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2547 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (29.1 KB). Loaded Objects now: 3047.
+Memory consumption went from 127.2 MB to 127.1 MB.
+Total: 4.681917 ms (FindLiveObjects: 0.088625 ms CreateObjectMapping: 0.021708 ms MarkObjects: 4.523250 ms  DeleteObjects: 0.047667 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/precompiled-assembly-types:UnityEditor.Purchasing: 685dd6c21885a5f478106a28c35eac48 -> 34a9de9d7f3d57ae0879e0d7f40e5358
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/IosInitializationListener.cs: 1afcd9eace4b29d4c56ac3e208ce6091 -> 
+  custom:scripting/monoscript/fileName/IosLoadListener.cs: 60a6fa6bfa5567471df83e1cd9489185 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/PostProcessBuildPlist.cs: 09abaaf263b8719afa9fe152a55cce58 -> 
+  custom:scripting/monoscript/fileName/AppleCapabilities.cs: ada0ffee336d5f4f056e5a6f89636ddf -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:scripting/monoscript/fileName/IosBanner.cs: 0b0154bb8d2fedf5a9d3337f009a27b7 -> 
+  custom:scripting/monoscript/fileName/IosShowListener.cs: 99a543284038b23ffae9effef8635bb2 -> 
+  custom:scripting/monoscript/fileName/PListProcessor.cs: 1290dacdd6d927c28c10b66e0481b008 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:scripting/precompiled-assembly-types:Unity.Services.Core.Device: 05e86348667145c6318337b7ef48c140 -> 63b48da9c583ff24a0dde69e3097501c
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements: 943cb582db753c05f125cc05f1779411 -> eddddc804f85d325d3f2cfb2febf94fd
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/IosNativeObject.cs: bf575b4cc098f2a6c690a7fffa6175b2 -> 
+  custom:scripting/precompiled-assembly-types:UnityEngine.Advertisements.Editor: a357c05e7c81b4c56f1b27612cc9a459 -> f05c6ef344003dc4beb91632ad6a3d4b
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/HyprMXAdapterConfiguration.cs: 941bb1b9bc44b054b434280d95bab5a8 -> 854823bcee4f5d7875556e2e052dbb01
+  custom:scripting/monoscript/fileName/NSUserDefaults.cs: 0e4508bfb9a56172d0357721cef59693 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:GoogleMobileAds.Editor: d4c9ee07524a12488bc92fff8d1bfbcc -> f43a3c3179e4052d8fce24140d2b1e08
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp: 8b2c4e323c2b81057893fdf4b0763ca3 -> 520c803afdb1890ad501bfbb2dde5cf5
+  custom:scripting/monoscript/fileName/IosPlatform.cs: 02c9366fe4abc914cb4db792079af415 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 529312.253295 seconds.
+  path: Assets/Scripts/BannerViewController.cs
+  artifactKey: Guid(8a2d90b8992b64e07b12ef028c0acffb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/BannerViewController.cs using Guid(8a2d90b8992b64e07b12ef028c0acffb) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'b8472f7854c069e4a5660e560cb1f215') in 0.040527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/GoogleMobileAds/Api/Mediation/HyprMX/Version.txt
+  artifactKey: Guid(e0c041bf96d924b24a84f9d92b3fd7bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GoogleMobileAds/Api/Mediation/HyprMX/Version.txt using Guid(e0c041bf96d924b24a84f9d92b3fd7bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'c20ab4d66110776a864651f94de5d1f1') in 0.005727 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000131 seconds.
+  path: Assets/HyprMXAdMob/Version.txt
+  artifactKey: Guid(515a907fbaf134934a58d0600dc1eb9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HyprMXAdMob/Version.txt using Guid(515a907fbaf134934a58d0600dc1eb9f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'b930eae3a7660efedebea3e6b0e37b3b') in 0.004531 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000132 seconds.
+  path: Assets/GoogleMobileAds/Api/Mediation/HyprMX/HyprMXAdapterConfiguration.cs
+  artifactKey: Guid(d50ea77fe227142f984ef0f48fc38245) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GoogleMobileAds/Api/Mediation/HyprMX/HyprMXAdapterConfiguration.cs using Guid(d50ea77fe227142f984ef0f48fc38245) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '9136526f9d497680769b0a8c9477d5ae') in 0.005028 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/Scripts/RewardedInterstitialAdController.cs
+  artifactKey: Guid(3c9bc340105fc45398489acee30b431d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/RewardedInterstitialAdController.cs using Guid(3c9bc340105fc45398489acee30b431d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '520be384bda7c8a23ce8703592276bd0') in 0.004915 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Scenes/GoogleRewardedAdScene.unity
+  artifactKey: Guid(cd900f4ab8bae442790ecc98e0876160) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/GoogleRewardedAdScene.unity using Guid(cd900f4ab8bae442790ecc98e0876160) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '768b5ca1a488a98c8c705e1da4451b93') in 0.004298 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Snippets/RewardedAdSnippets.cs
+  artifactKey: Guid(adfc143955d224ad8ae89c8628c423b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Snippets/RewardedAdSnippets.cs using Guid(adfc143955d224ad8ae89c8628c423b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'aa10f6e2566d8bb7986c7155c748c393') in 0.004493 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/UI/images/RewardedAd.png
+  artifactKey: Guid(e06fe997a1d5e45ffbeffaa2f34c54b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/images/RewardedAd.png using Guid(e06fe997a1d5e45ffbeffaa2f34c54b8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '0c08e006a07958bbf33c3dc6967ea376') in 0.024930 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Scripts/Utility/StatusText.cs
+  artifactKey: Guid(8908b0838a97247e5adbd98a9b32d01b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Utility/StatusText.cs using Guid(8908b0838a97247e5adbd98a9b32d01b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '9df7a0774d93f8b23321370416c3d466') in 0.004662 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000142 seconds.
+  path: Assets/Scripts/AppOpenAdController.cs
+  artifactKey: Guid(382c4cfe0c98949c9914a2e6256188c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/AppOpenAdController.cs using Guid(382c4cfe0c98949c9914a2e6256188c0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '5c04158cdcbeb2f3a4bfb863357cb21e') in 0.004086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/UI/images/AppOpenAd.png
+  artifactKey: Guid(005a52d066ccd403ba2d980b21db7f66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/images/AppOpenAd.png using Guid(005a52d066ccd403ba2d980b21db7f66) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'cf0a26acd50132bbcfe5b5a268c45662') in 0.009338 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000143 seconds.
+  path: Assets/Scenes/GoogleNativeOverlayAdScene.unity
+  artifactKey: Guid(7dae6ce369eac46f1bdd0f6c2e80928f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/GoogleNativeOverlayAdScene.unity using Guid(7dae6ce369eac46f1bdd0f6c2e80928f) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '5ab9ed390a9e9b358902ce8c51b167a3') in 0.004062 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Snippets/RequestConfigurationSnippets.cs
+  artifactKey: Guid(f50115d8ea1b24d63b617d879dd7911d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Snippets/RequestConfigurationSnippets.cs using Guid(f50115d8ea1b24d63b617d879dd7911d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'ae51be3fd77a80a0b63526496579d4e5') in 0.007199 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000117 seconds.
+  path: Assets/Snippets/AdManagerBannerViewSnippets.cs
+  artifactKey: Guid(e18d877043b6b46cea5e9595bdc020c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Snippets/AdManagerBannerViewSnippets.cs using Guid(e18d877043b6b46cea5e9595bdc020c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'f0cd10ff4a2a3f371244a1ee764d0b0a') in 0.016639 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/Snippets/MediationSnippets.cs
+  artifactKey: Guid(fa4c4f628796f41249136757d71b5361) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Snippets/MediationSnippets.cs using Guid(fa4c4f628796f41249136757d71b5361) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '7a8833ead5a488f222732acd9e3785e4') in 0.006163 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000108 seconds.
+  path: Assets/Scripts/Utility/FpsText.cs
+  artifactKey: Guid(e28b43bae8cbb41b7a06912b81abc3c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Utility/FpsText.cs using Guid(e28b43bae8cbb41b7a06912b81abc3c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '6cb3f0b2cbfd6771e7f78178a04d7136') in 0.004541 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/UI/images/AdInspector.png
+  artifactKey: Guid(e57cb72edb50b4a9c94e2ef58d30945e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/images/AdInspector.png using Guid(e57cb72edb50b4a9c94e2ef58d30945e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '252c7298467840a9535bf2ba0b599d12') in 0.013347 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000111 seconds.
+  path: Assets/Scenes/GoogleMobileAdsScene.unity
+  artifactKey: Guid(1de1a74c0b30d4d2f8ed4cd020ce61c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/GoogleMobileAdsScene.unity using Guid(1de1a74c0b30d4d2f8ed4cd020ce61c8) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '0865436123c9bb33538ed8bb34a30219') in 0.003994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000147 seconds.
+  path: Assets/Prefabs/GoogleMobileAds.prefab
+  artifactKey: Guid(14b7f179c2c5148188b1b282d47b96ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Prefabs/GoogleMobileAds.prefab using Guid(14b7f179c2c5148188b1b282d47b96ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '45354b5a797f6787abfda0c6ea065549') in 0.028562 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 64
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Scripts/RewardedAdController.cs
+  artifactKey: Guid(8b914fa3323ca480aacf51740a68ce63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/RewardedAdController.cs using Guid(8b914fa3323ca480aacf51740a68ce63) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '72eed37df3d34d37ac00b32ee8d8b4ab') in 0.005436 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000144 seconds.
+  path: Assets/Snippets/InterstitialAdSnippets.cs
+  artifactKey: Guid(1f9b86041c95c426f9baf7d409b29ba0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Snippets/InterstitialAdSnippets.cs using Guid(1f9b86041c95c426f9baf7d409b29ba0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'f9b418bc61c0d986500768e0da7fb7d9') in 0.007734 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Scenes/GoogleRewardedInterstitialAdScene.unity
+  artifactKey: Guid(8c04fc67812034997b8ab4a88058e1dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/GoogleRewardedInterstitialAdScene.unity using Guid(8c04fc67812034997b8ab4a88058e1dc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '23d51e2db0d94308eba8b0eaaa9a27a2') in 0.003994 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/UI/images/AdMobProductBanner.png
+  artifactKey: Guid(6f93082dbbed0404bb61b22271575d33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/UI/images/AdMobProductBanner.png using Guid(6f93082dbbed0404bb61b22271575d33) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '1775288622d91cd912d3f6d0425b2140') in 0.009375 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 89, details: Operation aborted.
+AssetImportWorker is now disconnected from the server
+Process exiting
