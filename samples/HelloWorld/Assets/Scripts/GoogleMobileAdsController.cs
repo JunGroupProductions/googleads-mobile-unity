@@ -59,6 +59,25 @@ namespace GoogleMobileAds.Samples
 
 
         /// <summary>
+        /// Enables HyprMX debug logging before SDK initialization.
+        /// Android: calls com.hyprmx.android.sdk.utility.HyprMXLog.enableDebugLogs(true).
+        /// iOS: not set from here (would require HyprMX.setLogLevel(HYPRLogLevelDebug) in native code).
+        /// </summary>
+        private void EnableHyprMXDebugLogs()
+        {
+#if UNITY_ANDROID
+            try
+            {
+                new AndroidJavaObject("com.hyprmx.android.sdk.utility.HyprMXLog").CallStatic("enableDebugLogs", true);
+            }
+            catch (AndroidJavaException e)
+            {
+                Debug.LogError("HyprMX: Error enabling debug logs: " + e.Message);
+            }
+#endif
+        }
+
+        /// <summary>
         /// Initializes the Google Mobile Ads Unity plugin.
         /// </summary>
         private void InitializeGoogleMobileAds()
@@ -70,6 +89,8 @@ namespace GoogleMobileAds.Samples
             }
 
             _isInitialized = false;
+
+            EnableHyprMXDebugLogs();
 
             // Initialize the Google Mobile Ads Unity plugin.
             Debug.Log("Google Mobile Ads Initializing.");
