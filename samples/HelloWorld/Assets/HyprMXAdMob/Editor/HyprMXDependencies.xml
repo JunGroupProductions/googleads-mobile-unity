@@ -5,7 +5,7 @@
   </androidPackages>
 
   <iosPods>
-    <iosPod name="HyprMX-AdMob" version="6.4.5.0" bitcodeEnabled="false">
+    <iosPod name="HyprMX-AdMob" version="6.4.5.0" addToAllTargets="true">
     </iosPod>
   </iosPods>
 </dependencies>

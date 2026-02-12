@@ -208,3 +208,56 @@ Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae9
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 [usbmuxd] Detached: 11 00008120-001A114136E0A01E
+========================================================================
+Received Import Request.
+  Time since last request: 641.324982 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'dc93f25fd7873a86a248813b6cf4e667') in 0.001476 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.890639 seconds.
+  path: Assets/GoogleMobileAds/Editor
+  artifactKey: Guid(8fabc073dd2de40f7aa7ff090dc609f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/GoogleMobileAds/Editor using Guid(8fabc073dd2de40f7aa7ff090dc609f2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '981639159210ba724232618d34524e00') in 0.046012 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 18.41 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 3042.
+Memory consumption went from 73.7 MB to 73.7 MB.
+Total: 3.775875 ms (FindLiveObjects: 0.083625 ms CreateObjectMapping: 0.021125 ms MarkObjects: 3.645708 ms  DeleteObjects: 0.010542 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+[usbmuxd] Attached: 13 00008120-001A114136E0A01E
+[usbmuxd] Detached: 13 00008120-001A114136E0A01E
+[usbmuxd] Attached: 14 00008120-001A114136E0A01E
+[usbmuxd] Detached: 14 00008120-001A114136E0A01E
+[usbmuxd] Attached: 15 00008120-001A114136E0A01E
+[usbmuxd] Detached: 15 00008120-001A114136E0A01E
+[usbmuxd] Attached: 16 00008120-001A114136E0A01E
+[usbmuxd] Detached: 16 00008120-001A114136E0A01E
+[usbmuxd] Attached: 17 00008120-001A114136E0A01E
+[usbmuxd] Detached: 17 00008120-001A114136E0A01E
+[usbmuxd] Attached: 18 00008120-001A114136E0A01E
+[usbmuxd] Detached: 18 00008120-001A114136E0A01E
