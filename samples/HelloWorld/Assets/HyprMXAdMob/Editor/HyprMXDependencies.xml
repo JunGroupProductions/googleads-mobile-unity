@@ -1,11 +1,9 @@
 <dependencies>
   <androidPackages>
-    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.4.5.0">
-    </androidPackage>
+    <androidPackage spec="com.hyprmx.android:HyprMX-AdMob:6.4.5.0" />
   </androidPackages>
 
   <iosPods>
-    <iosPod name="HyprMX-AdMob" version="6.4.5.0" addToAllTargets="true">
-    </iosPod>
+    <iosPod name="HyprMX-AdMob" version="6.4.5.0" />
   </iosPods>
 </dependencies>

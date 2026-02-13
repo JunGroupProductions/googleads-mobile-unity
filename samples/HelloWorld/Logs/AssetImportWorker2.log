@@ -402,3 +402,239 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 27317.418419 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '48835d2769d337c14c2675d6d28f572a') in 0.003895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 25.361142 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'ace200d138449cef97df90b0d56d39c3') in 0.019214 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 19.75 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 3042.
+Memory consumption went from 72.7 MB to 72.7 MB.
+Total: 8.636209 ms (FindLiveObjects: 0.087458 ms CreateObjectMapping: 0.026084 ms MarkObjects: 8.482208 ms  DeleteObjects: 0.040000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+[usbmuxd] Attached: 19 00008120-001A114136E0A01E
+========================================================================
+Received Import Request.
+  Time since last request: 738.215529 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '6ed3e8ce2f20fa21490309325f879129') in 0.009361 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4.266065 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'de98ada8952cd90685dfabcadbec44ba') in 0.012804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 20.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 3042.
+Memory consumption went from 72.6 MB to 72.6 MB.
+Total: 4.326208 ms (FindLiveObjects: 0.088084 ms CreateObjectMapping: 0.020625 ms MarkObjects: 4.203583 ms  DeleteObjects: 0.013500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 178.658225 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '20edbcaf2317edb1039cfc9bd26627d9') in 0.001736 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.956164 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '1818bf4bd299c4111bddedc0976cdafb') in 0.010229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 21.01 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 3042.
+Memory consumption went from 72.5 MB to 72.5 MB.
+Total: 4.463208 ms (FindLiveObjects: 0.073875 ms CreateObjectMapping: 0.024959 ms MarkObjects: 4.336292 ms  DeleteObjects: 0.027541 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+[usbmuxd] Detached: 19 00008120-001A114136E0A01E
+========================================================================
+Received Import Request.
+  Time since last request: 908.021894 seconds.
+  path: Assets/HyprMXAdMob/Editor/EmbedHyprMXBinary.cs
+  artifactKey: Guid(c6842ab1dd1614433b3b6aae655222f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/HyprMXAdMob/Editor/EmbedHyprMXBinary.cs using Guid(c6842ab1dd1614433b3b6aae655222f5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: '272e623c56524348f3e21b57cca70d28') in 0.034425 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+Thread 0x174487000 may have been prematurely finalized
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.721 seconds
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.009 seconds
+Domain Reload Profiling: 6731ms
+	BeginReloadAssembly (130ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (2ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (85ms)
+	RebuildNativeTypeToScriptingClass (5ms)
+	initialDomainReloadingComplete (19ms)
+	LoadAllAssembliesAndSetupDomain (482ms)
+		LoadAssemblies (561ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11ms)
+			TypeCache.Refresh (6ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (3ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (6009ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (236ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (37ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (20ms)
+			ProcessInitializeOnLoadAttributes (111ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
+Refreshing native plugins compatible for Editor in 26.60 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2547 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (29.0 KB). Loaded Objects now: 3046.
+Memory consumption went from 119.6 MB to 119.5 MB.
+Total: 5.530791 ms (FindLiveObjects: 0.087458 ms CreateObjectMapping: 0.030625 ms MarkObjects: 5.369583 ms  DeleteObjects: 0.042584 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/EmbedHyprMXBinary.cs: 28ac3c7f9996e9e64f18bacdf99f05cb -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: b243b461c7ee763a795e87b7fa3de263 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+========================================================================
+Received Import Request.
+  Time since last request: 22.208007 seconds.
+  path: Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml
+  artifactKey: Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HyprMXAdMob/Editor/HyprMXDependencies.xml using Guid(6ae93d4a841d446fa9b1986e11accb50) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 14 workers.
+ -> (artifact id: 'fc6ba4ec17cf3d45d7d22398ca9bc047') in 0.005400 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 23.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 1 unused Assets / (0.9 KB). Loaded Objects now: 3046.
+Memory consumption went from 79.8 MB to 79.8 MB.
+Total: 4.362166 ms (FindLiveObjects: 0.083833 ms CreateObjectMapping: 0.021125 ms MarkObjects: 4.245666 ms  DeleteObjects: 0.011250 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:scripting/monoscript/fileName/EmbedHyprMXBinary.cs: 28ac3c7f9996e9e64f18bacdf99f05cb -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/precompiled-assembly-types:Assembly-CSharp-Editor: b243b461c7ee763a795e87b7fa3de263 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
